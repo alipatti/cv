@@ -1,0 +1,24 @@
+name: Build LaTeX document
+on:
+  push:
+    tags:
+      - \d{4}-\d{2}-\d{2} # only compile pdf for tagged commits YYYY-MM-DD
+
+jobs:
+  compile_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git repo
+        uses: actions/checkout@v3
+
+      - name: Compile pdf
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: latex/main.tex
+          work_in_root_file_dir: latex
+          latexmk_use_lualatex: true
+
+      - name: Upload pdf
+        uses: softprops/action-gh-release@v1
+        with:
+          files: latex/main.pdf
