@@ -2,7 +2,7 @@ name: Build LaTeX document
 on:
   push:
     tags:
-      - \d{4}-\d{2}-\d{2} # only compile pdf for tagged commits YYYY-MM-DD
+      - "**" # run action only on tagged commits
 
 jobs:
   compile_pdf:
