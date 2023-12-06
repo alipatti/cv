@@ -1,16 +1,17 @@
-name: Build LaTeX document
+name: Create pdf
 on:
   push:
-    tags:
-      - "**" # run action only on tagged commits
+    branches:
+      - main
 
 jobs:
-  compile_pdf:
+  compile:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - name: Checkout git repo
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Compile pdf
@@ -20,7 +21,14 @@ jobs:
           work_in_root_file_dir: true
           latexmk_use_lualatex: true
 
-      - name: Upload pdf
+      - name: Prep for release
+        run: |
+          echo "outfile=pattison-cv-$(date +'%b-%Y' | tr '[A-Z]' '[a-z]').pdf" >> $GITHUB_ENV
+          echo "date=$(date +'%b %d, %Y')" >> $GITHUB_ENV
+          mv latex/main.pdf ${{ env.outfile }}
+
+      - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: latex/main.pdf
+          files: ${{ env.outfile }}
+          name: ${{ env.date }}
