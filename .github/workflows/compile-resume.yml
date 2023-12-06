@@ -1,8 +1,11 @@
 name: Create pdf
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+    paths:
+      - latex/main.tex
 
 jobs:
   compile:
@@ -24,9 +27,9 @@ jobs:
       - name: Create environment variables
         run: |
           echo "outfile=pattison-cv-$(date +'%b-%Y' | tr '[A-Z]' '[a-z]').pdf" >> $GITHUB_ENV
-          echo "release_name='$(date +'%b %d, %Y')'" >> $GITHUB_ENV
-          echo "release_tag='$(date +'%Y/%m/%d/%H.%M.%S%p')'" >> $GITHUB_ENV
-          
+          echo "release_name=$(date +'%b %d, %Y')" >> $GITHUB_ENV
+          echo "release_tag=$(date +'%Y/%m/%d/%H.%M.%S%p')" >> $GITHUB_ENV
+
       - name: Move pdf
         run: mv latex/main.pdf ${{ env.outfile }}
 
