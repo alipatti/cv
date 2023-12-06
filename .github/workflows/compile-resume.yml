@@ -21,11 +21,13 @@ jobs:
           work_in_root_file_dir: true
           latexmk_use_lualatex: true
 
-      - name: Prep for release
+      - name: Create environment variables
         run: |
           echo "outfile=pattison-cv-$(date +'%b-%Y' | tr '[A-Z]' '[a-z]').pdf" >> $GITHUB_ENV
           echo "date=$(date +'%b %d, %Y')" >> $GITHUB_ENV
-          mv latex/main.pdf ${{ env.outfile }}
+          
+      - name: Move pdf
+        run: mv latex/main.pdf ${{ env.outfile }}
 
       - name: Create release
         uses: softprops/action-gh-release@v1
