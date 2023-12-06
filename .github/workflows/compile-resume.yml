@@ -26,7 +26,7 @@ jobs:
 
       - name: Create environment variables
         run: |
-          echo "outfile=pattison-cv-$(date +'%b-%Y' | tr '[A-Z]' '[a-z]').pdf" >> $GITHUB_ENV
+          echo "outfile=pattison-cv.pdf" >> $GITHUB_ENV
           echo "release_name=$(date +'%b %d, %Y')" >> $GITHUB_ENV
           echo "release_tag=$(date +'%Y/%m/%d/%H.%M.%S')" >> $GITHUB_ENV
 
