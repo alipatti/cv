@@ -24,7 +24,8 @@ jobs:
       - name: Create environment variables
         run: |
           echo "outfile=pattison-cv-$(date +'%b-%Y' | tr '[A-Z]' '[a-z]').pdf" >> $GITHUB_ENV
-          echo "date=$(date +'%b %d, %Y')" >> $GITHUB_ENV
+          echo "release_name='$(date +'%b %d, %Y')'" >> $GITHUB_ENV
+          echo "release_tag='$(date +'%D-%T')'" >> $GITHUB_ENV
           
       - name: Move pdf
         run: mv latex/main.pdf ${{ env.outfile }}
@@ -33,4 +34,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ env.outfile }}
-          name: ${{ env.date }}
+          name: ${{ env.release_name }}
+          tag_name: ${{ env.release_tag }}
