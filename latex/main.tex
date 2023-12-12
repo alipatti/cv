@@ -1,13 +1,11 @@
 \documentclass{resume}
 
 \author{Alistair Pattison}
-\title{
-{\it (651) 706-6713}
-\ | \
-{\it pattisona@carleton.edu}
-\ | \
-\href{http://alipatti.com}{\it alipatti.com}
-}
+
+\def\phone{(651) 706-6713}
+\def\email{pattisona@carleton.edu}
+\def\github{alipatti}
+\def\website{alipatti.com}
 
 \usepackage[maxnames=100, giveninits=true]{biblatex}
 \addbibresource{publications.bib}
@@ -129,7 +127,7 @@
 	\subsection{#1
 		\hfill
 		\normalfont \small \faicon{github}
-		\href{http://github.com/alipatti/#2}{\textit{alipatti/#2}}
+		\href{https://github.com/\github/#2}{\textit{\github/#2}}
 	}}
 
 \project{Ole or Carl?}{ole-or-carl}
@@ -195,7 +193,7 @@
 
 \textbf{Data Science:} R (tidyverse, ggplot2), Python (NumPy, pandas, Matplotlib), SQL.
 
-\textbf{Machine Learning:} TensorFlow, scikit-learn.
+\textbf{Machine Learning:} PyTorch, TensorFlow, scikit-learn.
 
 \textbf{Data Visualization:} ggplot2, matplotlib, d3.js.
 
@@ -212,6 +210,6 @@ probability, regression, time-series analysis, machine learning, data science, a
 
 \section{Personal Interests}
 
-Running, the Minnesota Timberwolves, the Premier League, backpacking, photography, playing the piano, Nordic skiing, Wii Mario Kart, tomfoolery.
+Running, the Minnesota Timberwolves, the Premier League, backpacking, photography, playing the piano, Nordic skiing, Wii Mario Kart, tomfoolery, Project Euler, David Sedaris, Curb Your Enthusiasm.
 
 \end{document}

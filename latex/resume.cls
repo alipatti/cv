@@ -31,16 +31,22 @@
 %  -- TITLE --
 \makeatletter
 \renewcommand{\maketitle}{
-	\setlength{\leftskip}{-1em}
+\setlength{\leftskip}{-1em}
 
-	{\huge \scshape \@author}
+{\huge \scshape \@author}
 
-	\vspace{-.5em}
-	\rule{.4 \textwidth}{0.5pt}
+\vspace{-.5em}
+\rule{.4 \textwidth}{0.5pt}
 
-	{\@title}
+{
+{\it \phone}
+\ | \
+{\it \email}
+\ | \
+\href{http://\website}{\it \website}
+}
 
-	\setlength{\leftskip}{0em}
+\setlength{\leftskip}{0em}
 }
 \makeatother
 
@@ -48,8 +54,8 @@
 
 \titlespacing{\section}
 {-1em}  % leading
-{2em}  % before
-{.6em}  % after
+{.8em}  % before
+{.4em}  % after
 
 \titleformat{\section}
 {}
@@ -71,9 +77,10 @@
 {\bfseries #1}
 
 \newcommand{\resumeitem}[3]{\subsection{%
-		#1, \normalfont
-		\textit{#2}
-		\hfill {\normalsize \itshape (#3)}
+		#1,
+		{\normalfont \itshape #2}
+		\hfill
+		{\normalfont \itshape (#3)}
 	}}
 
 % -----------
