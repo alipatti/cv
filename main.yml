@@ -1,0 +1,17 @@
+about:
+  name: Alistair Pattison
+  phone: 651-706-6713
+  email: pattisona@carleton.edu
+  github: alipatti
+  linkedin: alipatti
+  website: alipatti.com
+
+sections:
+  - name: Education
+    key: education
+  - name: Work Experience
+    key: experience
+  - name: Publications/Preprints
+    key: publications
+  - name: Awards
+    key: awards
