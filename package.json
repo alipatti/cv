@@ -1,0 +1,8 @@
+{
+  "name": "cv",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/alipatti/cv.git",
+  "author": "Alistair Pattison <alistairpattison@gmail.com>",
+  "license": "MIT"
+}
