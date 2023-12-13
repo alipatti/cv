@@ -11,7 +11,7 @@ on:
 
 jobs:
   compile:
-    runs-on: ubuntu-18
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
@@ -23,6 +23,8 @@ jobs:
         with:
           packages: texlive latexmk
           version: 1.0
+
+      - run: sudo fmtutil-sys --byfmt=lualatex
 
       - name: Setup node
         uses: actions/setup-node@v4
