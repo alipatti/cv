@@ -15,7 +15,11 @@ const buildTex = (cv_content) => {
   writeFileSync(`${OUTPUT_DIR}/tex/main.tex`, latex);
   cpSync(`${TEMPLATES_DIR}/tex/resume.cls`, `${OUTPUT_DIR}/tex/resume.cls`);
   cpSync("publications.bib", `${OUTPUT_DIR}/tex/publications.bib`);
-  spawnSync("latexmk", ["-cd", `${OUTPUT_DIR}/tex/main.tex`]);
+  const process = spawnSync("latexmk", ["-cd", `${OUTPUT_DIR}/tex/main.tex`]);
+
+  if (process.status != 0) {
+    throw process.error;
+  }
 };
 
 const main = () => {
