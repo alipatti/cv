@@ -1,17 +1,85 @@
 about:
   name: Alistair Pattison
-  phone: 651-706-6713
+  phone: (651) 706-6713
   email: pattisona@carleton.edu
   github: alipatti
   linkedin: alipatti
   website: alipatti.com
 
 sections:
-  - name: Education
-    key: education
-  - name: Work Experience
-    key: experience
-  - name: Publications/Preprints
-    key: publications
-  - name: Awards
-    key: awards
+  education:
+    name: Education
+    items:
+      carleton:
+        title: Bachelors of Arts, Mathematics and Statistics
+        subtitle: Carleton College
+        dates: September 2020 -- June 2024
+        bullets:
+          - 3.99 GPA, captain of varsity track and field.
+          - Studied abroad at the University of Cambridge taking classes in
+            computer science and history.
+          - "Theses: An Introduction to Analytic Number Theory (math), Live Win
+            Probabilities in Soccer with RNNs (stats)."
+
+  experience:
+    name: Work Experience
+    items:
+      umn-crypto:
+        title: Research Assistant
+        subtitle: University of Minnesota Privacy and Cryptography Group
+        dates: September 2022 -- present
+        bullets:
+          - Work with Professor Nicholas Hopper to develop privacy-preserving
+            methods for reporting abuse and misinformation on encrypted
+            messaging platforms.
+          - Design, implement, and benchmark cryptographic protocols using
+            Python, Rust, and Docker.
+          - Presented findings at a first-tier security conference in 2023. We
+            plan to publish more results in 2024.
+          # TODO: mention REU/kolenkow reitz funding? e.g.:
+          # - Funded by the Signal Foundation, a NSF REU, and the Kolenkow-Reitz Felowship.
+
+      carleton-ta:
+        title: Teaching Assistant
+        subtitle: Carleton College
+        dates: March 2021 -- present
+        bullets:
+          - Tutor students, grade homework, and hold office hours for classes in
+            the math and computer science departments.
+          - "Classes: Algorithms, Artificial Intelligence, Real Analysis I,
+            Abstract Algebra I, Data Visualization, Math Structures, and
+            Calculus II."
+
+      stat-consulting:
+        title: Statistical Consultant
+        subtitle: Minnesota Department of Human Services
+        dates: September 2023 -- November 2023
+        bullets:
+          - Worked with interdepartmental task force to help make Minnesota’s
+            government systems more inclusive of older adults.
+          - Analyzed American Community Survey data to identify demographic
+            disparities in wealth, housing, and internet access.
+          - Created data visualizations and interactive dashboards for use by
+            government employees and other consultants.
+
+      widji:
+        title: The Food Guy
+        subtitle: YMCA Camp Widjiwagan
+        dates: June 2021 -- September 2021
+        bullets:
+          - Oversaw the purchase and distribution of food for nearly 200
+            wilderness trips across the US and Canada.
+          - Managed a \$95,000 budget alongside two other employees and taught
+            basic nutrition to kids aged 12 to 18.
+          - Lead a week-long canoeing trip with a program dedicated to making
+            the outdoors more diverse and financially accessible.
+
+      carleton-dining-hall:
+        title: Dining Hall Worker
+        subtitle: Carleton College
+        dates: September 2020 -- March 2021
+
+      hansen-tree-farm:
+        title: Farm Hand
+        subtitle: Hansen Tree Farm
+        dates: November 2018 -- December 2020

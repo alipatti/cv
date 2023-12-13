@@ -2,7 +2,22 @@
   "name": "cv",
   "version": "0.0.1",
   "main": "index.js",
+  "type": "module",
   "repository": "https://github.com/alipatti/cv.git",
   "author": "Alistair Pattison <alistairpattison@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "node index.js",
+    "dev": "nodemon"
+  },
+  "nodemonConfig": {
+    "ext": "js,yml,hbs,cls"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }

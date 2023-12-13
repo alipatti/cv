@@ -1,0 +1,34 @@
+\documentclass{resume}
+
+\author{ {{~about.name~}} }
+
+\def\phone{ {{~about.phone~}} }
+\def\email{ {{~about.email~}} }
+\def\github{ {{~about.github~}} }
+\def\website{ {{~about.website~}} }
+
+\begin{document}
+
+\maketitle
+
+{{#each sections}}
+	\section{ {{~this.name~}} }
+	
+	\label{ {{~this.key~}} }
+
+	{{#each this.items}}
+
+	\resumeitem{ {{~this.title~}} }{ {{~this.subtitle~}} }{ {{~this.dates~}} }
+
+	{{#if this.bullets}}
+		\begin{itemize}
+		{{#each this.bullets}}
+			\item {{this}}
+		{{/each}}
+		\end{itemize}
+	{{/if}}
+
+	{{/each }}
+{{/each }}
+
+\end{document}
