@@ -1,4 +1,4 @@
-about:
+about: &about
   name: Alistair Pattison
   phone: (651) 706-6713
   email: pattisona@carleton.edu
@@ -7,10 +7,10 @@ about:
   website: alipatti.com
 
 sections:
-  education:
-    name: Education
+  - &education
+    title: Education
     items:
-      carleton:
+      - &carleton
         title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
@@ -20,7 +20,7 @@ sections:
             computer science and history.
           - "Theses: An Introduction to Analytic Number Theory (math), Live Win
             Probabilities in Soccer with RNNs (stats)."
-      umtymp:
+      - &umtymp
         title: Talented Youth Mathematics Program
         subtitle: University of Minnesota
         dates: September 2015 -- June 2020
@@ -29,25 +29,22 @@ sections:
             semesters of set theory, vector calculus, linear algebra, and
             differential equations at the University of Minnesota.
 
-  experience:
-    name: Work Experience
+  - &experience
+    title: Work Experience
     items:
-      umn-crypto:
+      - &umn-crypto
         title: Research Assistant
         subtitle: University of Minnesota Privacy and Cryptography Group
         dates: September 2022 -- present
         bullets:
-          - Work with Professor Nicholas Hopper to develop privacy-preserving
-            methods for reporting abuse and misinformation on encrypted
-            messaging platforms.
-          - Design, implement, and benchmark cryptographic protocols using
-            Python, Rust, and Docker.
+          - Design and implement cryptographic protocols for reporting abuse and
+            misinformation on encrypted messaging platforms.
+          - Supported by an NSF REU and the Kolenkow-Reitz Fellowship;
+            supervised by Professor Nicholas Hopper.
           - Presented findings at a first-tier security conference in 2023. We
             plan to publish more results in 2024.
-          # TODO: mention REU/kolenkow reitz funding? e.g.:
-          # - Funded by the Signal Foundation, a NSF REU, and the Kolenkow-Reitz Felowship.
 
-      carleton-ta:
+      - &carleton-ta
         title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
@@ -58,7 +55,7 @@ sections:
             Abstract Algebra I, Data Visualization, Math Structures, and
             Calculus II."
 
-      stat-consulting:
+      - &stat-consulting
         title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
@@ -70,7 +67,7 @@ sections:
           - Created data visualizations and interactive dashboards for use by
             government employees and other consultants.
 
-      widji:
+      - &widji
         title: The Food Guy
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- September 2021
@@ -82,30 +79,62 @@ sections:
           - Lead a week-long canoeing trip with a program dedicated to making
             the outdoors more diverse and financially accessible.
 
-      carleton-dining-hall:
+      - &carleton-dining-hall
         title: Dining Hall Worker
         subtitle: Carleton College
         dates: September 2020 -- March 2021
 
-      hansen-tree-farm:
+      - &hansen-tree-farm
         title: Farm Hand
         subtitle: Hansen Tree Farm
         dates: November 2018 -- December 2020
 
-  skills:
-    name: Skills
-
-  publications:
-    name: Publications and Preprints
+  - &publications
+    title: Publications and Preprints
     citations:
       - cerberus
       - threshold-reporting
       - exemplar
 
-  projects:
-    name: Projects
+  - &awards
+    title: Awards
     items:
-      ole-or-carl:
+      - title: Phi Beta Kappa
+        subtitle: 2023
+        notes: one of nine Junior-year inductees, roughly 2 percent of the class
+
+      - title: Dean's List
+        subtitle: 2021, 2022, 2023
+        notes: awarded to top 10 percent of class by GPA
+
+      - title: National Merit Scholarship
+        subtitle: 2020
+        notes:
+          awarded to roughly the top 1 percent of high-school seniors in the U.S
+
+  - &skills
+    title: Skills
+    items:
+      - title: Programming
+        notes:
+          Python, R, JavaScript, Rust, Java, SQL, git, Docker, Swift, \LaTeX,
+
+      - title: Web Development
+        notes: Typescript, React, Next.js, Prisma.
+
+      - title: Data Science
+        notes: R (tidyverse, ggplot2), Python (NumPy, pandas, Matplotlib), SQL.
+
+      - title: Machine Learning
+        notes: PyTorch, TensorFlow, scikit-learn.
+
+      - title: Data Visualization
+        notes: ggplot2, matplotlib, d3.js.
+
+  - &projects
+    title: Projects
+    items:
+      - &ole-or-carl
         title: Ole or Carl?
         github: ole-or-carl
         bullets:
@@ -116,57 +145,75 @@ sections:
           - Uses a linear support-vector classifier on embeddings of student’s
             faces taken from directory photos.
 
-      wordle-bot:
+      - &wordle-bot
         title: Wordle Bot
         github: wordle-bot
         bullets:
           - An information-theory powered bot that beats Wordle in about 3.5
             moves on average. Written in Python using NumPy.
 
-      in-passing:
+      - &in-passing
         title: In Passing
         github: in-passing
         bullets:
           - A visualization of passing and touch data from the 2022 FIFA Men’s
             World Cup. Written in JavaScript using d3.js.
 
-      todo:
+      - &todo
         title: TODO.swift
         github: todo.swift
         bullets:
           - A command line app to view and add to your Apple reminders, synced
             across all your devices. Written in Swift.
 
-      oeis:
+      - &oeis
         title: OEIS.rs
         github: oeis.rs
         bullets:
           - A terminal interface for the Online Encyclopedia of Integer
             Sequences. Written in Rust.
 
-      course-classifier:
+      - &course-classifier
         title: Carleton Course Classifier
         github: course-classifier
         bullets:
           - Uses deep learning to predict a class's department and course number
             given a description. Written using Tensorflow.
 
-      smart-garage:
+      - &smart-garage
         title: Smart Garage
         github: homekit-garage-door
         bullets:
           - Integrates my parents’ 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
 
-      math-comps:
+      - &math-comps
         title: An Introduction to Analytic Number Theory
         github: math-comps
         bullets:
           - A whirlwind introduction to number rings, number fields, the class
             group, and Dirichlet’s unit theorem. Written as a senior thesis for
             the Carleton math department.
-  interests:
-    name: Personal Interests
+
+  - &coursework
+    title: Coursework
+    items:
+      - title: Math
+        # TODO: make notes show up in pdf
+        notes:
+          algebra, analysis, combinatorics, topology, analytic and algebraic
+          number theory, representation theory, and Galois theory.
+      - title: Computer Science
+        notes:
+          algorithms, data structures, cryptography, artificial intelligence,
+          natural language processing, and quantum computing.
+      - title: Statistics
+        notes:
+          probability, regression, time-series analysis, machine learning, data
+          science, and data visualization.
+
+  - &interests
+    title: Personal Interests
     summary:
       Running, the Minnesota Timberwolves, the Premier League, backpacking,
       photography, playing the piano, Nordic skiing, Wii Mario Kart, tomfoolery,
