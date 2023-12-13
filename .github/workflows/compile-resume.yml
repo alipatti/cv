@@ -5,7 +5,9 @@ on:
     branches:
       - main
     paths:
-      - latex/main.tex
+      - main.yml
+      - templates
+      - index.js
 
 jobs:
   compile:
@@ -14,15 +16,16 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Compile pdf
-        uses: xu-cheng/latex-action@v3
+      - name: Install LaTeX
+        uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          root_file: latex/main.tex
-          work_in_root_file_dir: true
-          latexmk_use_lualatex: true
+          packages: texlive latexmk
+          version: 1.0
+
+      - name: Compile
+        run: yarn build
 
       - name: Create environment variables
         run: |
@@ -31,7 +34,7 @@ jobs:
           echo "release_tag=$(date +'%Y/%m/%d/%H.%M.%S')" >> $GITHUB_ENV
 
       - name: Move pdf
-        run: mv latex/main.pdf ${{ env.outfile }}
+        run: mv .out/tex/main.pdf ${{ env.outfile }}
 
       - name: Create release
         uses: softprops/action-gh-release@v1
