@@ -1,4 +1,96 @@
-\documentclass{resume}
+\documentclass{article}
+
+\usepackage[explicit]{titlesec}
+\usepackage{xhfill}
+\usepackage{ifthen}
+\usepackage[colorlinks]{hyperref}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
+
+\usepackage[maxnames=100, giveninits=true]{biblatex}
+\addbibresource{publications.bib}
+
+\usepackage{geometry, parskip}
+\geometry{margin=4em}
+\pagestyle{empty}  % remove page numbering
+
+\usepackage{enumitem}
+\setlist[itemize]{
+	label={\bfseries-},
+	leftmargin=1.5em,
+	topsep=-.1em,
+	itemsep=-.3em,
+}
+
+%  -- TITLE --
+\makeatletter
+\renewcommand{\maketitle}{
+\setlength{\leftskip}{-1em}
+
+{\huge \scshape \@author}
+
+\vspace{-.5em}
+\rule{.4 \textwidth}{0.5pt}
+
+{
+{\it \phone}
+\ | \
+{\it \email}
+\ | \
+\href{http://\website}{\it \website}
+}
+
+\setlength{\leftskip}{0em}
+}
+\makeatother
+
+% -- SECTION --
+
+\titlespacing{\section}
+{-1em}  % leading
+{.8em}  % before
+{.4em}  % after
+
+\titleformat{\section}
+{}
+{}
+{0em}  % number-header spacing 
+{\Large \scshape  #1 \ \xrfill[.2em]{.5pt}}
+
+% -- RESUME ITEM --
+
+\titlespacing{\subsection}
+{0em}  % leading
+{1em}  % before
+{.5em}  % after
+
+\titleformat{\subsection}
+{}
+{}
+{0em}  % number-header spacing 
+{\bfseries #1}
+
+\newcommand{\resumeitem}[3]{\subsection{%
+		\def\subtitle{#2}%
+		\def\empty{}%
+		#1%
+		\ifx\subtitle\empty{ }\else{, }\fi
+		{\normalfont \itshape #2}
+		\hfill
+		{\normalfont \itshape #3}
+	}}
+
+
+% -----------
+% -- LINKS -- 
+% -----------
+
+\let\oldhref\href
+\renewcommand{\href}[2]{%
+	#2
+	\oldhref{#1}{\raisebox{-.1em}{\faicon{link}}}%
+}
+
 
 \author{ {{~about.name~}} }
 
@@ -12,7 +104,7 @@
 \maketitle
 
 {{#each sections}}
-	\section{ {{~this.name~}} }
+	\section{ {{~this.title~}} }
 	\label{ {{~this.key~}} }
 
 	{{{this.summary}}}
@@ -28,7 +120,7 @@
 		\def\margin{}	
 
 		{{#if this.dates}}
-			\def\margin{({{this.dates}})}
+			\def\margin{({{{this.dates}}})}
 		{{/if}}
 
 		{{#if this.github}}
@@ -39,8 +131,12 @@
 			}
 		{{/if}}
 
-		\resumeitem{ {{~this.title~}} }{ {{~this.subtitle~}} }{\margin}
-
+		\resumeitem{%
+			{{{this.title}}}%
+		}{%
+			{{{this.subtitle}}}%
+		}{\margin}
+ 
 		{{#if this.bullets}}
 			\begin{itemize}
 			{{#each this.bullets}}
