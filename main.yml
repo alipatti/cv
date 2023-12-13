@@ -100,17 +100,14 @@ sections:
     title: Awards
     items:
       - title: Phi Beta Kappa
-        subtitle: 2023
-        notes: one of nine Junior-year inductees, roughly 2 percent of the class
+        dates: June 2023
+        paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
       - title: Dean's List
-        subtitle: 2021, 2022, 2023
-        notes: awarded to top 10 percent of class by GPA
+        dates: September 2021, 2022, and 2023
 
       - title: National Merit Scholarship
-        subtitle: 2020
-        notes:
-          awarded to roughly the top 1 percent of high-school seniors in the U.S
+        dates: May 2020
 
   - &skills
     title: Skills
