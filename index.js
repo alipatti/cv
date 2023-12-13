@@ -18,6 +18,7 @@ const buildTex = (cv_content) => {
   const process = spawnSync("latexmk", ["-cd", `${OUTPUT_DIR}/tex/main.tex`]);
 
   if (process.status != 0) {
+    console.log(process.stdout.toString());
     throw process.error;
   }
 };
