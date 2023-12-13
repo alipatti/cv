@@ -14,13 +14,14 @@ const buildTex = (cv_content) => {
   mkdirSync(`${OUTPUT_DIR}/tex`, { recursive: true });
   writeFileSync(`${OUTPUT_DIR}/tex/main.tex`, latex);
   cpSync(`${TEMPLATES_DIR}/tex/resume.cls`, `${OUTPUT_DIR}/tex/resume.cls`);
+  cpSync("publications.bib", `${OUTPUT_DIR}/tex/publications.bib`);
   spawnSync("latexmk", ["-cd", `${OUTPUT_DIR}/tex/main.tex`]);
 };
 
 const main = () => {
-  const cv_content = yaml.load(readFileSync("main.yml"));
+  const content = yaml.load(readFileSync("main.yml"));
 
-  buildTex(cv_content);
+  buildTex(content);
 };
 
 main();

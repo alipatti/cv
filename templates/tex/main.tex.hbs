@@ -13,21 +13,41 @@
 
 {{#each sections}}
 	\section{ {{~this.name~}} }
-	
 	\label{ {{~this.key~}} }
 
-	{{#each this.items}}
+	{{{this.summary}}}
 
-	\resumeitem{ {{~this.title~}} }{ {{~this.subtitle~}} }{ {{~this.dates~}} }
+	{{#if this.citations}}
+		{{#each this.citations}}
+			\fullcite{ {{~this~}} }
 
-	{{#if this.bullets}}
-		\begin{itemize}
-		{{#each this.bullets}}
-			\item {{this}}
 		{{/each}}
-		\end{itemize}
 	{{/if}}
 
+	{{#each this.items}}
+		\def\margin{}	
+
+		{{#if this.dates}}
+			\def\margin{({{this.dates}})}
+		{{/if}}
+
+		{{#if this.github}}
+			\def\margin{%
+				\normalfont \small \faicon{github}
+				\href{https://github.com/\github/{{this.github~}} }
+				     {\textit{\github/{{this.github~}}}}%
+			}
+		{{/if}}
+
+		\resumeitem{ {{~this.title~}} }{ {{~this.subtitle~}} }{\margin}
+
+		{{#if this.bullets}}
+			\begin{itemize}
+			{{#each this.bullets}}
+				\item {{{this}}}
+			{{/each}}
+			\end{itemize}
+		{{/if}}
 	{{/each }}
 {{/each }}
 

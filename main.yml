@@ -20,6 +20,14 @@ sections:
             computer science and history.
           - "Theses: An Introduction to Analytic Number Theory (math), Live Win
             Probabilities in Soccer with RNNs (stats)."
+      umtymp:
+        title: Talented Youth Mathematics Program
+        subtitle: University of Minnesota
+        dates: September 2015 -- June 2020
+        bullets:
+          - Completed selective high-school math program culminating in six
+            semesters of set theory, vector calculus, linear algebra, and
+            differential equations at the University of Minnesota.
 
   experience:
     name: Work Experience
@@ -83,3 +91,83 @@ sections:
         title: Farm Hand
         subtitle: Hansen Tree Farm
         dates: November 2018 -- December 2020
+
+  skills:
+    name: Skills
+
+  publications:
+    name: Publications and Preprints
+    citations:
+      - cerberus
+      - threshold-reporting
+      - exemplar
+
+  projects:
+    name: Projects
+    items:
+      ole-or-carl:
+        title: Ole or Carl?
+        github: ole-or-carl
+        bullets:
+          - This project tests the validity of a long-standing stereotype that
+            students from Northfield’s two colleges look meaningfully different.
+            If so, then a machine learning model should be able to tell them
+            apart? Right?
+          - Uses a linear support-vector classifier on embeddings of student’s
+            faces taken from directory photos.
+
+      wordle-bot:
+        title: Wordle Bot
+        github: wordle-bot
+        bullets:
+          - An information-theory powered bot that beats Wordle in about 3.5
+            moves on average. Written in Python using NumPy.
+
+      in-passing:
+        title: In Passing
+        github: in-passing
+        bullets:
+          - A visualization of passing and touch data from the 2022 FIFA Men’s
+            World Cup. Written in JavaScript using d3.js.
+
+      todo:
+        title: TODO.swift
+        github: todo.swift
+        bullets:
+          - A command line app to view and add to your Apple reminders, synced
+            across all your devices. Written in Swift.
+
+      oeis:
+        title: OEIS.rs
+        github: oeis.rs
+        bullets:
+          - A terminal interface for the Online Encyclopedia of Integer
+            Sequences. Written in Rust.
+
+      course-classifier:
+        title: Carleton Course Classifier
+        github: course-classifier
+        bullets:
+          - Uses deep learning to predict a class's department and course number
+            given a description. Written using Tensorflow.
+
+      smart-garage:
+        title: Smart Garage
+        github: homekit-garage-door
+        bullets:
+          - Integrates my parents’ 40-year-old garage door opener with Apple
+            HomeKit using an ESP32 microcontroller.
+
+      math-comps:
+        title: An Introduction to Analytic Number Theory
+        github: math-comps
+        bullets:
+          - A whirlwind introduction to number rings, number fields, the class
+            group, and Dirichlet’s unit theorem. Written as a senior thesis for
+            the Carleton math department.
+  interests:
+    name: Personal Interests
+    summary:
+      Running, the Minnesota Timberwolves, the Premier League, backpacking,
+      photography, playing the piano, Nordic skiing, Wii Mario Kart, tomfoolery,
+      Project Euler, David Sedaris, Curb Your Enthusiasm.

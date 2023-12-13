@@ -6,11 +6,15 @@
 \RequirePackage{geometry}
 \RequirePackage[explicit]{titlesec}
 \RequirePackage{xhfill}
+\usepackage{ifthen}
 \RequirePackage{parskip}
 \RequirePackage[colorlinks]{hyperref}
 \RequirePackage{fontawesome}
 \RequirePackage[T1]{fontenc}
-% \RequirePackage{biblatex}  % for publications
+
+% citations
+\RequirePackage[maxnames=100, giveninits=true]{biblatex}
+\addbibresource{publications.bib}
 
 % -- MARGINS --
 
@@ -77,11 +81,15 @@
 {\bfseries #1}
 
 \newcommand{\resumeitem}[3]{\subsection{%
-		#1,
+		\def\subtitle{#2}%
+		\def\empty{}%
+		#1%
+		\ifx\subtitle\empty{ }\else{, }\fi
 		{\normalfont \itshape #2}
 		\hfill
-		{\normalfont \itshape (#3)}
+		{\normalfont \itshape #3}
 	}}
+
 
 % -----------
 % -- LINKS -- 
