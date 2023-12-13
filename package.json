@@ -11,7 +11,7 @@
     "dev": "nodemon"
   },
   "nodemonConfig": {
-    "ext": "js,yml,hbs,cls"
+    "ext": "js,yml,hbs,cls,bib"
   },
   "dependencies": {
     "handlebars": "^4.7.8",
