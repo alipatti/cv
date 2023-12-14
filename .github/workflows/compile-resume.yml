@@ -20,6 +20,9 @@ jobs:
           packages: texlive-full latexmk
           version: 1.0
 
+      - run: |
+          sudo fmtutil-sys --byfmt=lualatex
+
       - name: Setup node
         uses: actions/setup-node@v4
         with:
