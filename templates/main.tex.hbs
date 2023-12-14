@@ -5,29 +5,47 @@
 \usepackage{fontawesome}
 \usepackage[T1]{fontenc}
 \usepackage[margin=4em]{geometry}
-\usepackage{parskip}
+\usepackage{etoolbox}
 
-\usepackage[maxnames=100, giveninits=true]{biblatex}
+\usepackage[
+	maxnames=100,
+	{{!-- giveninits=true, --}}
+	sorting=ynt,
+	style=authortitle
+]{biblatex}
 \addbibresource{publications.bib}
 
 \pagestyle{empty}
+\usepackage{parskip}
 
 \usepackage[explicit]{titlesec}
+
 \titleformat{\section}
 	{\Large \scshape}
 	{}
 	{0em}  % number-header spacing 
 	{#1 \ \xrfill[.2em]{.5pt}}
+
+\titleformat{\subsection}[runin]
+	{}
+	{}
+	{0em}  % number-header spacing 
+	{#1}
+
 \titlespacing{\section}
 	{-1em}  % leading
 	{.8em}  % before
 	{.4em}  % after
 
+\titlespacing{\subsection}
+	{0em}  % leading
+	{.2em}  % before
+	{1pt}  % after
+
 \usepackage{enumitem}
-\setlist[itemize]{
-	label={\bfseries-},
-	leftmargin=1.5em,
-	topsep=-.1em,
+\setlist{
+	rightmargin=1.5em,
+	topsep=-.2em,
 	itemsep=-.3em,
 }
 
@@ -63,6 +81,7 @@
 
 \begin{document}
 
+\raggedright
 \maketitle
 
 {{#each sections}}
@@ -102,23 +121,38 @@
 			}
 		{{/if}}
 
-		\ifx\title\empty{}\else{\textbf{\title}}\fi%
-		\ifx\subtitle\empty{}\else{, \textit{\subtitle}}\fi%
-		\ifx\notes\empty{}\else{: \notes}\fi%
-		\ifx\paren\empty{}\else{ (\textit{\paren})}\fi%
-		\ifx\dates\empty{}\else{\hfill \textit{\dates}}\fi
- 
+
+		
+		{{#if this.title}}
+			\subsection{%
+				\ifdefempty{\title}{}{\textbf{\title}}%
+				\ifdefempty{\subtitle}{}{, \textit{\subtitle}}%
+			}
+			\ifdefempty{\notes}{}{: \notes}%
+			\ifdefempty{\paren}{}{\quad (\textit{\paren})}%
+			\ifdefempty{\dates}{}{\hfill \textit{\dates}}%
+		{{/if}}
+
+		{{#if this.citations}}
+			\begin{refsection} 
+				\nocite{%
+					{{#each this.citations}}{{~this~}},{{/each}}%
+				}
+				\printbibliography[heading=none]
+			\end{refsection} 
+		{{/if}}
+
 		{{#if this.bullets}}
-			\begin{itemize}
+			\begin{itemize}[
+				label={\bfseries-},
+				leftmargin=1.5em,
+			]
 			{{#each this.bullets}}
 				\item {{{this}}}
 			{{/each}}
 			\end{itemize}
 		{{/if}}
 
-		{{#if this.citation}}
-			\fullcite{ {{~this.citation~}} }
-		{{/if}}
 	{{/each }}
 {{/each }}
 

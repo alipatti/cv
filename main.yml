@@ -60,10 +60,10 @@ sections:
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
         bullets:
-          - Worked with interdepartmental task force to help make Minnesota's
+          - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
-          - Analyzed American Community Survey data to identify demographic
-            disparities in wealth, housing, and internet access.
+          - Analyzed census data to identify disparities in wealth, housing, and
+            internet access across demographic groups.
           - Created data visualizations and interactive dashboards for use by
             government employees and other consultants.
 
@@ -77,7 +77,7 @@ sections:
           - Managed a \$95,000 budget alongside two other employees and taught
             basic nutrition to kids aged 12 to 18.
           - Lead a week-long canoeing trip with a program dedicated to making
-            the outdoors more diverse and financially accessible.
+            the outdoors more financially accessible.
 
       - &carleton-dining-hall
         title: Dining Hall Worker
@@ -92,9 +92,10 @@ sections:
   - &publications
     title: Publications and Preprints
     items:
-      - citation: cerberus
-      - citation: threshold-reporting
-      - citation: exemplar
+      - citations:
+          - cerberus
+          - threshold-reporting
+          - exemplar
 
   - &awards
     title: Awards
