@@ -20,9 +20,6 @@ jobs:
           packages: texlive-full latexmk
           version: 1.0
 
-      - run: |
-          sudo fmtutil-sys --byfmt=lualatex
-
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -30,7 +27,9 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn install --frozen-lockfile
+          sudo fmtutil-sys --byfmt=lualatex
 
       - name: Build
         run: yarn build
