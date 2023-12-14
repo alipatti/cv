@@ -22,8 +22,7 @@ jobs:
 
       - run: |
           sudo fmtutil-sys --byfmt=lualatex
-          tlmgr init-usertree
-          sudo tlmgr install fontawesome 
+          tlmgr install fontawesome 
 
       - name: Setup node
         uses: actions/setup-node@v4
