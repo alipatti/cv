@@ -1,25 +1,23 @@
 \documentclass{article}
 
-\usepackage[explicit]{titlesec}
 \usepackage{xhfill}
-\usepackage{ifthen}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fontawesome}
 \usepackage[T1]{fontenc}
+\usepackage[margin=4em]{geometry}
+\usepackage{parskip}
 
 \usepackage[maxnames=100, giveninits=true]{biblatex}
 \addbibresource{publications.bib}
 
-\usepackage{geometry, parskip}
-\geometry{margin=4em}
-\pagestyle{empty}  % remove page numbering
+\pagestyle{empty}
 
+\usepackage[explicit]{titlesec}
 \titleformat{\section}
 	{\Large \scshape}
 	{}
 	{0em}  % number-header spacing 
 	{#1 \ \xrfill[.2em]{.5pt}}
-
 \titlespacing{\section}
 	{-1em}  % leading
 	{.8em}  % before
@@ -73,13 +71,6 @@
 
 	{{{this.summary}}}
 
-	{{#if this.citations}}
-		{{#each this.citations}}
-			\fullcite{ {{~this~}} }
-
-		{{/each}}
-	{{/if}}
-
 	{{#each this.items}}
 		\def\empty{}
 
@@ -100,7 +91,7 @@
 		}
 
 		
-		\def\margin{%
+		\def\dates{%
 			{{{this.dates}}}%
 		}
 
@@ -111,12 +102,11 @@
 			}
 		{{/if}}
 
-		\textbf{\title}%
+		\ifx\title\empty{}\else{\textbf{\title}}\fi%
 		\ifx\subtitle\empty{}\else{, \textit{\subtitle}}\fi%
-		\ifx\notes\empty{}\else{: \notes}\fi
-		\ifx\paren\empty{}\else{ (\textit{\paren})}\fi
-		\hfill
-		{\itshape \margin}
+		\ifx\notes\empty{}\else{: \notes}\fi%
+		\ifx\paren\empty{}\else{ (\textit{\paren})}\fi%
+		\ifx\dates\empty{}\else{\hfill \textit{\dates}}\fi
  
 		{{#if this.bullets}}
 			\begin{itemize}
@@ -124,6 +114,10 @@
 				\item {{{this}}}
 			{{/each}}
 			\end{itemize}
+		{{/if}}
+
+		{{#if this.citation}}
+			\fullcite{ {{~this.citation~}} }
 		{{/if}}
 	{{/each }}
 {{/each }}

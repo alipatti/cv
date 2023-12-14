@@ -91,10 +91,10 @@ sections:
 
   - &publications
     title: Publications and Preprints
-    citations:
-      - cerberus
-      - threshold-reporting
-      - exemplar
+    items:
+      - citation: cerberus
+      - citation: threshold-reporting
+      - citation: exemplar
 
   - &awards
     title: Awards
