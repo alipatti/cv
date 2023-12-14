@@ -60,7 +60,7 @@ sections:
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
         bullets:
-          - Worked with interdepartmental task force to help make Minnesota’s
+          - Worked with interdepartmental task force to help make Minnesota's
             government systems more inclusive of older adults.
           - Analyzed American Community Survey data to identify demographic
             disparities in wealth, housing, and internet access.
@@ -87,7 +87,7 @@ sections:
       - &hansen-tree-farm
         title: Farm Hand
         subtitle: Hansen Tree Farm
-        dates: November 2018 -- December 2020
+        dates: November 2018 -- December 2020, seasonal
 
   - &publications
     title: Publications and Preprints
@@ -136,10 +136,10 @@ sections:
         github: ole-or-carl
         bullets:
           - This project tests the validity of a long-standing stereotype that
-            students from Northfield’s two colleges look meaningfully different.
+            students from Northfield's two colleges look meaningfully different.
             If so, then a machine learning model should be able to tell them
             apart? Right?
-          - Uses a linear support-vector classifier on embeddings of student’s
+          - Uses a linear support-vector classifier on embeddings of student's
             faces taken from directory photos.
 
       - &wordle-bot
@@ -153,7 +153,7 @@ sections:
         title: In Passing
         github: in-passing
         bullets:
-          - A visualization of passing and touch data from the 2022 FIFA Men’s
+          - A visualization of passing and touch data from the 2022 FIFA Men's
             World Cup. Written in JavaScript using d3.js.
 
       - &todo
@@ -181,7 +181,7 @@ sections:
         title: Smart Garage
         github: homekit-garage-door
         bullets:
-          - Integrates my parents’ 40-year-old garage door opener with Apple
+          - Integrates my parents' 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
 
       - &math-comps
@@ -189,7 +189,7 @@ sections:
         github: math-comps
         bullets:
           - A whirlwind introduction to number rings, number fields, the class
-            group, and Dirichlet’s unit theorem. Written as a senior thesis for
+            group, and Dirichlet's unit theorem. Written as a senior thesis for
             the Carleton math department.
 
   - &coursework
