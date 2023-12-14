@@ -16,7 +16,7 @@ jobs:
 
       - name: Setup tex
         run: |
-          apt-get install texlive-full latexmk
+          sudo apt-get install texlive-full latexmk
           sudo texhash
 
       - name: Setup node
@@ -25,7 +25,7 @@ jobs:
           node-version: 16
           cache: yarn
 
-      - name: Install dependencies
+      - name: Install node dependencies
         run: yarn install --frozen-lockfile
 
       - name: Build
