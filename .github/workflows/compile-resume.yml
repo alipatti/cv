@@ -17,13 +17,11 @@ jobs:
       - name: Setup LaTeX
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: texlive-latex-extra latexmk
+          packages: texlive-full latexmk
           version: 1.0
 
       - run: |
           sudo fmtutil-sys --byfmt=lualatex
-          sudo tlmgr init-usertree
-          sudo tlmgr install fontawesome 
 
       - name: Setup node
         uses: actions/setup-node@v4
