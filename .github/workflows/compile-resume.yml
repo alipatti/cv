@@ -14,11 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup tex
+      - name: Setup
         run: |
           sudo apt-get update
           sudo apt-get install texlive-full latexmk imagemagick
           sudo texhash
+          sudo sed -i '/disable ghostscript format types/,+6d' /etc/ImageMagick-6/policy.xml
 
       - name: Setup node
         uses: actions/setup-node@v4
