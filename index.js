@@ -13,13 +13,12 @@ const buildTex = (cv_content) => {
   // build latex
   mkdirSync(`${OUTPUT_DIR}/tex`, { recursive: true });
   writeFileSync(`${OUTPUT_DIR}/tex/main.tex`, latex);
-  cpSync(`${TEMPLATES_DIR}/tex/resume.cls`, `${OUTPUT_DIR}/tex/resume.cls`);
   cpSync("publications.bib", `${OUTPUT_DIR}/tex/publications.bib`);
   const process = spawnSync("latexmk", ["-cd", `${OUTPUT_DIR}/tex/main.tex`]);
 
   if (process.status != 0) {
     console.log(process.stdout.toString());
-    throw process.error;
+    throw
   }
 };
 
