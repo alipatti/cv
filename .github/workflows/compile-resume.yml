@@ -14,13 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup LaTeX
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: texlive-full latexmk
-          version: 1.0
-
-      - run: |
+      - name: Setup tex
+        run: |
+          apt-get install texlive-full latexmk
           sudo texhash
 
       - name: Setup node
