@@ -7,7 +7,7 @@ const OUTPUT_DIR = ".out";
 const TEMPLATES_DIR = "templates";
 
 const buildTex = (cv_content) => {
-  const template = readFileSync(`${TEMPLATES_DIR}/tex/main.tex.hbs`).toString();
+  const template = readFileSync(`${TEMPLATES_DIR}/main.tex.hbs`).toString();
   const latex = hbs.compile(template)(cv_content);
 
   // build latex
@@ -18,7 +18,7 @@ const buildTex = (cv_content) => {
 
   if (process.status != 0) {
     console.log(process.stdout.toString());
-    throw
+    throw "LaTeX error";
   }
 };
 
