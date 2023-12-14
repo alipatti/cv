@@ -17,7 +17,7 @@ jobs:
       - name: Setup tex
         run: |
           sudo apt-get update
-          sudo apt-get install texlive-full latexmk
+          sudo apt-get install texlive-full latexmk imagemagick
           sudo texhash
 
       - name: Setup node
@@ -32,18 +32,18 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Create environment variables
+      - name: Prep for release
         run: |
-          echo "outfile=pattison-cv.pdf" >> $GITHUB_ENV
+          mv .out/tex/main.pdf pattison-cv.pdf
+          convert -density 100 -blur 4x4 pattison-cv.pdf[0] pattison-cv-thumbnail.png
           echo "release_name=$(date +'%b %d, %Y')" >> $GITHUB_ENV
           echo "release_tag=$(date +'%Y/%m/%d/%H.%M.%S')" >> $GITHUB_ENV
-
-      - name: Move pdf
-        run: mv .out/tex/main.pdf ${{ env.outfile }}
 
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: ${{ env.outfile }}
           name: ${{ env.release_name }}
           tag_name: ${{ env.release_tag }}
+          files: |
+            pattison-cv.pdf
+            pattison-cv-thumbnail.png
