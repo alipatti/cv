@@ -21,7 +21,7 @@ jobs:
           version: 1.0
 
       - run: |
-          sudo fmtutil-sys --byfmt=lualatex
+          sudo texhash
 
       - name: Setup node
         uses: actions/setup-node@v4
