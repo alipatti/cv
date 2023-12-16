@@ -14,12 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup
+      - name: Setup tex
         run: |
           sudo apt-get update
-          sudo apt-get install texlive-full latexmk imagemagick
+          sudo apt-get install texlive-full latexmk
           sudo texhash
-          sudo sed -i '/disable ghostscript format types/,+6d' /etc/ImageMagick-6/policy.xml
 
       - name: Setup node
         uses: actions/setup-node@v4
@@ -35,8 +34,6 @@ jobs:
 
       - name: Prep for release
         run: |
-          mv .out/tex/main.pdf pattison-cv.pdf
-          convert -density 100 -blur 4x4 pattison-cv.pdf[0] pattison-cv-thumbnail.png
           echo "release_name=$(date +'%b %d, %Y')" >> $GITHUB_ENV
           echo "release_tag=$(date +'%Y/%m/%d/%H.%M.%S')" >> $GITHUB_ENV
 
@@ -45,6 +42,4 @@ jobs:
         with:
           name: ${{ env.release_name }}
           tag_name: ${{ env.release_tag }}
-          files: |
-            pattison-cv.pdf
-            pattison-cv-thumbnail.png
+          files: .out/*
