@@ -14,12 +14,14 @@ sections:
         title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
+        tags: [software]
         bullets:
           - 3.99 GPA, captain of varsity track and field.
           - Studied abroad at the University of Cambridge taking classes in
             computer science and history.
           - "Theses: An Introduction to Analytic Number Theory (math), Live Win
             Probabilities in Soccer with RNNs (stats)."
+
       - &umtymp
         title: Talented Youth Mathematics Program
         subtitle: University of Minnesota

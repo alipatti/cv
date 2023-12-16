@@ -1,16 +1,6 @@
-*.aux
-*.bbl
-*.bcf
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.pdf
-*.run.xml
-
 .DS_Store
 
 node_modules
 
 .out
+.temp
