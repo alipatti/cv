@@ -16,7 +16,7 @@ sections:
         dates: September 2020 -- June 2024
         tags: [software]
         bullets:
-          - 3.99 GPA, captain of varsity track and field.
+          - Captain of varsity track and field, 3.99 GPA, Dean's List, Phi Beta Kappa, National Merit Scholarship.
           - Studied abroad at the University of Cambridge taking classes in
             computer science and history.
           - "Theses: An Introduction to Analytic Number Theory (math), Live Win
@@ -38,6 +38,7 @@ sections:
         title: Research Assistant
         subtitle: University of Minnesota Privacy and Cryptography Group
         dates: September 2022 -- present
+        tags: [software]
         bullets:
           - Design and implement cryptographic protocols for reporting abuse and
             misinformation on encrypted messaging platforms.
@@ -50,6 +51,7 @@ sections:
         title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
+        tags: [software]
         bullets:
           - Tutor students, grade homework, and hold office hours for classes in
             the math and computer science departments.
@@ -61,6 +63,7 @@ sections:
         title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
+        tags: [software]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -94,7 +97,8 @@ sections:
   - &publications
     title: Publications and Preprints
     items:
-      - citations:
+      - tags: [software]
+        citations:
           - cerberus
           - threshold-reporting
           - exemplar
@@ -116,10 +120,12 @@ sections:
     title: Skills
     items:
       - title: Programming
+        tags: [software]
         notes:
           Python, R, JavaScript, Rust, Java, SQL, git, Docker, Swift, \LaTeX,
 
       - title: Data Science and Machine Learning
+        tags: [software]
         notes: NumPy, pandas, tidyverse, PyTorch, TensorFlow, scikit-learn.
 
       - title: Data Visualization
@@ -131,6 +137,7 @@ sections:
       - &ole-or-carl
         title: Ole or Carl?
         github: ole-or-carl
+        tags: [software]
         bullets:
           - Uses deep learning and an SVM to test the validity of a
             long-standing stereotype that students from Northfield's two
@@ -139,6 +146,7 @@ sections:
       - &wordle-bot
         title: Wordle Bot
         github: wordle-bot
+        tags: [software]
         bullets:
           - An information-theory powered bot that beats Wordle in about 3.5
             moves on average.
@@ -153,6 +161,7 @@ sections:
       - &todo
         title: TODO.swift
         github: todo.swift
+        tags: [software]
         bullets:
           - A command line app to view and add to your Apple reminders, written
             natively in Swift, and synced across all your devices.
@@ -174,6 +183,7 @@ sections:
       - &smart-garage
         title: Smart Garage
         github: homekit-garage-door
+        tags: [software]
         bullets:
           - Integrates my parents' 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
