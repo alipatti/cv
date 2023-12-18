@@ -16,8 +16,9 @@
 \addbibresource{publications.bib}
 \setlength\bibitemsep{1.2\itemsep}
 
-\pagestyle{empty}
 \usepackage{parskip}
+\pagestyle{empty}
+\raggedright
 
 \usepackage[explicit]{titlesec}
 
@@ -50,41 +51,41 @@
 	itemsep=-.3em,
 }
 
-%  -- TITLE --
-
-\makeatletter
-\renewcommand{\maketitle}{
-\setlength{\leftskip}{-1em}
-
-{\huge \scshape \@author}
-
-\vspace{-.5em}
-\rule{.4 \textwidth}{0.5pt}
-
-{
-{\it \phone}
-\ | \
-{\it \email}
-\ | \
-\href{http://\website}{\it \website}
-}
-
-\setlength{\leftskip}{0em}
-}
-\makeatother
-
-
-\author{ {{~about.name~}} }
-\def\phone{ {{~about.phone~}} }
-\def\email{ {{~about.email~}} }
-\def\github{ {{~about.github~}} }
-\def\website{ {{~about.website~}} }
-
 \begin{document}
 
-\raggedright
-\maketitle
+{{!-- TITLE --}}
+\begin{minipage}[t]{.5\textwidth}
+	\setlength{\leftskip}{-1em}
 
+	\def\title{%
+		{\Huge \scshape { {{about.name~}} }}}
+
+	\title
+
+	\medskip
+
+	\itshape
+	\faicon{envelope} {{{about.email}}} \ | \ 
+	\faicon{phone} {{{about.phone}}}
+
+	\setlength{\leftskip}{0em}
+\end{minipage}%
+\begin{minipage}[t]{.5\textwidth}
+	\raggedleft \itshape \small
+	
+	\href{http://{{about.website~}}}
+		{ {{~about.website}} \; \faicon{globe}}
+
+	\href{http://github.com/{{about.github~}}}
+		{github.com/{{about.github}} \; \faicon{github}}
+	
+
+	\href{http://linkedin.com/in/{{about.linkedin~}}}
+		{ linkedin.com/in/{{~about.linkedin~}} \; \faicon{linkedin}}
+\end{minipage}
+
+
+{{!-- SECTIONS --}}
 {{#each sections}}
 	\section{ {{~this.title~}} }
 	\label{ {{~this.key~}} }
@@ -117,8 +118,8 @@
 
 		{{#if this.github}}
 			\def\paren{%
-				\href{https://github.com/\github/{{this.github~}} }
-				     {\hspace{2pt}\faicon{github} \github/{{this.github~}}\hspace{2pt}}%
+				\href{https://github.com/{{about.github}}/{{this.github~}} }
+				     {\hspace{2pt}\faicon{github} {{about.github}}/{{this.github~}}\hspace{2pt}}%
 			}
 		{{/if}}
 
