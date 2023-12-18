@@ -14,9 +14,10 @@ sections:
         title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
-        tags: [software]
+        tags: [software, finance]
         bullets:
-          - Captain of varsity track and field, 3.99 GPA, Dean's List, Phi Beta Kappa, National Merit Scholarship.
+          - Captain of varsity track and field, 3.99 GPA, Dean's List, Phi Beta
+            Kappa, National Merit Scholarship.
           - Studied abroad at the University of Cambridge taking classes in
             computer science and history.
           - "Theses: An Introduction to Analytic Number Theory (math), Live Win
@@ -38,7 +39,7 @@ sections:
         title: Research Assistant
         subtitle: University of Minnesota Privacy and Cryptography Group
         dates: September 2022 -- present
-        tags: [software]
+        tags: [software, finance]
         bullets:
           - Design and implement cryptographic protocols for reporting abuse and
             misinformation on encrypted messaging platforms.
@@ -51,7 +52,7 @@ sections:
         title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software]
+        tags: [software, finance]
         bullets:
           - Tutor students, grade homework, and hold office hours for classes in
             the math and computer science departments.
@@ -63,7 +64,7 @@ sections:
         title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software]
+        tags: [software, finance]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -97,7 +98,7 @@ sections:
   - &publications
     title: Publications and Preprints
     items:
-      - tags: [software]
+      - tags: [software, finance]
         citations:
           - cerberus
           - threshold-reporting
@@ -107,25 +108,30 @@ sections:
     title: Awards
     items:
       - title: Phi Beta Kappa
+        tags: [finance]
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
       - title: Dean's List
+        tags: [finance]
         dates: September 2021, 2022, and 2023
+        paren: top 10 percent of class, annual
 
       - title: National Merit Scholarship
+        tags: [finance]
         dates: May 2020
+        paren: # TODO: add something here?
 
   - &skills
     title: Skills
     items:
       - title: Programming
-        tags: [software]
+        tags: [software, finance]
         notes:
-          Python, R, JavaScript, Rust, Java, SQL, git, Docker, Swift, \LaTeX,
+          Python, R, JavaScript, Rust, Java, SQL, git, Docker, Swift, \LaTeX.
 
       - title: Data Science and Machine Learning
-        tags: [software]
+        tags: [software, finance]
         notes: NumPy, pandas, tidyverse, PyTorch, TensorFlow, scikit-learn.
 
       - title: Data Visualization
@@ -200,17 +206,27 @@ sections:
     title: Coursework
     items:
       - title: Math
+        tags: [finance]
         notes:
           algebra, analysis, combinatorics, topology, analytic and algebraic
           number theory, representation theory, and Galois theory.
+
       - title: Computer Science
+        tags: [finance]
         notes:
           algorithms, data structures, cryptography, artificial intelligence,
           natural language processing, and quantum computing.
+
       - title: Statistics
+        tags: [finance]
         notes:
           probability, regression, time-series analysis, machine learning, data
           science, and data visualization.
+
+      - title: Economics
+        tags: [finance]
+        notes:
+          principles of micro and macro economics, labor economics, price theory.
 
   - &interests
     title: Personal Interests
