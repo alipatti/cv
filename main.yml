@@ -154,6 +154,12 @@ sections:
           - A command line app to view and add to your Apple reminders, written
             natively in Swift, and synced across all your devices.
 
+      - title: CV
+        github: cv
+        bullets:
+          - An overengineered CI/CD pipeline for generating this document (and
+            others) from a single YAML file.
+
       - title: OEIS.rs
         github: oeis.rs
         bullets:
