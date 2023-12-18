@@ -1,4 +1,4 @@
-about: &about
+about:
   name: Alistair Pattison
   phone: (651) 706-6713
   email: pattisona@carleton.edu
@@ -7,11 +7,9 @@ about: &about
   website: alipatti.com
 
 sections:
-  - &education
-    title: Education
+  - title: Education
     items:
-      - &carleton
-        title: Bachelors of Arts, Mathematics and Statistics
+      - title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
         tags: [software, finance]
@@ -23,8 +21,7 @@ sections:
           - "Theses: An Introduction to Analytic Number Theory (math), Live Win
             Probabilities in Soccer with RNNs (stats)."
 
-      - &umtymp
-        title: Talented Youth Mathematics Program
+      - title: Talented Youth Mathematics Program
         subtitle: University of Minnesota
         dates: September 2015 -- June 2020
         bullets:
@@ -32,11 +29,9 @@ sections:
             semesters of set theory, vector calculus, linear algebra, and
             differential equations at the University of Minnesota.
 
-  - &experience
-    title: Work Experience
+  - title: Work Experience
     items:
-      - &umn-crypto
-        title: Research Assistant
+      - title: Research Assistant
         subtitle: University of Minnesota Privacy and Cryptography Group
         dates: September 2022 -- present
         tags: [software, finance]
@@ -48,8 +43,7 @@ sections:
           - Presented findings at a first-tier security conference in 2023. We
             plan to publish more results in 2024.
 
-      - &carleton-ta
-        title: Teaching Assistant
+      - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
         tags: [software, finance]
@@ -60,8 +54,7 @@ sections:
             Abstract Algebra I, Data Visualization, Math Structures, and
             Calculus II."
 
-      - &stat-consulting
-        title: Statistical Consultant
+      - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
         tags: [software, finance]
@@ -73,8 +66,7 @@ sections:
           - Created data visualizations and interactive dashboards for use by
             government employees and other consultants.
 
-      - &widji
-        title: The Food Guy
+      - title: The Food Guy
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- September 2021
         bullets:
@@ -85,18 +77,15 @@ sections:
           - Lead a week-long canoeing trip with a program dedicated to making
             the outdoors more financially accessible.
 
-      - &carleton-dining-hall
-        title: Dining Hall Worker
+      - title: Dining Hall Worker
         subtitle: Carleton College
         dates: September 2020 -- March 2021
 
-      - &hansen-tree-farm
-        title: Farm Hand
+      - title: Farm Hand
         subtitle: Hansen Tree Farm
         dates: November 2018 -- December 2020, seasonal
 
-  - &publications
-    title: Publications and Preprints
+  - title: Publications and Preprints
     items:
       - tags: [software, finance]
         citations:
@@ -104,8 +93,7 @@ sections:
           - threshold-reporting
           - exemplar
 
-  - &awards
-    title: Awards
+  - title: Awards
     items:
       - title: Phi Beta Kappa
         tags: [finance]
@@ -122,8 +110,7 @@ sections:
         dates: May 2020
         paren: # TODO: add something here?
 
-  - &skills
-    title: Skills
+  - title: Skills
     items:
       - title: Programming
         tags: [software, finance]
@@ -137,11 +124,9 @@ sections:
       - title: Data Visualization
         notes: ggplot2, matplotlib, d3.js.
 
-  - &projects
-    title: Projects
+  - title: Projects
     items:
-      - &ole-or-carl
-        title: Ole or Carl?
+      - title: Ole or Carl?
         github: ole-or-carl
         tags: [software]
         bullets:
@@ -149,61 +134,53 @@ sections:
             long-standing stereotype that students from Northfield's two
             colleges look meaningfully different.
 
-      - &wordle-bot
-        title: Wordle Bot
+      - title: Wordle Bot
         github: wordle-bot
         tags: [software]
         bullets:
           - An information-theory powered bot that beats Wordle in about 3.5
             moves on average.
 
-      - &in-passing
-        title: In Passing
+      - title: In Passing
         github: in-passing
         bullets:
           - An interactive visualization of passing and touch data from the 2022
             FIFA Men's World Cup.
 
-      - &todo
-        title: TODO.swift
+      - title: TODO.swift
         github: todo.swift
         tags: [software]
         bullets:
           - A command line app to view and add to your Apple reminders, written
             natively in Swift, and synced across all your devices.
 
-      - &oeis
-        title: OEIS.rs
+      - title: OEIS.rs
         github: oeis.rs
         bullets:
           - A terminal interface for the Online Encyclopedia of Integer
             Sequences.
 
-      - &course-classifier
-        title: Carleton Course Classifier
+      - title: Carleton Course Classifier
         github: course-classifier
         bullets:
           - Uses a TensorFlow language model to predict a class's department and
             course number given its catalog description.
 
-      - &smart-garage
-        title: Smart Garage
+      - title: Smart Garage
         github: homekit-garage-door
         tags: [software]
         bullets:
           - Integrates my parents' 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
 
-      - &math-comps
-        title: An Introduction to Analytic Number Theory
+      - title: An Introduction to Analytic Number Theory
         github: math-comps
         bullets:
           - A ground-up introduction to the class number and Dirichlet's unit
             theorem. Written as a senior thesis for the Carleton math
             department.
 
-  - &coursework
-    title: Coursework
+  - title: Coursework
     items:
       - title: Math
         tags: [finance]
@@ -226,10 +203,10 @@ sections:
       - title: Economics
         tags: [finance]
         notes:
-          principles of micro and macro economics, labor economics, price theory.
+          principles of micro and macro economics, labor economics, price
+          theory.
 
-  - &interests
-    title: Personal Interests
+  - title: Personal Interests
     summary:
       Running, the Minnesota Timberwolves, the Premier League, backpacking,
       photography, playing the piano, Nordic skiing, Wii Mario Kart, tomfoolery,
