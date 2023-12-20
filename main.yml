@@ -12,14 +12,14 @@ sections:
       - title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
-        tags: [software, finance]
+        tags: [software, finance, data-science]
         bullets:
           - Captain of varsity track and field, 3.99 GPA, Dean's List, Phi Beta
             Kappa, National Merit Scholarship.
           - Studied abroad at the University of Cambridge taking classes in
             computer science and history.
-          - "Theses: An Introduction to Analytic Number Theory (math), Live Win
-            Probabilities in Soccer with RNNs (stats)."
+          - "Theses: \\textit{An Introduction to Analytic Number Theory} (math),
+            \\textit{Live Win Probabilities in Soccer with RNNs} (stats)."
 
       - title: Talented Youth Mathematics Program
         subtitle: University of Minnesota
@@ -34,7 +34,7 @@ sections:
       - title: Research Assistant
         subtitle: University of Minnesota Privacy and Cryptography Group
         dates: September 2022 -- present
-        tags: [software, finance]
+        tags: [software, finance, data-science]
         bullets:
           - Design and implement cryptographic protocols for reporting abuse and
             misinformation on encrypted messaging platforms.
@@ -46,7 +46,7 @@ sections:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software, finance]
+        tags: [software, finance, data-science]
         bullets:
           - Tutor students, grade homework, and hold office hours for classes in
             the math and computer science departments.
@@ -57,7 +57,7 @@ sections:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, finance]
+        tags: [software, finance, data-science]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -87,7 +87,7 @@ sections:
 
   - title: Publications and Preprints
     items:
-      - tags: [software, finance]
+      - tags: [software, finance, data-science]
         citations:
           - cerberus
           - threshold-reporting
@@ -113,12 +113,12 @@ sections:
   - title: Skills
     items:
       - title: Programming
-        tags: [software, finance]
+        tags: [software, finance, data-science]
         notes:
           Python, R, JavaScript, Rust, Java, SQL, git, Docker, Swift, \LaTeX.
 
       - title: Data Science and Machine Learning
-        tags: [software, finance]
+        tags: [software, finance, data-science]
         notes: NumPy, pandas, tidyverse, PyTorch, TensorFlow, scikit-learn.
 
       - title: Data Visualization
@@ -126,20 +126,28 @@ sections:
 
   - title: Projects
     items:
+      - title: Live Win Probabilities in Soccer with RNNs
+        # github: stats-comps
+        tags: [data-science]
+        bullets:
+          - Uses a recurrent netural network to predict the result of an
+            in-progress soccer game. Written as a senior thesis for the Carleton
+            statistics department.
+
+      - title: Wordle Bot
+        github: wordle-bot
+        tags: [software, data-science]
+        bullets:
+          - An information-theory powered bot that beats Wordle in about 3.5
+            moves on average.
+
       - title: Ole or Carl?
         github: ole-or-carl
-        tags: [software]
+        tags: [software, data-science]
         bullets:
           - Uses deep learning and an SVM to test the validity of a
             long-standing stereotype that students from Northfield's two
             colleges look meaningfully different.
-
-      - title: Wordle Bot
-        github: wordle-bot
-        tags: [software]
-        bullets:
-          - An information-theory powered bot that beats Wordle in about 3.5
-            moves on average.
 
       - title: In Passing
         github: in-passing
@@ -168,6 +176,7 @@ sections:
 
       - title: Carleton Course Classifier
         github: course-classifier
+        tags: [data-science]
         bullets:
           - Uses a TensorFlow language model to predict a class's department and
             course number given its catalog description.
