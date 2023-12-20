@@ -44,7 +44,7 @@ const buildTex = async (tag) => {
   const content = await getContent(tag);
 
   // generate tex source
-  const template = (await readFile(`${TEMPLATES_DIR}/main.tex.hbs`)).toString();
+  const template = (await readFile(`${TEMPLATES_DIR}/tex.hbs`)).toString();
   const latex = hbs.compile(template)(content);
 
   // setup file structure
