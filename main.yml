@@ -105,10 +105,22 @@ sections:
         dates: September 2021, 2022, and 2023
         paren: top 10 percent of class, annual
 
+      - title: Kolenkow-Reitz Fellowship
+        dates: December 2023
+        paren: funded winter-break research at UMN
+
+      - title:
+          James F. Koehler Endowed Scholarship
+          # https://www.carleton.edu/stewardship/2023-funds/endowed/
+        dates: September 2022
+        paren: \$30,000 per year for one math major at Carleton
+
+      - title: National AP Scholar
+        dates: July 2020
+
       - title: National Merit Scholarship
         tags: [finance]
         dates: May 2020
-        paren: # TODO: add something here?
 
   - title: Skills
     items:
