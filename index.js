@@ -9,7 +9,6 @@ const exec = promisify(execCallback);
 
 const OUT_DIR = ".out";
 const TEMP_DIR = ".temp";
-const TEMPLATES_DIR = "templates";
 const CV_BASE_NAME = "pattison-cv";
 
 const getContent = async (tag) => {
@@ -44,7 +43,7 @@ const buildTex = async (tag) => {
   const content = await getContent(tag);
 
   // generate tex source
-  const template = (await readFile(`${TEMPLATES_DIR}/main.tex.hbs`)).toString();
+  const template = (await readFile("template.tex.hbs")).toString();
   const latex = hbs.compile(template)(content);
 
   // setup file structure
@@ -66,7 +65,6 @@ const buildTex = async (tag) => {
 };
 
 const main = async () => {
-
   const tags = await getTags();
   tags.push("full");
 
