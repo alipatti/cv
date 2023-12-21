@@ -12,7 +12,7 @@ sections:
       - title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
-        tags: [software, finance, data-science]
+        tags: [software, finance, data-science, teaching]
         bullets:
           - Captain of varsity track and field, 3.99 GPA, Dean's List, Phi Beta
             Kappa, National Merit Scholarship.
@@ -34,9 +34,9 @@ sections:
       - title: Research Assistant
         subtitle: University of Minnesota Privacy and Cryptography Group
         dates: September 2022 -- present
-        tags: [software, finance, data-science]
+        tags: [software, finance, data-science, teaching]
         bullets:
-          - Design and implement cryptographic protocols for reporting abuse and
+          - Design and implement cryptographic protocols for mitigating abuse and
             misinformation on encrypted messaging platforms.
           - Supported by an NSF REU and the Kolenkow-Reitz Fellowship;
             supervised by Professor Nicholas Hopper.
@@ -46,9 +46,9 @@ sections:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software, finance, data-science]
+        tags: [software, finance, data-science, teaching]
         bullets:
-          - Tutor students, grade homework, and hold office hours for classes in
+          - Tutor students, hold office hours, and grade homework for classes in
             the math and computer science departments.
           - "Classes: Algorithms, Artificial Intelligence, Real Analysis I,
             Abstract Algebra I, Data Visualization, Math Structures, and
@@ -57,7 +57,7 @@ sections:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, finance, data-science]
+        tags: [software, finance, data-science, teaching]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -66,16 +66,17 @@ sections:
           - Created data visualizations and interactive dashboards for use by
             government employees and other consultants.
 
-      - title: The Food Guy
+      - title: Counselor
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- September 2021
+        tags: [teaching]
         bullets:
           - Oversaw the purchase and distribution of food for nearly 200
             wilderness trips across the US and Canada.
           - Managed a \$95,000 budget alongside two other employees and taught
             basic nutrition to kids aged 12 to 18.
-          - Lead a week-long canoeing trip with a program dedicated to making
-            the outdoors more financially accessible.
+          - Lead a week-long canoeing trip with a program dedicated to
+            increasing diversity in the outdoors community.
 
       - title: Dining Hall Worker
         subtitle: Carleton College
@@ -96,22 +97,24 @@ sections:
   - title: Awards
     items:
       - title: Phi Beta Kappa
-        tags: [finance]
+        tags: [finance, teaching]
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
       - title: Dean's List
-        tags: [finance]
+        tags: [finance, teaching]
         dates: September 2021, 2022, and 2023
         paren: top 10 percent of class, annual
 
       - title: Kolenkow-Reitz Fellowship
+        tags: [teaching]
         dates: December 2023
         paren: funded winter-break research at UMN
 
       - title:
           James F. Koehler Endowed Scholarship
           # https://www.carleton.edu/stewardship/2023-funds/endowed/
+        tags: [teaching]
         dates: September 2022
         paren: \$30,000 per year for one math major at Carleton
 
@@ -125,12 +128,11 @@ sections:
   - title: Skills
     items:
       - title: Programming
-        tags: [software, finance, data-science]
-        notes:
-          Python, R, JavaScript, Rust, Java, Swift, git, Docker, \LaTeX.
+        tags: [software, finance, data-science, teaching]
+        notes: Python, Rust, R, JavaScript, Swift, git, Docker, \LaTeX.
 
       - title: Data Science and Machine Learning
-        tags: [software, finance, data-science]
+        tags: [software, finance, data-science, teaching]
         notes: NumPy, pandas, SQL tidyverse, PyTorch, TensorFlow, scikit-learn.
 
       - title: Data Visualization
@@ -139,19 +141,19 @@ sections:
       - title: Web Development
         notes: React, Next.js, Tailwind CSS, TypeScript.
 
-  - title: Projects
+  - title: Selected Projects
     items:
       - title: Live Win Probabilities in Soccer with RNNs
         # github: stats-comps
-        tags: [data-science]
+        tags: [data-science, teaching]
         bullets:
-          - Uses a recurrent netural network to predict the result of an
+          - Uses a recurrent neural network to predict the result of an
             in-progress soccer game. Written as a senior thesis for the Carleton
             statistics department.
 
       - title: Wordle Bot
         github: wordle-bot
-        tags: [software, data-science]
+        tags: [software, data-science, teaching]
         bullets:
           - An information-theory powered bot that beats Wordle in about 3.5
             moves on average.
@@ -198,7 +200,7 @@ sections:
 
       - title: Smart Garage
         github: homekit-garage-door
-        tags: [software]
+        tags: [software, teaching]
         bullets:
           - Integrates my parents' 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
