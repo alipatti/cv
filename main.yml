@@ -60,7 +60,7 @@ sections:
         bullets:
           - Study a novel algorithms problem inspired by clustering survey
             responses; with Professor David Liben-Nowell.
-          - Our solutions use techniques from approximation algorithms and
+          - Develop solutions using techniques from approximation algorithms and
             convex optimization.
 
       - title: Statistical Consultant
