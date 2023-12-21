@@ -31,13 +31,13 @@ sections:
 
   - title: Work Experience
     items:
-      - title: Research Assistant
-        subtitle: University of Minnesota Privacy and Cryptography Group
+      - title: Research Assistant (Applied Cryptography)
+        subtitle: University of Minnesota
         dates: September 2022 -- present
         tags: [software, finance, data-science, teaching]
         bullets:
-          - Design and implement cryptographic protocols for mitigating abuse and
-            misinformation on encrypted messaging platforms.
+          - Design and implement cryptographic protocols for mitigating abuse
+            and misinformation on encrypted messaging platforms.
           - Supported by an NSF REU and the Kolenkow-Reitz Fellowship;
             supervised by Professor Nicholas Hopper.
           - Presented findings at a first-tier security conference in 2023. We
@@ -53,6 +53,15 @@ sections:
           - "Classes: Algorithms, Artificial Intelligence, Real Analysis I,
             Abstract Algebra I, Data Visualization, Math Structures, and
             Calculus II."
+
+      - title: Research Assistant (Algorithms)
+        subtitle: Carleton College
+        dates: September 2023 -- present
+        bullets:
+          - Study a novel algorithms problem inspired by clustering survey
+            responses; with Professor David Liben-Nowell.
+          - Our solutions use techniques from approximation algorithms and
+            convex optimization.
 
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
@@ -72,9 +81,9 @@ sections:
         tags: [teaching]
         bullets:
           - Oversaw the purchase and distribution of food for nearly 200
-            wilderness trips across the US and Canada.
-          - Managed a \$95,000 budget alongside two other employees and taught
-            basic nutrition to kids aged 12 to 18.
+            wilderness trips across North America.
+          - Managed a \$95,000 budget in a team of three and taught basic
+            nutrition to kids aged 12 to 18.
           - Lead a week-long canoeing trip with a program dedicated to
             increasing diversity in the outdoors community.
 
