@@ -127,14 +127,17 @@ sections:
       - title: Programming
         tags: [software, finance, data-science]
         notes:
-          Python, R, JavaScript, Rust, Java, SQL, git, Docker, Swift, \LaTeX.
+          Python, R, JavaScript, Rust, Java, Swift, git, Docker, \LaTeX.
 
       - title: Data Science and Machine Learning
         tags: [software, finance, data-science]
-        notes: NumPy, pandas, tidyverse, PyTorch, TensorFlow, scikit-learn.
+        notes: NumPy, pandas, SQL tidyverse, PyTorch, TensorFlow, scikit-learn.
 
       - title: Data Visualization
         notes: ggplot2, matplotlib, d3.js.
+
+      - title: Web Development
+        notes: React, Next.js, Tailwind CSS, TypeScript.
 
   - title: Projects
     items:
