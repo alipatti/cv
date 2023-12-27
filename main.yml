@@ -12,14 +12,15 @@ sections:
       - title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
-        tags: [software, finance, data-science, teaching]
+        tags: [software, fintech, machine-learning, teaching]
         bullets:
           - Captain of varsity track and field, 3.99 GPA, Dean's List, Phi Beta
             Kappa, National Merit Scholarship.
           - Studied abroad at the University of Cambridge taking classes in
             computer science and history.
-          - "Theses: \\textit{An Introduction to Analytic Number Theory} (math),
-            \\textit{Live Win Probabilities in Soccer with RNNs} (stats)."
+          - "Theses: \\textit{The Class Group and Dirichlet's Unit Theorem}
+            (math) and \\textit{In-Game Win Prediction with Deep Learning}
+            (stats)."
 
       - title: Talented Youth Mathematics Program
         subtitle: University of Minnesota
@@ -34,19 +35,36 @@ sections:
       - title: Research Assistant (Applied Cryptography)
         subtitle: University of Minnesota
         dates: September 2022 -- present
-        tags: [software, finance, data-science, teaching]
+        tags: [software, fintech, machine-learning, teaching]
         bullets:
-          - Design and implement cryptographic protocols for mitigating abuse
-            and misinformation on encrypted messaging platforms.
-          - Supported by an NSF REU and the Kolenkow-Reitz Fellowship;
-            supervised by Professor Nicholas Hopper.
+          - Design cryptographic protocols for reporting abuse and
+            misinformation on encrypted messaging platforms.
           - Presented findings at a first-tier security conference in 2023. We
             plan to publish more results in 2024.
+          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship;
+            supervised by Professor Nicholas Hopper.
+
+      - title: Research Assistant (Algorithms)
+        subtitle: Carleton College
+        dates: September 2023 -- present
+        tags: [software, fintech, machine-learning]
+        bullets:
+          - Study a novel approximation problem inspired by clustering survey
+            responses (with Professor David Liben-Nowell).
+          - Produce algorithms and prove their correctness using techniques from
+            semidefinite and integer programming.
+
+      # - title: Research Assistant (Gravitational Waves)
+      #   subtitle: Carleton College
+      #   dates: Janurary 2023 -- present
+      #   bullets:
+      #     - Write NumPy algorithms to detect gravatational waves from sensor
+      #       data.
 
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software, finance, data-science, teaching]
+        tags: [software, fintech, machine-learning, teaching]
         bullets:
           - Tutor students, hold office hours, and grade homework for classes in
             the math and computer science departments.
@@ -54,19 +72,10 @@ sections:
             Abstract Algebra I, Data Visualization, Math Structures, and
             Calculus II."
 
-      - title: Research Assistant (Algorithms)
-        subtitle: Carleton College
-        dates: September 2023 -- present
-        bullets:
-          - Study a novel algorithms problem inspired by clustering survey
-            responses; with Professor David Liben-Nowell.
-          - Develop solutions using techniques from approximation algorithms and
-            convex optimization.
-
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, finance, data-science, teaching]
+        tags: [software, fintech, machine-learning, teaching]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -91,13 +100,13 @@ sections:
         subtitle: Carleton College
         dates: September 2020 -- March 2021
 
-      - title: Farm Hand
-        subtitle: Hansen Tree Farm
-        dates: November 2018 -- December 2020, seasonal
+      # - title: Farm Hand
+      #   subtitle: Hansen Tree Farm
+      #   dates: November 2018 -- December 2020, seasonal
 
   - title: Publications and Preprints
     items:
-      - tags: [software, finance, data-science]
+      - tags: [software, fintech, machine-learning]
         citations:
           - cerberus
           - threshold-reporting
@@ -106,12 +115,12 @@ sections:
   - title: Awards
     items:
       - title: Phi Beta Kappa
-        tags: [finance, teaching]
+        tags: [fintech, teaching]
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
       - title: Dean's List
-        tags: [finance, teaching]
+        tags: [fintech, teaching]
         dates: September 2021, 2022, and 2023
         paren: top 10 percent of class, annual
 
@@ -131,18 +140,20 @@ sections:
         dates: July 2020
 
       - title: National Merit Scholarship
-        tags: [finance]
+        tags: [fintech]
         dates: May 2020
+        paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
   - title: Skills
     items:
       - title: Programming
-        tags: [software, finance, data-science, teaching]
-        notes: Python, Rust, R, JavaScript, Swift, git, Docker, \LaTeX.
+        tags: [software, fintech, machine-learning, teaching]
+        notes:
+          Python, Rust, R, JavaScript, TypeScript, Swift, git, Docker, \LaTeX.
 
       - title: Data Science and Machine Learning
-        tags: [software, finance, data-science, teaching]
-        notes: NumPy, pandas, SQL tidyverse, PyTorch, TensorFlow, scikit-learn.
+        tags: [software, fintech, machine-learning, teaching]
+        notes: NumPy, pandas, R, PyTorch, TensorFlow, scikit-learn, SQL.
 
       - title: Data Visualization
         notes: ggplot2, matplotlib, d3.js.
@@ -152,24 +163,32 @@ sections:
 
   - title: Selected Projects
     items:
-      - title: Live Win Probabilities in Soccer with RNNs
-        # github: stats-comps
-        tags: [data-science, teaching]
+      - title: The Class Group and Dirichlet's Unit Theorem
+        github: math-comps
         bullets:
-          - Uses a recurrent neural network to predict the result of an
-            in-progress soccer game. Written as a senior thesis for the Carleton
-            statistics department.
+          - A ground-up introduction to Analytic Number Theory culminating in
+            duscussion of Dirichlet's Unit Theorem and proof that the class
+            number is finite.
+          - Written as a senior thesis for the Carleton math department.
+
+      - title: In-Game Win Prediction with Deep Learning
+        # github: stats-comps
+        tags: [software, machine-learning, teaching]
+        bullets:
+          - Uses a recurrent neural network to predict the results of
+            in-progress soccer and basketball games using pass, shot, and touch
+            data.
+          - Writing as a senior thesis for the Carleton statistics department.
 
       - title: Wordle Bot
         github: wordle-bot
-        tags: [software, data-science, teaching]
+        tags: [software, machine-learning, teaching]
         bullets:
           - An information-theory powered bot that beats Wordle in about 3.5
             moves on average.
 
       - title: Ole or Carl?
         github: ole-or-carl
-        tags: [software, data-science]
         bullets:
           - Uses deep learning and an SVM to test the validity of a
             long-standing stereotype that students from Northfield's two
@@ -177,16 +196,17 @@ sections:
 
       - title: In Passing
         github: in-passing
+        tags: [software]
         bullets:
           - An interactive visualization of passing and touch data from the 2022
             FIFA Men's World Cup.
 
       - title: TODO.swift
         github: todo.swift
-        tags: [software]
+        # tags: [software]
         bullets:
-          - A command line app to view and add to your Apple reminders, written
-            natively in Swift, and synced across all your devices.
+          - A command line app to view and add to your reminders such that
+            changes are synced across all your Apple devices.
 
       - title: CV
         github: cv
@@ -202,47 +222,36 @@ sections:
 
       - title: Carleton Course Classifier
         github: course-classifier
-        tags: [data-science]
+        tags: [machine-learning]
         bullets:
-          - Uses a TensorFlow language model to predict a class's department and
+          - A TensorFlow language model to predict a class's department and
             course number given its catalog description.
 
       - title: Smart Garage
         github: homekit-garage-door
-        tags: [software, teaching]
+        tags: [teaching]
         bullets:
           - Integrates my parents' 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
 
-      - title: An Introduction to Analytic Number Theory
-        github: math-comps
-        bullets:
-          - A ground-up introduction to the class number and Dirichlet's unit
-            theorem. Written as a senior thesis for the Carleton math
-            department.
-
   - title: Coursework
     items:
       - title: Math
-        tags: [finance]
         notes:
           algebra, analysis, combinatorics, topology, analytic and algebraic
           number theory, representation theory, and Galois theory.
 
       - title: Computer Science
-        tags: [finance]
         notes:
           algorithms, data structures, cryptography, artificial intelligence,
           natural language processing, and quantum computing.
 
       - title: Statistics
-        tags: [finance]
         notes:
           probability, regression, time-series analysis, machine learning, data
           science, and data visualization.
 
       - title: Economics
-        tags: [finance]
         notes:
           principles of micro and macro economics, labor economics, price
           theory.
