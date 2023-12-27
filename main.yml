@@ -41,16 +41,16 @@ sections:
             misinformation on encrypted messaging platforms.
           - Presented findings at a first-tier security conference in 2023. We
             plan to publish more results in 2024.
-          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship;
-            supervised by Professor Nicholas Hopper.
+          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
+            Supervised by Professor Nicholas Hopper.
 
       - title: Research Assistant (Algorithms)
         subtitle: Carleton College
         dates: September 2023 -- present
         tags: [software, fintech, machine-learning]
         bullets:
-          - Study a novel approximation problem inspired by clustering survey
-            responses (with Professor David Liben-Nowell).
+          - Study a novel problem inspired by clustering survey responses. Lead
+            by Professor David Liben-Nowell.
           - Produce algorithms and prove their correctness using techniques from
             semidefinite and integer programming. We hope to publish in 2024.
 
@@ -104,14 +104,6 @@ sections:
       #   subtitle: Hansen Tree Farm
       #   dates: November 2018 -- December 2020, seasonal
 
-  - title: Publications and Preprints
-    items:
-      - tags: [software, fintech, machine-learning]
-        citations:
-          - cerberus
-          - threshold-reporting
-          - exemplar
-
   - title: Awards
     items:
       - title: Phi Beta Kappa
@@ -160,6 +152,36 @@ sections:
 
       - title: Web Development
         notes: React, Next.js, Tailwind CSS, TypeScript.
+
+  - title: Coursework
+    items:
+      - title: Math
+        notes:
+          algebra, analysis, combinatorics, topology, analytic and algebraic
+          number theory, representation theory, and Galois theory.
+
+      - title: Computer Science
+        notes:
+          algorithms, data structures, cryptography, artificial intelligence,
+          natural language processing, and quantum computing.
+
+      - title: Statistics
+        notes:
+          probability, regression, time-series analysis, machine learning, data
+          science, and data visualization.
+
+      - title: Economics
+        notes:
+          principles of micro and macro economics, labor economics, price
+          theory.
+
+  - title: Publications and Preprints
+    items:
+      - tags: [software, fintech, machine-learning]
+        citations:
+          - cerberus
+          - threshold-reporting
+          - exemplar
 
   - title: Selected Projects
     items:
@@ -233,28 +255,6 @@ sections:
         bullets:
           - Integrates my parents' 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
-
-  - title: Coursework
-    items:
-      - title: Math
-        notes:
-          algebra, analysis, combinatorics, topology, analytic and algebraic
-          number theory, representation theory, and Galois theory.
-
-      - title: Computer Science
-        notes:
-          algorithms, data structures, cryptography, artificial intelligence,
-          natural language processing, and quantum computing.
-
-      - title: Statistics
-        notes:
-          probability, regression, time-series analysis, machine learning, data
-          science, and data visualization.
-
-      - title: Economics
-        notes:
-          principles of micro and macro economics, labor economics, price
-          theory.
 
   - title: Personal Interests
     summary:
