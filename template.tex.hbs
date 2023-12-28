@@ -129,10 +129,22 @@
 			\subsection{%
 				\ifdefempty{\title}{}{\textbf{\title}}%
 				\ifdefempty{\subtitle}{}{, \textit{\subtitle}}%
-			}
+			}%
 			\ifdefempty{\notes}{}{: \notes}%
 			\ifdefempty{\paren}{}{\quad (\textit{\paren})}%
 			\ifdefempty{\dates}{}{\hfill \textit{\dates}}%
+		{{/if}}
+
+		{{#if this.email}}
+			\hspace{1em}
+			
+			\vspace{-3pt}
+			\;
+			\itshape\small
+			\faicon{envelope} {{{this.email}}}
+			\ | \ \hspace{2pt}
+			\faicon{phone} {{{this.phone}}}
+			\normalfont\normalsize
 		{{/if}}
 
 		{{#if this.citations}}

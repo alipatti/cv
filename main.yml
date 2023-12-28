@@ -183,6 +183,38 @@ sections:
           - threshold-reporting
           - exemplar
 
+  - title: References
+    items:
+      # TODO: wait for the okay before including dln and caroline
+      #
+      # - title: Daivd Liben-Nowell
+      #   subtitle:
+      #     Associate Provost and Professor of Computer Science, Carleton College
+      #   phone: 507-222-4300
+      #   email: dln@carleton.edu.
+      #   bullets:
+      #     - At Carleton, I took several classes with David, served as his TA,
+      #       participated in his research group, and studied abroad with him in
+      #       Cambridge.
+
+      - title: Nicholas Hopper
+        subtitle:
+          Director of Undergraduate Studies and Professor of Computer Science,
+          University of Minnesota
+        phone: 612-626-1284
+        email: hoppernj@umn.edu
+        bullets:
+          - I spent the Fall of 2022 and the Summer of 2023 working with Nick in
+            his research group at UMN.
+      #
+      # - title: Caroline Turnage-Butterbaugh
+      #   subtitle: Assistant Professor of Mathematics, Carleton College
+      #   phone: 507-222-4785
+      #   email: cturnageb@carleton.edu
+      #   bullets:
+      #     - Caroline was my undergraduate advisor and on the comittee for my
+      #       senior math thesis.
+
   - title: Selected Projects
     items:
       - title: The Class Group and Dirichlet's Unit Theorem
