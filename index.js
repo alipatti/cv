@@ -7,7 +7,7 @@ import { exec as execCallback } from "child_process";
 
 const exec = promisify(execCallback);
 
-const OUT_DIR = ".out";
+const OUT_DIR = "pdfs";
 const TEMP_DIR = ".temp";
 const CV_BASE_NAME = "pattison-cv";
 
