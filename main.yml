@@ -12,15 +12,21 @@ sections:
       - title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
-        tags: [software, fintech, machine-learning, teaching]
+        tags: [software, machine-learning, teaching, crypto]
         bullets:
-          - Captain of varsity track and field, 3.99 GPA, Dean's List, Phi Beta
-            Kappa, National Merit Scholarship.
-          - Studied abroad at the University of Cambridge taking classes in
-            computer science and history.
-          - "Theses: \\textit{The Class Group and Dirichlet's Unit Theorem}
-            (math) and \\textit{In-Game Win Prediction with Deep Learning}
-            (stats)."
+          - 3.99 GPA, Dean's List, Phi Beta Kappa (Junior inductee), National
+            Merit Scholarship.
+          - Captain of varsity track and field. Top-10 all-time at Carleton in
+            the indoor 600m.
+          - "Theses: \\textit{The Class Group and Dirichlet's Unit Theorem} and
+            \\textit{In-Game Win Prediction with Deep Learning}."
+
+      - title: Visiting Student
+        subtitle: University of Cambridge
+        tags: [crypto]
+        dates: June 2021 -- August 2021
+        bullets:
+          - Studied abroad taking classes in computer science and history.
 
       - title: Talented Youth Mathematics Program
         subtitle: University of Minnesota
@@ -35,7 +41,7 @@ sections:
       - title: Research Assistant (Applied Cryptography)
         subtitle: University of Minnesota
         dates: September 2022 -- present
-        tags: [software, fintech, machine-learning, teaching]
+        tags: [software, machine-learning, teaching, crypto]
         bullets:
           - Design cryptographic protocols for reporting abuse and
             misinformation on encrypted messaging platforms.
@@ -47,12 +53,12 @@ sections:
       - title: Research Assistant (Algorithms)
         subtitle: Carleton College
         dates: September 2023 -- present
-        tags: [software, fintech, machine-learning]
+        tags: [software, machine-learning, crypto]
         bullets:
           - Study a novel problem inspired by clustering survey responses. Lead
             by Professor David Liben-Nowell.
           - Produce algorithms and prove their correctness using techniques from
-            semidefinite and integer programming. We hope to publish in 2024.
+            semidefinite and integer programming. We plan to publish in 2024.
 
       # - title: Research Assistant (Gravitational Waves)
       #   subtitle: Carleton College
@@ -64,7 +70,7 @@ sections:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software, fintech, machine-learning, teaching]
+        tags: [software, machine-learning, teaching, crypto]
         bullets:
           - Tutor students, hold office hours, and grade homework for classes in
             the math and computer science departments.
@@ -75,7 +81,7 @@ sections:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, fintech, machine-learning, teaching]
+        tags: [software, machine-learning, teaching, crypto]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -104,15 +110,15 @@ sections:
       #   subtitle: Hansen Tree Farm
       #   dates: November 2018 -- December 2020, seasonal
 
-  - title: Awards
+  - title: Awards and Recognition
     items:
       - title: Phi Beta Kappa
-        tags: [fintech, teaching]
+        tags: [teaching]
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
       - title: Dean's List
-        tags: [fintech, teaching]
+        tags: [teaching]
         dates: September 2021, 2022, and 2023
         paren: top 10 percent of class, annual
 
@@ -132,19 +138,22 @@ sections:
         dates: July 2020
 
       - title: National Merit Scholarship
-        tags: [fintech]
         dates: May 2020
         paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
   - title: Skills
     items:
       - title: Programming
-        tags: [software, fintech, machine-learning, teaching]
+        tags: [software, machine-learning, teaching, crypto]
         notes:
           Python, Rust, R, JavaScript, TypeScript, Swift, git, Docker, \LaTeX.
 
+      - title: Cryptography
+        tags: [crypto]
+        notes: Rust, zero-knowledge proofs, dalek-crypto, arkworks, OpenSSL.
+
       - title: Data Science and Machine Learning
-        tags: [software, fintech, machine-learning, teaching]
+        tags: [software, machine-learning, teaching]
         notes: NumPy, pandas, R, PyTorch, TensorFlow, scikit-learn, SQL.
 
       - title: Data Visualization
@@ -177,7 +186,7 @@ sections:
 
   - title: Publications and Preprints
     items:
-      - tags: [software, fintech, machine-learning]
+      - tags: [software, machine-learning, crypto]
         citations:
           - cerberus
           - threshold-reporting
@@ -185,15 +194,14 @@ sections:
 
   - title: References
     items:
-      # TODO: wait for the okay before including dln and caroline
-      #
+      # TODO: wait for david to respond to request
       # - title: Daivd Liben-Nowell
       #   subtitle:
       #     Associate Provost and Professor of Computer Science, Carleton College
       #   phone: 507-222-4300
       #   email: dln@carleton.edu.
       #   bullets:
-      #     - At Carleton, I took several classes with David, served as his TA,
+      #     - At Carleton, I took four classes with David, served as his TA,
       #       participated in his research group, and studied abroad with him in
       #       Cambridge.
 
@@ -206,33 +214,35 @@ sections:
         bullets:
           - I spent the Fall of 2022 and the Summer of 2023 working with Nick in
             his research group at UMN.
-      #
-      # - title: Caroline Turnage-Butterbaugh
-      #   subtitle: Assistant Professor of Mathematics, Carleton College
-      #   phone: 507-222-4785
-      #   email: cturnageb@carleton.edu
+
+      # TODO: ask rafe
+      # - title: Rafe Jones
+      #   subtitle:
+      #     Department Chair and Associate Professor of Mathematics, Carleton
+      #     College
       #   bullets:
-      #     - Caroline was my undergraduate advisor and on the comittee for my
-      #       senior math thesis.
+      #     - Rafe is the chair of the math department and a member of my senior
+      #       thesis committee.
 
   - title: Selected Projects
     items:
       - title: The Class Group and Dirichlet's Unit Theorem
         github: math-comps
+        tags: [crypto]
         bullets:
           - A ground-up introduction to Analytic Number Theory culminating in
             duscussion of Dirichlet's Unit Theorem and proof that the class
-            number is finite.
-          - Written as a senior thesis for the Carleton math department.
+            number is finite. Written as a senior thesis for the Carleton math
+            department.
 
       - title: In-Game Win Prediction with Deep Learning
         # github: stats-comps
-        tags: [software, machine-learning, teaching]
+        tags: [software, machine-learning, teaching, crypto]
         bullets:
           - Uses a recurrent neural network to predict the results of
             in-progress soccer and basketball games using pass, shot, and touch
-            data.
-          - Writing as a senior thesis for the Carleton statistics department.
+            data. Writing as a senior thesis for the Carleton statistics
+            department.
 
       - title: Wordle Bot
         github: wordle-bot
