@@ -12,7 +12,7 @@ sections:
       - title: Bachelors of Arts, Mathematics and Statistics
         subtitle: Carleton College
         dates: September 2020 -- June 2024
-        tags: [software, machine-learning, teaching, crypto]
+        tags: [software, machine-learning, short, crypto]
         bullets:
           - 3.99 GPA, Dean's List, Phi Beta Kappa (Junior inductee), National
             Merit Scholarship.
@@ -23,7 +23,7 @@ sections:
 
       - title: Visiting Student
         subtitle: University of Cambridge
-        tags: [crypto]
+        tags: [crypto, short]
         dates: June 2021 -- August 2021
         bullets:
           - Studied abroad taking classes in computer science and history.
@@ -31,6 +31,7 @@ sections:
       - title: Talented Youth Mathematics Program
         subtitle: University of Minnesota
         dates: September 2015 -- June 2020
+        tags: [short]
         bullets:
           - Completed selective high-school math program culminating in six
             semesters of set theory, vector calculus, linear algebra, and
@@ -41,7 +42,7 @@ sections:
       - title: Research Assistant (Applied Cryptography)
         subtitle: University of Minnesota
         dates: September 2022 -- present
-        tags: [software, machine-learning, teaching, crypto]
+        tags: [software, machine-learning, short, crypto]
         bullets:
           - Design cryptographic protocols for reporting abuse and
             misinformation on encrypted messaging platforms.
@@ -53,7 +54,7 @@ sections:
       - title: Research Assistant (Algorithms)
         subtitle: Carleton College
         dates: September 2023 -- present
-        tags: [software, machine-learning, crypto]
+        tags: [software, machine-learning, crypto, short]
         bullets:
           - Study a novel problem inspired by clustering survey responses. Lead
             by Professor David Liben-Nowell.
@@ -70,7 +71,7 @@ sections:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software, machine-learning, teaching, crypto]
+        tags: [software, machine-learning, short, crypto]
         bullets:
           - Tutor students, hold office hours, and grade homework for classes in
             the math and computer science departments.
@@ -81,7 +82,7 @@ sections:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, machine-learning, teaching, crypto]
+        tags: [software, machine-learning, short, crypto]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -93,14 +94,14 @@ sections:
       - title: Counselor
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- September 2021
-        tags: [teaching]
+        tags: [short]
         bullets:
           - Oversaw the purchase and distribution of food for nearly 200
             wilderness trips across North America.
-          - Managed a \$95,000 budget in a team of three and taught basic
-            nutrition to kids aged 12 to 18.
           - Lead a week-long canoeing trip with a program dedicated to
             increasing diversity in the outdoors community.
+          - Managed a \$95,000 budget in a team of three and taught basic
+            nutrition to kids aged 12 to 18.
 
       - title: Dining Hall Worker
         subtitle: Carleton College
@@ -113,24 +114,23 @@ sections:
   - title: Awards and Recognition
     items:
       - title: Phi Beta Kappa
-        tags: [teaching]
+        tags: [short]
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
       - title: Dean's List
-        tags: [teaching]
+        tags: [short]
         dates: September 2021, 2022, and 2023
         paren: top 10 percent of class, annual
 
       - title: Kolenkow-Reitz Fellowship
-        tags: [teaching]
+        tags: [short]
         dates: December 2023
         paren: funded winter-break research at UMN
 
       - title:
           James F. Koehler Endowed Scholarship
           # https://www.carleton.edu/stewardship/2023-funds/endowed/
-        tags: [teaching]
         dates: September 2022
         paren: \$30,000 per year for one math major at Carleton
 
@@ -138,13 +138,14 @@ sections:
         dates: July 2020
 
       - title: National Merit Scholarship
+        tags: [short]
         dates: May 2020
         paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
   - title: Skills
     items:
       - title: Programming
-        tags: [software, machine-learning, teaching, crypto]
+        tags: [software, machine-learning, short, crypto]
         notes:
           Python, Rust, R, JavaScript, TypeScript, Swift, git, Docker, \LaTeX.
 
@@ -153,7 +154,7 @@ sections:
         notes: Rust, zero-knowledge proofs, dalek-crypto, arkworks, OpenSSL.
 
       - title: Data Science and Machine Learning
-        tags: [software, machine-learning, teaching]
+        tags: [software, machine-learning, short, crypto]
         notes: NumPy, pandas, R, PyTorch, TensorFlow, scikit-learn, SQL.
 
       - title: Data Visualization
@@ -195,15 +196,15 @@ sections:
   - title: References
     items:
       # TODO: wait for david to respond to request
-      # - title: Daivd Liben-Nowell
-      #   subtitle:
-      #     Associate Provost and Professor of Computer Science, Carleton College
-      #   phone: 507-222-4300
-      #   email: dln@carleton.edu.
-      #   bullets:
-      #     - At Carleton, I took four classes with David, served as his TA,
-      #       participated in his research group, and studied abroad with him in
-      #       Cambridge.
+      - title: Daivd Liben-Nowell
+        subtitle:
+          Associate Provost and Professor of Computer Science, Carleton College
+        phone: 507-222-4300
+        email: dln@carleton.edu.
+        bullets:
+          - At Carleton, I took four classes with David, served as his TA,
+            participated in his research group, and studied abroad with him in
+            Cambridge.
 
       - title: Nicholas Hopper
         subtitle:
@@ -237,7 +238,7 @@ sections:
 
       - title: In-Game Win Prediction with Deep Learning
         # github: stats-comps
-        tags: [software, machine-learning, teaching, crypto]
+        tags: [software, machine-learning, crypto]
         bullets:
           - Uses a recurrent neural network to predict the results of
             in-progress soccer and basketball games using pass, shot, and touch
@@ -246,7 +247,7 @@ sections:
 
       - title: Wordle Bot
         github: wordle-bot
-        tags: [software, machine-learning, teaching]
+        tags: [software, machine-learning]
         bullets:
           - An information-theory powered bot that beats Wordle in about 3.5
             moves on average.
@@ -293,7 +294,6 @@ sections:
 
       - title: Smart Garage
         github: homekit-garage-door
-        tags: [teaching]
         bullets:
           - Integrates my parents' 40-year-old garage door opener with Apple
             HomeKit using an ESP32 microcontroller.
