@@ -9,37 +9,34 @@ about:
 sections:
   - title: Education
     items:
-      - title: Bachelors of Arts, Mathematics and Statistics
-        subtitle: Carleton College
+      - title: Carleton College
+        subtitle: B.A. in Mathematics and Statistics
         dates: September 2020 -- June 2024
         tags: [software, machine-learning, short, crypto]
         bullets:
-          - 3.99 GPA, Dean's List, Phi Beta Kappa (Junior inductee), National
-            Merit Scholarship.
-          - Captain of varsity track and field. Top-10 all-time at Carleton in
-            the indoor 600m.
+          - Captain of varsity track and field, 3.99 GPA.
           - "Theses: \\textit{The Class Group and Dirichlet's Unit Theorem} and
             \\textit{In-Game Win Prediction with Deep Learning}."
 
-      - title: Visiting Student
-        subtitle: University of Cambridge
+      - title: University of Cambridge
+        subtitle: Visiting Student
         tags: [crypto, short]
         dates: June 2021 -- August 2021
         bullets:
           - Studied abroad taking classes in computer science and history.
 
-      - title: Talented Youth Mathematics Program
-        subtitle: University of Minnesota
+      - title: University of Minnesota
+        subtitle: Talented Youth Mathematics Program
         dates: September 2015 -- June 2020
         tags: [short]
         bullets:
           - Completed selective high-school math program culminating in six
             semesters of set theory, vector calculus, linear algebra, and
-            differential equations at the University of Minnesota.
+            differential equations.
 
-  - title: Work Experience
+  - title: Research Experience
     items:
-      - title: Research Assistant (Applied Cryptography)
+      - title: Cryptography
         subtitle: University of Minnesota
         dates: September 2022 -- present
         tags: [software, machine-learning, short, crypto]
@@ -51,23 +48,27 @@ sections:
           - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
             Supervised by Professor Nicholas Hopper.
 
-      - title: Research Assistant (Algorithms)
+      - title: Algorithms
         subtitle: Carleton College
         dates: September 2023 -- present
         tags: [software, machine-learning, crypto, short]
         bullets:
-          - Study a novel problem inspired by clustering survey responses. Lead
-            by Professor David Liben-Nowell.
-          - Produce algorithms and prove their correctness using techniques from
-            semidefinite and integer programming. We plan to publish in 2024.
+          - Study a novel NP-complete problem inspired by clustering survey
+            responses.
+          - Develop approximation algorithms powered by redutions to the
+            independent set problem in hypergraphs and semidefinite relaxations
+            of integer quadratic programs. Supervised by Professor David
+            Liben-Nowell.
 
-      # - title: Research Assistant (Gravitational Waves)
-      #   subtitle: Carleton College
-      #   dates: Janurary 2023 -- present
-      #   bullets:
-      #     - Write NumPy algorithms to detect gravatational waves from sensor
-      #       data.
+      - title: Gravitational Waves
+        subtitle: LIGO Scientific Collaboration
+        dates: Janurary 2023 -- present
+        bullets:
+          - Work on a system to remove noise from and detect false positives in
+            gravitational wave sensor data.
 
+  - title: Work Experience
+    items:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
@@ -202,9 +203,8 @@ sections:
         phone: 507-222-4300
         email: dln@carleton.edu.
         bullets:
-          - At Carleton, I took four classes with David, served as his TA,
-            participated in his research group, and studied abroad with him in
-            Cambridge.
+          - At Carleton, I served as David's TA, worked in his research group,
+            and studied abroad with him in Cambridge.
 
       - title: Nicholas Hopper
         subtitle:
@@ -216,14 +216,14 @@ sections:
           - I spent the Fall of 2022 and the Summer of 2023 working with Nick in
             his research group at UMN.
 
-      # TODO: ask rafe
-      # - title: Rafe Jones
-      #   subtitle:
-      #     Department Chair and Associate Professor of Mathematics, Carleton
-      #     College
-      #   bullets:
-      #     - Rafe is the chair of the math department and a member of my senior
-      #       thesis committee.
+      - title: Rafe Jones
+        phone: 507-222-4450
+        email: rfjones@carleton.edu
+        subtitle:
+          Department Chair and Professor of Mathematics, Carleton College
+        bullets:
+          - Rafe was my undergraduate department chair and a member of my senior
+            thesis committee.
 
   - title: Selected Projects
     items:
@@ -301,5 +301,6 @@ sections:
   - title: Personal Interests
     summary:
       Running, the Minnesota Timberwolves, the Premier League, backpacking,
-      photography, playing the piano, Nordic skiing, Wii Mario Kart, tomfoolery,
-      Project Euler, David Sedaris, Curb Your Enthusiasm.
+      photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
+      Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
+      midwest.
