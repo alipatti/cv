@@ -55,14 +55,13 @@ sections:
         bullets:
           - Study a novel NP-complete problem inspired by clustering survey
             responses.
-          - Develop approximation algorithms powered by redutions to the
-            independent set problem in hypergraphs and semidefinite relaxations
-            of integer quadratic programs. Supervised by Professor David
-            Liben-Nowell.
+          - Develop approximation algorithms powered by relaxations of integer
+            quadratic programs and redutions to well-studied problems on
+            hypergraphs. Supervised by Professor David Liben-Nowell.
 
       - title: Gravitational Waves
         subtitle: LIGO Scientific Collaboration
-        dates: Janurary 2023 -- present
+        dates: Janurary 2024 -- present
         bullets:
           - Work on a system to remove noise from and detect false positives in
             gravitational wave sensor data.
@@ -127,7 +126,7 @@ sections:
       - title: Kolenkow-Reitz Fellowship
         tags: [short]
         dates: December 2023
-        paren: funded winter-break research at UMN
+        paren: funded off-campus research at UMN
 
       - title:
           James F. Koehler Endowed Scholarship
@@ -171,15 +170,15 @@ sections:
           algebra, analysis, combinatorics, topology, analytic and algebraic
           number theory, representation theory, and Galois theory.
 
-      - title: Computer Science
-        notes:
-          algorithms, data structures, cryptography, artificial intelligence,
-          natural language processing, and quantum computing.
-
       - title: Statistics
         notes:
           probability, regression, time-series analysis, machine learning, data
           science, and data visualization.
+
+      - title: Computer Science
+        notes:
+          algorithms, data structures, cryptography, artificial intelligence,
+          natural language processing, and quantum computing.
 
       - title: Economics
         notes:
@@ -227,80 +226,4 @@ sections:
 
   - title: Selected Projects
     items:
-      - title: The Class Group and Dirichlet's Unit Theorem
-        github: math-comps
-        tags: [crypto]
-        bullets:
-          - A ground-up introduction to Analytic Number Theory culminating in
-            duscussion of Dirichlet's Unit Theorem and proof that the class
-            number is finite. Written as a senior thesis for the Carleton math
-            department.
-
-      - title: In-Game Win Prediction with Deep Learning
-        # github: stats-comps
-        tags: [software, machine-learning, crypto]
-        bullets:
-          - Uses a recurrent neural network to predict the results of
-            in-progress soccer and basketball games using pass, shot, and touch
-            data. Writing as a senior thesis for the Carleton statistics
-            department.
-
-      - title: Wordle Bot
-        github: wordle-bot
-        tags: [software, machine-learning]
-        bullets:
-          - An information-theory powered bot that beats Wordle in about 3.5
-            moves on average.
-
-      - title: Ole or Carl?
-        github: ole-or-carl
-        bullets:
-          - Uses deep learning and an SVM to test the validity of a
-            long-standing stereotype that students from Northfield's two
-            colleges look meaningfully different.
-
-      - title: In Passing
-        github: in-passing
-        tags: [software]
-        bullets:
-          - An interactive visualization of passing and touch data from the 2022
-            FIFA Men's World Cup.
-
-      - title: TODO.swift
-        github: todo.swift
-        # tags: [software]
-        bullets:
-          - A command line app to view and add to your reminders such that
-            changes are synced across all your Apple devices.
-
-      - title: CV
-        github: cv
-        bullets:
-          - An overengineered CI/CD pipeline for generating this document (and
-            others) from a single YAML file.
-
-      - title: OEIS.rs
-        github: oeis.rs
-        bullets:
-          - A terminal interface for the Online Encyclopedia of Integer
-            Sequences.
-
-      - title: Carleton Course Classifier
-        github: course-classifier
-        tags: [machine-learning]
-        bullets:
-          - A TensorFlow language model to predict a class's department and
-            course number given its catalog description.
-
-      - title: Smart Garage
-        github: homekit-garage-door
-        bullets:
-          - Integrates my parents' 40-year-old garage door opener with Apple
-            HomeKit using an ESP32 microcontroller.
-
-  - title: Personal Interests
-    summary:
-      Running, the Minnesota Timberwolves, the Premier League, backpacking,
-      photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
-      Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
-      midwest.
+      - title: T
