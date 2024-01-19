@@ -11,7 +11,7 @@ sections:
     items:
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics
-        dates: September 2020 -- June 2024
+        dates: September 2020 -- June 2024 (expected)
         tags: [software, machine-learning, short, crypto]
         bullets:
           - Captain of varsity track and field, 3.99 GPA.
@@ -28,7 +28,6 @@ sections:
       - title: University of Minnesota
         subtitle: Talented Youth Mathematics Program
         dates: September 2015 -- June 2020
-        tags: [short]
         bullets:
           - Completed selective high-school math program culminating in six
             semesters of set theory, vector calculus, linear algebra, and
@@ -55,13 +54,13 @@ sections:
         bullets:
           - Study a novel NP-complete problem inspired by clustering survey
             responses.
-          - Develop approximation algorithms powered by relaxations of integer
-            quadratic programs and redutions to well-studied problems on
+          - Develop approximation algorithms powered by semidefinite programming and redutions to well-studied problems on
             hypergraphs. Supervised by Professor David Liben-Nowell.
 
       - title: Gravitational Waves
         subtitle: LIGO Scientific Collaboration
         dates: Janurary 2024 -- present
+        tags: [short]
         bullets:
           - Work on a system to remove noise from and detect false positives in
             gravitational wave sensor data.
