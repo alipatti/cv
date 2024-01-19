@@ -40,8 +40,8 @@ sections:
         dates: September 2022 -- present
         tags: [software, machine-learning, short, crypto]
         bullets:
-          - Design cryptographic protocols for reporting abuse and
-            misinformation on encrypted messaging platforms.
+          - Design protocols for reporting abuse on encrypted
+            messaging platforms that provably maintain users' privacy.
           - Presented findings at a first-tier security conference in 2023. We
             plan to publish more results in 2024.
           - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
@@ -54,8 +54,9 @@ sections:
         bullets:
           - Study a novel NP-complete problem inspired by clustering survey
             responses.
-          - Develop approximation algorithms powered by semidefinite programming and redutions to well-studied problems on
-            hypergraphs. Supervised by Professor David Liben-Nowell.
+          - Develop approximation algorithms powered by semidefinite programming
+            and redutions to well-studied problems on hypergraphs. Supervised by
+            Professor David Liben-Nowell.
 
       - title: Gravitational Waves
         subtitle: LIGO Scientific Collaboration
