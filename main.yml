@@ -40,8 +40,8 @@ sections:
         dates: September 2022 -- present
         tags: [software, machine-learning, short, crypto]
         bullets:
-          - Design protocols for reporting abuse on encrypted
-            messaging platforms that provably maintain users' privacy.
+          - Design protocols for reporting abuse on encrypted messaging
+            platforms that provably maintain users' privacy.
           - Presented findings at a first-tier security conference in 2023. We
             plan to publish more results in 2024.
           - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
@@ -226,4 +226,80 @@ sections:
 
   - title: Selected Projects
     items:
-      - title: T
+      - title: The Class Group and Dirichlet's Unit Theorem
+        github: math-comps
+        tags: [crypto]
+        bullets:
+          - A ground-up introduction to Analytic Number Theory culminating in
+            duscussion of Dirichlet's Unit Theorem and proof that the class
+            number is finite. Written as a senior thesis for the Carleton math
+            department.
+
+      - title: In-Game Win Prediction with Deep Learning
+        # github: stats-comps
+        tags: [software, machine-learning, crypto]
+        bullets:
+          - Uses a recurrent neural network to predict the results of
+            in-progress soccer and basketball games using pass, shot, and touch
+            data. Writing as a senior thesis for the Carleton statistics
+            department.
+
+      - title: Wordle Bot
+        github: wordle-bot
+        tags: [software, machine-learning]
+        bullets:
+          - An information-theory powered bot that beats Wordle in about 3.5
+            moves on average.
+
+      - title: Ole or Carl?
+        github: ole-or-carl
+        bullets:
+          - Uses deep learning and an SVM to test the validity of a
+            long-standing stereotype that students from Northfield's two
+            colleges look meaningfully different.
+
+      - title: In Passing
+        github: in-passing
+        tags: [software]
+        bullets:
+          - An interactive visualization of passing and touch data from the 2022
+            FIFA Men's World Cup.
+
+      - title: TODO.swift
+        github: todo.swift
+        # tags: [software]
+        bullets:
+          - A command line app to view and add to your reminders such that
+            changes are synced across all your Apple devices.
+
+      - title: CV
+        github: cv
+        bullets:
+          - An overengineered CI/CD pipeline for generating this document (and
+            others) from a single YAML file.
+
+      - title: OEIS.rs
+        github: oeis.rs
+        bullets:
+          - A terminal interface for the Online Encyclopedia of Integer
+            Sequences.
+
+      - title: Carleton Course Classifier
+        github: course-classifier
+        tags: [machine-learning]
+        bullets:
+          - A TensorFlow language model to predict a class's department and
+            course number given its catalog description.
+
+      - title: Smart Garage
+        github: homekit-garage-door
+        bullets:
+          - Integrates my parents' 40-year-old garage door opener with Apple
+            HomeKit using an ESP32 microcontroller.
+
+  - title: Personal Interests
+    summary:
+      Running, the Minnesota Timberwolves, the Premier League, backpacking,
+      photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
+      Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
+      midwest.
