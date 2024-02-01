@@ -12,66 +12,35 @@ sections:
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics
         dates: September 2020 -- June 2024 (expected)
-        tags: [software, machine-learning, short, crypto]
+        tags: [software, machine-learning, short, crypto, teaching]
         bullets:
           - Captain of varsity track and field, 3.99 GPA.
-          - "Theses: \\textit{The Class Group and Dirichlet's Unit Theorem} and
-            \\textit{In-Game Win Prediction with Deep Learning}."
+          - "Theses: \\textit{Sports as Sequences: Win Prediction with
+            Deep Learning} and \\textit{The Class Group and Dirichlet's Unit
+            Theorem}."
 
       - title: University of Cambridge
         subtitle: Visiting Student
-        tags: [crypto, short]
+        tags: [crypto, short, teaching]
         dates: June 2021 -- August 2021
         bullets:
           - Studied abroad taking classes in computer science and history.
 
       - title: University of Minnesota
         subtitle: Talented Youth Mathematics Program
+        tags: [teaching]
         dates: September 2015 -- June 2020
         bullets:
           - Completed selective high-school math program culminating in six
             semesters of set theory, vector calculus, linear algebra, and
             differential equations.
 
-  - title: Research Experience
-    items:
-      - title: Cryptography
-        subtitle: University of Minnesota
-        dates: September 2022 -- present
-        tags: [software, machine-learning, short, crypto]
-        bullets:
-          - Design protocols for reporting abuse on encrypted messaging
-            platforms that provably maintain users' privacy.
-          - Presented findings at a first-tier security conference in 2023. We
-            plan to publish more results in 2024.
-          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
-            Supervised by Professor Nicholas Hopper.
-
-      - title: Algorithms
-        subtitle: Carleton College
-        dates: September 2023 -- present
-        tags: [software, machine-learning, crypto, short]
-        bullets:
-          - Study a novel NP-complete problem inspired by clustering survey
-            responses.
-          - Develop approximation algorithms powered by semidefinite programming
-            and redutions to well-studied problems on hypergraphs. Supervised by
-            Professor David Liben-Nowell.
-
-      - title: Gravitational Waves
-        subtitle: LIGO Scientific Collaboration
-        dates: Janurary 2024 -- present
-        tags: [short]
-        bullets:
-          - Work on a system to remove noise from and detect false positives in
-            gravitational wave sensor data.
-
   - title: Work Experience
     items:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software, machine-learning, short, crypto]
+        tags: [software, machine-learning, short, crypto, teaching]
         bullets:
           - Tutor students, hold office hours, and grade homework for classes in
             the math and computer science departments.
@@ -82,7 +51,7 @@ sections:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, machine-learning, short, crypto]
+        tags: [software, machine-learning, short, crypto, teaching]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -94,7 +63,7 @@ sections:
       - title: Counselor
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- September 2021
-        tags: [short]
+        tags: [short, teaching]
         bullets:
           - Oversaw the purchase and distribution of food for nearly 200
             wilderness trips across North America.
@@ -111,20 +80,53 @@ sections:
       #   subtitle: Hansen Tree Farm
       #   dates: November 2018 -- December 2020, seasonal
 
+  - title: Research Experience
+    items:
+      - title: Cryptography
+        subtitle: University of Minnesota
+        dates: September 2022 -- present
+        tags: [software, machine-learning, short, crypto, teaching]
+        bullets:
+          - Design protocols for reporting abuse on encrypted messaging
+            platforms that provably maintain users' privacy.
+          - Presented findings at a first-tier security conference in 2023. We
+            plan to publish more results in 2024.
+          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
+            Supervised by Professor Nicholas Hopper.
+
+      - title: Algorithms
+        subtitle: Carleton College
+        dates: September 2023 -- present
+        tags: [software, machine-learning, crypto, short, teaching]
+        bullets:
+          - Study a novel NP-complete problem inspired by clustering survey
+            responses.
+          - Develop approximation algorithms powered by semidefinite programming
+            and redutions to well-studied problems on hypergraphs. Supervised by
+            Professor David Liben-Nowell.
+
+      - title: Gravitational Waves
+        subtitle: LIGO Scientific Collaboration
+        dates: Janurary 2024 -- present
+        tags: [short, teaching]
+        bullets:
+          - Work on a system to detect false positives in gravitational wave
+            sensor data. Supervised by Professor Jay Tasson.
+
   - title: Awards and Recognition
     items:
       - title: Phi Beta Kappa
-        tags: [short]
+        tags: [short, teaching]
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
       - title: Dean's List
-        tags: [short]
+        tags: [short, teaching]
         dates: September 2021, 2022, and 2023
         paren: top 10 percent of class, annual
 
       - title: Kolenkow-Reitz Fellowship
-        tags: [short]
+        tags: [short, teaching]
         dates: December 2023
         paren: funded off-campus research at UMN
 
@@ -138,7 +140,7 @@ sections:
         dates: July 2020
 
       - title: National Merit Scholarship
-        tags: [short]
+        tags: [short, teaching]
         dates: May 2020
         paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
@@ -195,7 +197,6 @@ sections:
 
   - title: References
     items:
-      # TODO: wait for david to respond to request
       - title: Daivd Liben-Nowell
         subtitle:
           Associate Provost and Professor of Computer Science, Carleton College
