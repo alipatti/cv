@@ -15,8 +15,8 @@ sections:
         tags: [software, machine-learning, short, crypto, teaching]
         bullets:
           - Captain of varsity track and field, 3.99 GPA.
-          - "Theses: \\textit{Sports as Sequences: Win Prediction with
-            Deep Learning} and \\textit{The Class Group and Dirichlet's Unit
+          - "Theses: \\textit{Sports as Sequences: Win Prediction with Deep
+            Learning} and \\textit{The Class Group and Dirichlet's Unit
             Theorem}."
 
       - title: University of Cambridge
@@ -270,20 +270,20 @@ sections:
         github: todo.swift
         # tags: [software]
         bullets:
-          - A command line app to view and add to your reminders such that
-            changes are synced across all your Apple devices.
+          - A command line app to view and add to your reminders with changes
+            synced across all your Apple devices.
 
       - title: CV
         github: cv
         bullets:
-          - An overengineered CI/CD pipeline for generating this document (and
-            others) from a single YAML file.
+          - An overengineered pipeline for generating this document (and others)
+            from a YAML file.
 
       - title: OEIS.rs
         github: oeis.rs
         bullets:
-          - A terminal interface for the Online Encyclopedia of Integer
-            Sequences.
+          - A command line app to interactively search the Online Encyclopedia
+            of Integer Sequences.
 
       - title: Carleton Course Classifier
         github: course-classifier
