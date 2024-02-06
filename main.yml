@@ -12,16 +12,15 @@ sections:
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics
         dates: September 2020 -- June 2024 (expected)
-        tags: [software, machine-learning, short, crypto, teaching]
+        tags: [software, machine-learning, short, crypto, teaching, econ]
         bullets:
           - Captain of varsity track and field, 3.99 GPA.
           - "Theses: \\textit{Sports as Sequences: Win Prediction with Deep
-            Learning} and \\textit{The Class Group and Dirichlet's Unit
-            Theorem}."
+            Learning} (stats) and \\textit{The Class Group} (math)."
 
       - title: University of Cambridge
         subtitle: Visiting Student
-        tags: [crypto, short, teaching]
+        tags: [crypto, short, teaching, econ]
         dates: June 2021 -- August 2021
         bullets:
           - Studied abroad taking classes in computer science and history.
@@ -40,7 +39,7 @@ sections:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- present
-        tags: [software, machine-learning, short, crypto, teaching]
+        tags: [software, machine-learning, short, crypto, teaching, econ]
         bullets:
           - Tutor students, hold office hours, and grade homework for classes in
             the math and computer science departments.
@@ -51,7 +50,7 @@ sections:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, machine-learning, short, crypto, teaching]
+        tags: [software, machine-learning, short, crypto, teaching, econ]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -85,7 +84,7 @@ sections:
       - title: Cryptography
         subtitle: University of Minnesota
         dates: September 2022 -- present
-        tags: [software, machine-learning, short, crypto, teaching]
+        tags: [software, machine-learning, short, crypto, teaching, econ]
         bullets:
           - Design protocols for reporting abuse on encrypted messaging
             platforms that provably maintain users' privacy.
@@ -97,9 +96,9 @@ sections:
       - title: Algorithms
         subtitle: Carleton College
         dates: September 2023 -- present
-        tags: [software, machine-learning, crypto, short, teaching]
+        tags: [software, machine-learning, crypto, short, teaching, econ]
         bullets:
-          - Study a novel NP-complete problem inspired by clustering survey
+          - Study a novel algorithms problem inspired by clustering survey
             responses.
           - Develop approximation algorithms powered by semidefinite programming
             and redutions to well-studied problems on hypergraphs. Supervised by
@@ -108,7 +107,7 @@ sections:
       - title: Gravitational Waves
         subtitle: LIGO Scientific Collaboration
         dates: Janurary 2024 -- present
-        tags: [short, teaching]
+        tags: [short, teaching, econ]
         bullets:
           - Work on a system to detect false positives in gravitational wave
             sensor data. Supervised by Professor Jay Tasson.
@@ -116,7 +115,7 @@ sections:
   - title: Awards and Recognition
     items:
       - title: Phi Beta Kappa
-        tags: [short, teaching]
+        tags: [short, teaching, econ]
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
@@ -140,14 +139,14 @@ sections:
         dates: July 2020
 
       - title: National Merit Scholarship
-        tags: [short, teaching]
+        tags: [short, teaching, econ]
         dates: May 2020
         paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
   - title: Skills
     items:
       - title: Programming
-        tags: [software, machine-learning, short, crypto]
+        tags: [software, machine-learning, short, crypto, econ]
         notes:
           Python, Rust, R, JavaScript, TypeScript, Swift, git, Docker, \LaTeX.
 
@@ -156,7 +155,7 @@ sections:
         notes: Rust, zero-knowledge proofs, dalek-crypto, arkworks, OpenSSL.
 
       - title: Data Science and Machine Learning
-        tags: [software, machine-learning, short, crypto]
+        tags: [software, machine-learning, short, crypto, econ]
         notes: NumPy, pandas, R, PyTorch, TensorFlow, scikit-learn, SQL.
 
       - title: Data Visualization
@@ -165,27 +164,29 @@ sections:
       - title: Web Development
         notes: React, Next.js, Tailwind CSS, TypeScript.
 
-  - title: Coursework
+  - title: Selected Coursework
     items:
-      - title: Math
-        notes:
-          algebra, analysis, combinatorics, topology, analytic and algebraic
-          number theory, representation theory, and Galois theory.
-
-      - title: Statistics
-        notes:
-          probability, regression, time-series analysis, machine learning, data
-          science, and data visualization.
-
       - title: Computer Science
+        tags: [software]
         notes:
           algorithms, data structures, cryptography, artificial intelligence,
-          natural language processing, and quantum computing.
+          natural language processing, quantum computing.
 
       - title: Economics
+        tags: [econ]
+        notes: micro and macro economics, labor economics, price theory.
+
+      - title: Statistics
+        tags: [econ]
         notes:
-          principles of micro and macro economics, labor economics, price
-          theory.
+          probability, regression, time-series analysis, machine learning, data
+          science, data visualization.
+
+      - title: Math
+        tags: [econ]
+        notes:
+          algebra (Galois and repr. theory), analysis, combinatorics, topology,
+          number theory (algebraic and analytic).
 
   - title: Publications and Preprints
     items:
