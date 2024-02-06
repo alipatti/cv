@@ -227,23 +227,21 @@ sections:
 
   - title: Selected Projects
     items:
-      - title: The Class Group and Dirichlet's Unit Theorem
+      - title: The Class Group
         github: math-comps
         tags: [crypto]
         bullets:
-          - A ground-up introduction to Analytic Number Theory culminating in
-            duscussion of Dirichlet's Unit Theorem and proof that the class
-            number is finite. Written as a senior thesis for the Carleton math
-            department.
+          - A ground-up introduction to analytic number theory written as a
+            senior thesis for the Carleton math department.
 
       - title: In-Game Win Prediction with Deep Learning
         # github: stats-comps
         tags: [software, machine-learning, crypto]
         bullets:
-          - Uses a recurrent neural network to predict the results of
-            in-progress soccer and basketball games using pass, shot, and touch
-            data. Writing as a senior thesis for the Carleton statistics
-            department.
+          - A recurrent neural net that uses sequences of in-game events like
+            passes and shots to predict the results of in-progress soccer and
+            basketball games. Writing as a senior thesis for the Carleton
+            statistics department.
 
       - title: Wordle Bot
         github: wordle-bot
