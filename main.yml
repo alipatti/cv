@@ -14,17 +14,10 @@ sections:
         dates: September 2020 -- June 2024 (expected)
         tags: [software, machine-learning, short, crypto, teaching, econ]
         bullets:
-          - Captain of varsity track and field. 3.99 GPA. Additional coursework
-            in computer science and economics.
+          - 3.99 GPA. Captain of varsity track and field. Studied abroad at the
+            University of Cambridge.
           - "Theses: \\textit{Sports as Sequences: Win Prediction with Deep
             Learning} (stats) and \\textit{The Class Group} (math)."
-
-      - title: University of Cambridge
-        subtitle: Visiting Student
-        tags: [crypto, short, teaching, econ, software]
-        dates: June 2021 -- August 2021
-        bullets:
-          - Studied abroad taking classes in computer science and history.
 
       - title: University of Minnesota
         subtitle: Talented Youth Mathematics Program
@@ -35,18 +28,27 @@ sections:
             semesters of set theory, vector calculus, linear algebra, and
             differential equations.
 
-  - title: Work Experience
+  - title: Previous Experience
     items:
+      - title: Predoctoral Fellow
+        subtitle: Opportunity Insights (Harvard University)
+        dates: July 2024 - July 2026
+        tags: [short]
+        bullets:
+          - Research economic mobility under professors Raj Chetty, Nathan
+            Hendren, and John Friedman.
+
       - title: Teaching Assistant
         subtitle: Carleton College
-        dates: March 2021 -- present
+        dates: March 2021 -- June 2024
         tags: [software, machine-learning, short, crypto, teaching, econ]
         bullets:
-          - Tutor students, hold office hours, and grade homework for classes in
-            the math and computer science departments.
-          - "Classes: Algorithms, Artificial Intelligence, Real Analysis I,
-            Abstract Algebra I, Data Visualization, Math Structures, and
-            Calculus II."
+          - Held office hours, desiged assignments, and graded homework for
+            various math and computer science classes.
+          - "Courses: artificial intelligence (CS 321), data visualization (CS
+            314), algorithms (CS 252), abstract algebra (MATH 352), real
+            analysis (MATH 321), math structures (MATH 236), and calculus II
+            (MATH 120)."
 
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
@@ -76,9 +78,9 @@ sections:
         subtitle: Carleton College
         dates: September 2020 -- March 2021
 
-      # - title: Farm Hand
-      #   subtitle: Hansen Tree Farm
-      #   dates: November 2018 -- December 2020, seasonal
+      - title: Farm Hand
+        subtitle: Hansen Tree Farm
+        dates: November 2018 -- December 2020, seasonal
 
   - title: Research Experience
     items:
@@ -87,8 +89,8 @@ sections:
         dates: September 2022 -- present
         tags: [software, machine-learning, short, crypto, teaching, econ]
         bullets:
-          - Design protocols for reporting abuse on messaging platforms in a way
-            that provably maintains users' privacy.
+          - Design privacy-respecting protocols for reporting abuse on enctypred
+            messsaging platforms.
           - Presented findings at a first-tier security conference in 2023 with
             another publication slated for 2024.
           - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
@@ -96,7 +98,7 @@ sections:
 
       - title: Algorithms
         subtitle: Carleton College
-        dates: September 2023 -- present
+        dates: September 2023 -- July 2024
         tags: [software, machine-learning, crypto, short, teaching, econ]
         bullets:
           - Study a novel algorithms problem inspired by clustering survey
@@ -107,12 +109,12 @@ sections:
 
       - title: Gravitational Waves
         subtitle: LIGO Scientific Collaboration
-        dates: Janurary 2024 -- present
+        dates: Janurary 2024 -- March 2024
         tags: [short, teaching, econ, software]
         bullets:
-          - Maintain a dashboard and SQL database used by scientists around the
-            world to help detect false positives in gravitational wave sensor
-            data.
+          - Helped develop and maintain a dashboard and SQL database used by
+            scientists around the world to detect false positives in
+            gravitational wave data.
 
   - title: Awards and Recognition
     items:
@@ -216,90 +218,4 @@ sections:
         phone: 612-626-1284
         email: hoppernj@umn.edu
         bullets:
-          - I spent the Fall of 2022 and the Summer of 2023 working with Nick in
-            his research group at UMN.
-
-      - title: Rafe Jones
-        phone: 507-222-4450
-        email: rfjones@carleton.edu
-        subtitle:
-          Department Chair and Professor of Mathematics, Carleton College
-        bullets:
-          - Rafe was my undergraduate department chair and a member of my senior
-            thesis committee.
-
-  - title: Selected Projects
-    items:
-      - title: The Class Group
-        github: math-comps
-        bullets:
-          - A ground-up introduction to analytic number theory written as a
-            senior thesis for the Carleton math department.
-
-      - title: In-Game Win Prediction with Deep Learning
-        # github: stats-comps
-        tags: [machine-learning, crypto]
-        bullets:
-          - A recurrent neural net that uses sequences of in-game events like
-            passes and shots to predict the results of in-progress soccer and
-            basketball games. Writing as a senior thesis for the Carleton
-            statistics department.
-
-      - title: Wordle Bot
-        github: wordle-bot
-        tags: [machine-learning]
-        bullets:
-          - An information-theory powered bot that beats Wordle in about 3.5
-            moves on average.
-
-      - title: Ole or Carl?
-        github: ole-or-carl
-        bullets:
-          - Uses deep learning and an SVM to test the validity of a
-            long-standing stereotype that students from Northfield's two
-            colleges look meaningfully different.
-
-      - title: In Passing
-        github: in-passing
-        bullets:
-          - An interactive visualization of passing and touch data from the 2022
-            FIFA Men's World Cup.
-
-      - title: TODO.swift
-        github: todo.swift
-        # tags: [software]
-        bullets:
-          - A command line app to view and add to your reminders with changes
-            synced across all your Apple devices.
-
-      - title: CV
-        github: cv
-        bullets:
-          - An overengineered pipeline for generating this document (and others)
-            from a YAML file.
-
-      - title: OEIS.rs
-        github: oeis.rs
-        bullets:
-          - A command line app to interactively search the Online Encyclopedia
-            of Integer Sequences.
-
-      - title: Carleton Course Classifier
-        github: course-classifier
-        tags: [machine-learning]
-        bullets:
-          - A TensorFlow language model to predict a class's department and
-            course number given its catalog description.
-
-      - title: Smart Garage
-        github: homekit-garage-door
-        bullets:
-          - Integrates my parents' 40-year-old garage door opener with Apple
-            HomeKit using an ESP32 microcontroller.
-
-  - title: Personal Interests
-    summary:
-      Running, the Minnesota Timberwolves, the Premier League, backpacking,
-      photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
-      Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
-      midwest.
+          - I spent the Fall of 2022 and the Summer of 2023 working with Nick
