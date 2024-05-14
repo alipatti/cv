@@ -12,7 +12,7 @@ sections:
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics
         dates: September 2020 -- June 2024 (expected)
-        tags: [software, machine-learning, short, crypto, teaching, econ]
+        tags: [short]
         bullets:
           - 3.99 GPA. Captain of varsity track and field. Studied abroad at the
             University of Cambridge.
@@ -21,7 +21,6 @@ sections:
 
       - title: University of Minnesota
         subtitle: Talented Youth Mathematics Program
-        tags: [teaching]
         dates: September 2015 -- June 2020
         bullets:
           - Completed selective high-school math program culminating in six
@@ -41,7 +40,7 @@ sections:
       - title: Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- June 2024
-        tags: [software, machine-learning, short, crypto, teaching, econ]
+        tags: [short]
         bullets:
           - Held office hours, desiged assignments, and graded homework for
             various math and computer science classes.
@@ -50,10 +49,42 @@ sections:
             analysis (MATH 321), math structures (MATH 236), and calculus II
             (MATH 120)."
 
+      - title: Research Assistant (Cryptography)
+        subtitle: University of Minnesota
+        dates: September 2022 -- present
+        tags: [short]
+        bullets:
+          - Design ways to report abuse on enctypred messsaging platforms while
+            preserving users' privacy.
+          - Presented findings at a first-tier security conference in 2023 with
+            another publication slated for 2024.
+          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
+            Supervised by Professor Nicholas Hopper.
+
+      - title: Research Assistant (Algorithms)
+        subtitle: Carleton College
+        dates: September 2023 -- July 2024
+        tags: [short]
+        bullets:
+          - Study a novel algorithms problem inspired by clustering survey
+            responses.
+          - Develop approximation algorithms powered by semidefinite programming
+            and redutions to well-studied problems on hypergraphs. Supervised by
+            Professor David Liben-Nowell.
+
+      - title: Research Assistant (Gravitational Waves)
+        subtitle: LIGO Scientific Collaboration
+        dates: Janurary 2024 -- March 2024
+        tags: [short]
+        bullets:
+          - Helped develop and maintain a dashboard and SQL database used by
+            scientists around the world to detect false positives in
+            gravitational wave data.
+
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [software, machine-learning, short, crypto, teaching, econ]
+        tags: [short]
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
@@ -65,7 +96,7 @@ sections:
       - title: Counselor
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- September 2021
-        tags: [short, teaching]
+        tags: [short]
         bullets:
           - Oversaw the purchase and distribution of food for nearly 200
             wilderness trips across North America.
@@ -82,56 +113,35 @@ sections:
         subtitle: Hansen Tree Farm
         dates: November 2018 -- December 2020, seasonal
 
-  - title: Research Experience
-    items:
-      - title: Cryptography
-        subtitle: University of Minnesota
-        dates: September 2022 -- present
-        tags: [software, machine-learning, short, crypto, teaching, econ]
-        bullets:
-          - Design privacy-respecting protocols for reporting abuse on enctypred
-            messsaging platforms.
-          - Presented findings at a first-tier security conference in 2023 with
-            another publication slated for 2024.
-          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
-            Supervised by Professor Nicholas Hopper.
-
-      - title: Algorithms
-        subtitle: Carleton College
-        dates: September 2023 -- July 2024
-        tags: [software, machine-learning, crypto, short, teaching, econ]
-        bullets:
-          - Study a novel algorithms problem inspired by clustering survey
-            responses.
-          - Develop approximation algorithms powered by semidefinite programming
-            and redutions to well-studied problems on hypergraphs. Supervised by
-            Professor David Liben-Nowell.
-
-      - title: Gravitational Waves
-        subtitle: LIGO Scientific Collaboration
-        dates: Janurary 2024 -- March 2024
-        tags: [short, teaching, econ, software]
-        bullets:
-          - Helped develop and maintain a dashboard and SQL database used by
-            scientists around the world to detect false positives in
-            gravitational wave data.
-
   - title: Awards and Recognition
     items:
-      - title: Phi Beta Kappa
-        tags: [short, teaching, econ, software]
-        dates: June 2023
-        paren: one of nine Junior-year inductees, roughly 2 percent of the class
+      - title: Noyes Prize
+        tags: [short]
+        dates: May 2024
+        paren: awarded to members of senior class on basis of GPA
+
+      - title: Kelly Award
+        tags: [short]
+        dates: May 2024
+        paren: for achievement in collegiate track and field
+
+      - title: Kolenkow-Reitz Fellowship
+        dates: December 2023
+        paren: funded applied cryptography research at UMN
 
       - title: Dean's List
-        tags: [short, teaching, software]
+        tags: [short]
         dates: September 2021, 2022, and 2023
         paren: top 10 percent of class, annual
 
-      - title: Kolenkow-Reitz Fellowship
-        tags: [teaching]
-        dates: December 2023
-        paren: funded off-campus research at UMN
+      - title: Phi Beta Kappa
+        tags: [short]
+        dates: June 2023
+        paren: one of nine Junior-year inductees, roughly 2 percent of the class
+
+      - title: NSF REU grant
+        dates: June - August 2023
+        paren: funded applied cryptography research at UMN
 
       - title:
           James F. Koehler Endowed Scholarship
@@ -143,24 +153,23 @@ sections:
         dates: July 2020
 
       - title: National Merit Scholarship
-        tags: [short, teaching, econ, software]
+        tags: [short]
         dates: May 2020
         paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
   - title: Skills
     items:
       - title: Programming
-        tags: [software, machine-learning, short, crypto, econ]
+        tags: [short]
         notes:
           Python, Rust, R, JavaScript, TypeScript, Swift, Lua, git, Docker,
           \LaTeX.
 
       - title: Cryptography
-        tags: [crypto]
         notes: Rust, zero-knowledge proofs, dalek-crypto, arkworks, OpenSSL.
 
       - title: Data Science and Machine Learning
-        tags: [software, machine-learning, short, crypto, econ]
+        tags: [short]
         notes: NumPy, pandas, R, PyTorch, TensorFlow, scikit-learn, SQL.
 
       - title: Data Visualization
@@ -172,23 +181,19 @@ sections:
   - title: Selected Coursework
     items:
       - title: Computer Science
-        tags: [software]
         notes:
           algorithms, data structures, cryptography, artificial intelligence,
           natural language processing, quantum computing.
 
       - title: Economics
-        tags: [econ]
         notes: micro and macro economics, labor economics, price theory.
 
       - title: Statistics
-        tags: [econ]
         notes:
           probability, regression, time-series analysis, machine learning, data
           science, data visualization.
 
       - title: Math
-        tags: [econ]
         notes:
           algebra (Galois and repr. theory), analysis, combinatorics, topology,
           number theory (algebraic and analytic).
@@ -219,3 +224,86 @@ sections:
         email: hoppernj@umn.edu
         bullets:
           - I spent the Fall of 2022 and the Summer of 2023 working with Nick
+            his research group at UMN.
+
+      - title: Rafe Jones
+        phone: 507-222-4450
+        email: rfjones@carleton.edu
+        subtitle:
+          Department Chair and Professor of Mathematics, Carleton College
+        bullets:
+          - Rafe was my undergraduate department chair and a member of my senior
+            thesis committee.
+
+  - title: Selected Projects
+    items:
+      - title: The Class Group
+        github: math-comps
+        bullets:
+          - A ground-up introduction to analytic number theory written as a
+            senior thesis for the Carleton math department.
+
+      - title: In-Game Win Prediction with Deep Learning
+        github: stats-comps
+        bullets:
+          - A recurrent neural net that uses sequences of in-game events like
+            passes and shots to predict the results of in-progress soccer and
+            basketball games. Writing as a senior thesis for the Carleton
+            statistics department.
+
+      - title: Wordle Bot
+        github: wordle-bot
+        bullets:
+          - An information-theory powered bot that beats Wordle in about 3.5
+            moves on average.
+
+      - title: Ole or Carl?
+        github: ole-or-carl
+        bullets:
+          - Uses deep learning and an SVM to test the validity of a
+            long-standing stereotype that students from Northfield's two
+            colleges look meaningfully different.
+
+      - title: In Passing
+        github: in-passing
+        bullets:
+          - An interactive visualization of passing and touch data from the 2022
+            FIFA Men's World Cup.
+
+      - title: TODO.swift
+        github: todo.swift
+        bullets:
+          - A command line app to view and add to your Apple reminders with changes
+            synced across all your devices.
+
+      - title: CV
+        github: cv
+        bullets:
+          - An overengineered pipeline for generating this document (and others)
+            from a YAML file.
+
+      - title: OEIS.rs
+        github: oeis.rs
+        bullets:
+          - A command line app to interactively search the Online Encyclopedia
+            of Integer Sequences.
+
+      - title: Carleton Course Classifier
+        github: course-classifier
+        bullets:
+          - A TensorFlow language model to predict a class's department and
+            course number given its catalog description.
+
+      - title: Smart Garage
+        github: homekit-garage-door
+        bullets:
+          - Integrates my parents' 40-year-old garage door opener with Apple
+            HomeKit using an ESP32 microcontroller.
+
+  - title: Personal Interests
+    summary:
+      Running, the Minnesota Timberwolves, the Premier League, backpacking,
+      photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
+      Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
+      midwest.
+
