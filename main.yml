@@ -1,7 +1,7 @@
 about:
   name: Alistair Pattison
   phone: (651) 706-6713
-  email: pattisona@carleton.edu
+  email: pattisona@carleton.edu # TODO: update this
   github: alipatti
   linkedin: alipatti
   website: alipatti.com
@@ -11,31 +11,61 @@ sections:
     items:
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics
-        dates: September 2020 -- June 2024 (expected)
+        dates: September 2020 -- June 2024
         tags: [short]
         bullets:
-          - 3.99 GPA. Captain of varsity track and field. Studied abroad at the
-            University of Cambridge.
-          - "Theses: \\textit{Sports as Sequences: Win Prediction with Deep
-            Learning} (stats) and \\textit{The Class Group} (math)."
+          - Graduated \textit{summa cum laude} (top 2 percent) with 3.99 GPA.
+          - Captain of varsity track and field. Studied abroad at the University
+            of Cambridge.
+          # - "Theses: \\textit{Sports as Sequences: Win Prediction with Deep
+          # Learning} (stats) and \\textit{The Class Group} (math)."
 
-      - title: University of Minnesota
-        subtitle: Talented Youth Mathematics Program
-        dates: September 2015 -- June 2020
-        bullets:
-          - Completed selective high-school math program culminating in six
-            semesters of set theory, vector calculus, linear algebra, and
-            differential equations.
+      # - title: University of Minnesota
+      #   subtitle: Talented Youth Mathematics Program
+      #   dates: 2015 -- 2020
+      #   bullets:
+      #     - Completed selective high-school math program culminating in six
+      #       semesters of set theory, vector calculus, linear algebra, and
+      #       differential equations.
 
-  - title: Previous Experience
+  - title: Work Experience
     items:
       - title: Predoctoral Fellow
-        subtitle: Opportunity Insights (Harvard University)
-        dates: July 2024 - July 2026
+        subtitle: Harvard University
+        dates: July 2024 -- present
         tags: [short]
         bullets:
-          - Research economic mobility under professors Raj Chetty, Nathan
+          - Research assistant for the Opportunity Insights group under professors Raj Chetty, Nathan
             Hendren, and John Friedman.
+
+      - title: Research Assistant
+        subtitle: National Bureau of Economic Research
+        dates: July 2024 -- present
+
+      - title: Contractor
+        subtitle: United States Census Bureau
+        dates: July 2024 -- present
+
+      - title: Cryptography Research Assistant
+        subtitle: University of Minnesota
+        dates: September 2022 -- June 2024
+        tags: [short]
+        bullets:
+          - Designed a tool for reporting misuse on enctypred messsaging
+            platforms that provably maintains users' privacy.
+          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
+            Supervised by Professor Nicholas Hopper.
+
+      - title: Algorithms Research Assistant
+        subtitle: Carleton College
+        dates: September 2023 -- June 2024
+        tags: [short]
+        bullets:
+          - Studied a novel algorithms problem inspired by clustering survey
+            responses.
+          - Developed approximation algorithms and proved inapproximability in
+            special cases by reducing to well-studied problems. Supervised by
+            Professor David Liben-Nowell.
 
       - title: Teaching Assistant
         subtitle: Carleton College
@@ -44,42 +74,20 @@ sections:
         bullets:
           - Held office hours, desiged assignments, and graded homework for
             various math and computer science classes.
-          - "Courses: artificial intelligence (CS 321), data visualization (CS
-            314), algorithms (CS 252), abstract algebra (MATH 352), real
-            analysis (MATH 321), math structures (MATH 236), and calculus II
-            (MATH 120)."
+          - "Selected courses: data visualization (2x), algorithms, making
+            decisions with AI, abstract algebra, real analysis."
+          # - "Courses: artificial intelligence (CS 321), data visualization (CS
+          #   314), algorithms (CS 252), abstract algebra (MATH 352), real
+          #   analysis (MATH 321), math structures (MATH 236), and calculus II
+          #   (MATH 120)."
 
-      - title: Research Assistant (Cryptography)
-        subtitle: University of Minnesota
-        dates: September 2022 -- present
-        tags: [short]
-        bullets:
-          - Design ways to report abuse on enctypred messsaging platforms while
-            preserving users' privacy.
-          - Presented findings at a first-tier security conference in 2023 with
-            another publication slated for 2024.
-          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
-            Supervised by Professor Nicholas Hopper.
-
-      - title: Research Assistant (Algorithms)
-        subtitle: Carleton College
-        dates: September 2023 -- July 2024
-        tags: [short]
-        bullets:
-          - Study a novel algorithms problem inspired by clustering survey
-            responses.
-          - Develop approximation algorithms powered by semidefinite programming
-            and redutions to well-studied problems on hypergraphs. Supervised by
-            Professor David Liben-Nowell.
-
-      - title: Research Assistant (Gravitational Waves)
+      - title: Research Assistant
         subtitle: LIGO Scientific Collaboration
         dates: Janurary 2024 -- March 2024
         tags: [short]
         bullets:
-          - Helped develop and maintain a dashboard and SQL database used by
-            scientists around the world to detect false positives in
-            gravitational wave data.
+          - Helped maintain a dashboard and SQL database used to filter false
+            positives from gravitational wave sensor data.
 
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
@@ -88,10 +96,9 @@ sections:
         bullets:
           - Worked with interdepartmental task force to make Minnesota's
             government systems more inclusive of older adults.
-          - Analyzed census data to identify disparities in wealth, housing, and
-            internet access across demographic groups.
-          - Created data visualizations and interactive dashboards for use by
-            government employees and other consultants.
+          - Analyzed census data to identify disparities across demographic
+            groups and created interactive visualizations for use by government
+            employees and other consultants.
 
       - title: Counselor
         subtitle: YMCA Camp Widjiwagan
@@ -102,16 +109,18 @@ sections:
             wilderness trips across North America.
           - Lead a week-long canoeing trip with a program dedicated to
             increasing diversity in the outdoors community.
-          - Managed a \$95,000 budget in a team of three and taught basic
-            nutrition to kids aged 12 to 18.
+          # - Managed a \$95,000 budget in a team of three and taught basic
+          # nutrition to kids aged 12 to 18.
 
       - title: Dining Hall Worker
         subtitle: Carleton College
         dates: September 2020 -- March 2021
+        tags: [short]
 
       - title: Farm Hand
         subtitle: Hansen Tree Farm
-        dates: November 2018 -- December 2020, seasonal
+        dates: November 2018 -- December 2020
+        tags: [short]
 
   - title: Awards and Recognition
     items:
@@ -132,7 +141,7 @@ sections:
       - title: Dean's List
         tags: [short]
         dates: September 2021, 2022, and 2023
-        paren: top 10 percent of class, annual
+        paren: top 10 percent of class in previous academic year
 
       - title: Phi Beta Kappa
         tags: [short]
@@ -152,10 +161,10 @@ sections:
       - title: National AP Scholar
         dates: July 2020
 
-      - title: National Merit Scholarship
-        tags: [short]
-        dates: May 2020
-        paren: awarded to rougly 1 percent of high-school seniors in the U.S.
+      # - title: National Merit Scholarship
+      #   tags: [short]
+      #   dates: May 2020
+      #   paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
   - title: Skills
     items:
@@ -163,17 +172,18 @@ sections:
         tags: [short]
         notes:
           Python, Rust, R, JavaScript, TypeScript, Swift, Lua, git, Docker,
-          \LaTeX.
+          \LaTeX, SQL.
 
       - title: Cryptography
         notes: Rust, zero-knowledge proofs, dalek-crypto, arkworks, OpenSSL.
 
-      - title: Data Science and Machine Learning
+      - title: Data Science and Visualization
         tags: [short]
-        notes: NumPy, pandas, R, PyTorch, TensorFlow, scikit-learn, SQL.
+        notes: R (tidyverse, Shiny, ggplot2), Python (Pandas, Polars, NumPy), JavaScript (d3.js)
 
-      - title: Data Visualization
-        notes: ggplot2, matplotlib, d3.js.
+      - title: Machine Learning
+        tags: [short]
+        notes: scikit-learn, tidymodels, PyTorch, TensorFlow
 
       - title: Web Development
         notes: React, Next.js, Tailwind CSS, TypeScript.
@@ -273,8 +283,8 @@ sections:
       - title: TODO.swift
         github: todo.swift
         bullets:
-          - A command line app to view and add to your Apple reminders with changes
-            synced across all your devices.
+          - A command line app to view and add to your Apple reminders with
+            changes synced across all your devices.
 
       - title: CV
         github: cv
@@ -306,4 +316,3 @@ sections:
       photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
       Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
       midwest.
-
