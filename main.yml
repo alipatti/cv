@@ -1,7 +1,7 @@
 about:
   name: Alistair Pattison
   phone: (651) 706-6713
-  email: pattisona@carleton.edu # TODO: update this
+  email: alistairpattison@gmail.com # TODO: update this
   github: alipatti
   linkedin: alipatti
   website: alipatti.com
@@ -20,9 +20,13 @@ sections:
           # - "Theses: \\textit{Sports as Sequences: Win Prediction with Deep
           # Learning} (stats) and \\textit{The Class Group} (math)."
 
+      - title: St. Paul Como Park High School
+        subtitle: H.S. Diploma
+        dates: Sep 2016 - June 2020
+
       # - title: University of Minnesota
       #   subtitle: Talented Youth Mathematics Program
-      #   dates: 2015 -- 2020
+      #   dates: Sep 2015 -- June 2020
       #   bullets:
       #     - Completed selective high-school math program culminating in six
       #       semesters of set theory, vector calculus, linear algebra, and
@@ -35,16 +39,16 @@ sections:
         dates: July 2024 -- present
         tags: [short]
         bullets:
-          - Research assistant for the Opportunity Insights group under professors Raj Chetty, Nathan
-            Hendren, and John Friedman.
+          - Research assistant for the Opportunity Insights group under
+            professors Raj Chetty, Nathan Hendren, and John Friedman.
 
-      - title: Research Assistant
-        subtitle: National Bureau of Economic Research
-        dates: July 2024 -- present
+      # - title: Research Assistant
+      #   subtitle: National Bureau of Economic Research
+      #   dates: July 2024 -- present
 
-      - title: Contractor
-        subtitle: United States Census Bureau
-        dates: July 2024 -- present
+      # - title: Contractor
+      #   subtitle: United States Census Bureau
+      #   dates: July 2024 -- present
 
       - title: Cryptography Research Assistant
         subtitle: University of Minnesota
@@ -148,7 +152,7 @@ sections:
         dates: June 2023
         paren: one of nine Junior-year inductees, roughly 2 percent of the class
 
-      - title: NSF REU grant
+      - title: NSF REU
         dates: June - August 2023
         paren: funded applied cryptography research at UMN
 
@@ -158,13 +162,12 @@ sections:
         dates: September 2022
         paren: \$30,000 per year for one math major at Carleton
 
-      - title: National AP Scholar
-        dates: July 2020
+      # - title: National AP Scholar
+      #   dates: July 2020
 
-      # - title: National Merit Scholarship
-      #   tags: [short]
-      #   dates: May 2020
-      #   paren: awarded to rougly 1 percent of high-school seniors in the U.S.
+      - title: National Merit Scholarship
+        dates: May 2020
+        paren: awarded to rougly 1 percent of high-school seniors in the U.S.
 
   - title: Skills
     items:
@@ -179,7 +182,9 @@ sections:
 
       - title: Data Science and Visualization
         tags: [short]
-        notes: R (tidyverse, Shiny, ggplot2), Python (Pandas, Polars, NumPy), JavaScript (d3.js)
+        notes:
+          R (tidyverse, Shiny, ggplot2), Python (Pandas, Polars, NumPy),
+          JavaScript (d3.js)
 
       - title: Machine Learning
         tags: [short]
@@ -205,8 +210,8 @@ sections:
 
       - title: Math
         notes:
-          algebra (Galois and repr. theory), analysis, combinatorics, topology,
-          number theory (algebraic and analytic).
+          algebra I, real analysis I, combinatorics, topology, algebraic number
+          theory, analytic number theory, galois theory, representation theory.
 
   - title: Publications and Preprints
     items:
@@ -226,6 +231,15 @@ sections:
           - At Carleton, I served as David's TA, worked in his research group,
             and studied abroad with him in Cambridge.
 
+      - title: Jenny Bourne
+        subtitle:
+          Raymond Plank Professor of Incentive Economics, Carleton College
+        phone: 507-222-4007
+        email: jbourne@carleton.edu
+        bullets:
+          - Jenny was one of my favorite undergraduate professors and nudged me
+            towards economics/policy work.
+
       - title: Nicholas Hopper
         subtitle:
           Director of Undergraduate Studies and Professor of Computer Science,
@@ -234,85 +248,85 @@ sections:
         email: hoppernj@umn.edu
         bullets:
           - I spent the Fall of 2022 and the Summer of 2023 working with Nick
-            his research group at UMN.
+            in his research group at UMN.
 
       - title: Rafe Jones
-        phone: 507-222-4450
-        email: rfjones@carleton.edu
         subtitle:
           Department Chair and Professor of Mathematics, Carleton College
+        phone: 507-222-4450
+        email: rfjones@carleton.edu
         bullets:
           - Rafe was my undergraduate department chair and a member of my senior
             thesis committee.
 
-  - title: Selected Projects
-    items:
-      - title: The Class Group
-        github: math-comps
-        bullets:
-          - A ground-up introduction to analytic number theory written as a
-            senior thesis for the Carleton math department.
-
-      - title: In-Game Win Prediction with Deep Learning
-        github: stats-comps
-        bullets:
-          - A recurrent neural net that uses sequences of in-game events like
-            passes and shots to predict the results of in-progress soccer and
-            basketball games. Writing as a senior thesis for the Carleton
-            statistics department.
-
-      - title: Wordle Bot
-        github: wordle-bot
-        bullets:
-          - An information-theory powered bot that beats Wordle in about 3.5
-            moves on average.
-
-      - title: Ole or Carl?
-        github: ole-or-carl
-        bullets:
-          - Uses deep learning and an SVM to test the validity of a
-            long-standing stereotype that students from Northfield's two
-            colleges look meaningfully different.
-
-      - title: In Passing
-        github: in-passing
-        bullets:
-          - An interactive visualization of passing and touch data from the 2022
-            FIFA Men's World Cup.
-
-      - title: TODO.swift
-        github: todo.swift
-        bullets:
-          - A command line app to view and add to your Apple reminders with
-            changes synced across all your devices.
-
-      - title: CV
-        github: cv
-        bullets:
-          - An overengineered pipeline for generating this document (and others)
-            from a YAML file.
-
-      - title: OEIS.rs
-        github: oeis.rs
-        bullets:
-          - A command line app to interactively search the Online Encyclopedia
-            of Integer Sequences.
-
-      - title: Carleton Course Classifier
-        github: course-classifier
-        bullets:
-          - A TensorFlow language model to predict a class's department and
-            course number given its catalog description.
-
-      - title: Smart Garage
-        github: homekit-garage-door
-        bullets:
-          - Integrates my parents' 40-year-old garage door opener with Apple
-            HomeKit using an ESP32 microcontroller.
+  # - title: Selected Projects
+  #   items:
+  #     - title: The Class Group
+  #       github: math-comps
+  #       bullets:
+  #         - A ground-up introduction to analytic number theory written as a
+  #           senior thesis for the Carleton math department.
+  #
+  #     - title: In-Game Win Prediction with Deep Learning
+  #       github: stats-comps
+  #       bullets:
+  #         - A recurrent neural net that uses sequences of in-game events like
+  #           passes and shots to predict the results of in-progress soccer and
+  #           basketball games. Writing as a senior thesis for the Carleton
+  #           statistics department.
+  #
+  #     - title: Wordle Bot
+  #       github: wordle-bot
+  #       bullets:
+  #         - An information-theory powered bot that beats Wordle in about 3.5
+  #           moves on average.
+  #
+  #     - title: Ole or Carl?
+  #       github: ole-or-carl
+  #       bullets:
+  #         - Uses deep learning and an SVM to test the validity of a
+  #           long-standing stereotype that students from Northfield's two
+  #           colleges look meaningfully different.
+  #
+  #     - title: In Passing
+  #       github: in-passing
+  #       bullets:
+  #         - An interactive visualization of passing and touch data from the 2022
+  #           FIFA Men's World Cup.
+  #
+  #     - title: TODO.swift
+  #       github: todo.swift
+  #       bullets:
+  #         - A command line app to view and add to your Apple reminders with
+  #           changes synced across all your devices.
+  #
+  #     - title: CV
+  #       github: cv
+  #       bullets:
+  #         - An overengineered pipeline for generating this document (and others)
+  #           from a YAML file.
+  #
+  #     - title: OEIS.rs
+  #       github: oeis.rs
+  #       bullets:
+  #         - A command line app to interactively search the Online Encyclopedia
+  #           of Integer Sequences.
+  #
+  #     - title: Carleton Course Classifier
+  #       github: course-classifier
+  #       bullets:
+  #         - A TensorFlow language model to predict a class's department and
+  #           course number given its catalog description.
+  #
+  #     - title: Smart Garage
+  #       github: homekit-garage-door
+  #       bullets:
+  #         - Integrates my parents' 40-year-old garage door opener with Apple
+  #           HomeKit using an ESP32 microcontroller.
 
   - title: Personal Interests
     summary:
       Running, the Minnesota Timberwolves, the Premier League, backpacking,
       photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
       Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
-      midwest.
+      midwest (but not Wisconsin), tomfoolery.
