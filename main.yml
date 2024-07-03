@@ -1,7 +1,7 @@
 about:
   name: Alistair Pattison
   phone: (651) 706-6713
-  email: alistairpattison@gmail.com # TODO: update this
+  email: apattison@g.harvard.edu
   github: alipatti
   linkedin: alipatti
   website: alipatti.com
@@ -42,9 +42,9 @@ sections:
           - Research assistant for the Opportunity Insights group under
             professors Raj Chetty, Nathan Hendren, and John Friedman.
 
-      # - title: Research Assistant
-      #   subtitle: National Bureau of Economic Research
-      #   dates: July 2024 -- present
+      - title: Research Assistant
+        subtitle: National Bureau of Economic Research
+        dates: July 2024 -- present
 
       # - title: Contractor
       #   subtitle: United States Census Bureau
