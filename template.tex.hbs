@@ -4,8 +4,9 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fontawesome}
 \usepackage[T1]{fontenc}
-\usepackage[margin=4em]{geometry}
 \usepackage{etoolbox}
+
+\usepackage[margin=4em,bottom=5em]{geometry}
 
 \usepackage[
 	maxnames=100,
@@ -50,6 +51,19 @@
 	rightmargin=1.5em,
 	topsep=-.2em,
 	itemsep=-.3em,
+}
+
+\usepackage{ifthen}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt} % remove line from header
+\fancyhf{} % clear header and footer
+\cfoot{
+	\footnotesize \itshape
+	last updated \today
+	\ifthenelse{\pageref{LastPage}=1}{}{
+	   (page \thepage\ of \pageref{LastPage})}
 }
 
 \renewcommand{\baselinestretch}{1.05} 
