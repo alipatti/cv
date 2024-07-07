@@ -78,7 +78,8 @@ sections:
         bullets:
           - Held office hours, designed assignments, and graded homework for
             various math and computer science classes.
-          - "Courses include data visualization (2x), algorithms, artificial intelligence, abstract algebra, and real analysis."
+          - "Courses include data visualization (2x), algorithms, artificial
+            intelligence, abstract algebra, and real analysis."
           # - "Courses: artificial intelligence (CS 321), data visualization (CS
           #   314), algorithms (CS 252), abstract algebra (MATH 352), real
           #   analysis (MATH 321), math structures (MATH 236), and calculus II
@@ -209,8 +210,9 @@ sections:
 
       - title: Math
         notes:
-          group theory, ring theory, field theory, real analysis, combinatorics, topology, algebraic number
-          theory, analytic number theory, galois theory, representation theory.
+          group theory, ring theory, field theory, real analysis, combinatorics,
+          topology, algebraic number theory, analytic number theory, galois
+          theory, representation theory.
 
   - title: Publications and Preprints
     items:
@@ -258,70 +260,50 @@ sections:
         #   - Rafe was my undergraduate department chair and a member of my senior
         #     thesis committee.
 
-  # - title: Selected Projects
-  #   items:
-  #     - title: The Class Group
-  #       github: math-comps
-  #       bullets:
-  #         - A ground-up introduction to analytic number theory written as a
-  #           senior thesis for the Carleton math department.
-  #
-  #     - title: In-Game Win Prediction with Deep Learning
-  #       github: stats-comps
-  #       bullets:
-  #         - A recurrent neural net that uses sequences of in-game events like
-  #           passes and shots to predict the results of in-progress soccer and
-  #           basketball games. Writing as a senior thesis for the Carleton
-  #           statistics department.
-  #
-  #     - title: Wordle Bot
-  #       github: wordle-bot
-  #       bullets:
-  #         - An information-theory powered bot that beats Wordle in about 3.5
-  #           moves on average.
-  #
-  #     - title: Ole or Carl?
-  #       github: ole-or-carl
-  #       bullets:
-  #         - Uses deep learning and an SVM to test the validity of a
-  #           long-standing stereotype that students from Northfield's two
-  #           colleges look meaningfully different.
-  #
-  #     - title: In Passing
-  #       github: in-passing
-  #       bullets:
-  #         - An interactive visualization of passing and touch data from the 2022
-  #           FIFA Men's World Cup.
-  #
-  #     - title: TODO.swift
-  #       github: todo.swift
-  #       bullets:
-  #         - A command line app to view and add to your Apple reminders with
-  #           changes synced across all your devices.
-  #
-  #     - title: CV
-  #       github: cv
-  #       bullets:
-  #         - An overengineered pipeline for generating this document (and others)
-  #           from a YAML file.
-  #
-  #     - title: OEIS.rs
-  #       github: oeis.rs
-  #       bullets:
-  #         - A command line app to interactively search the Online Encyclopedia
-  #           of Integer Sequences.
-  #
-  #     - title: Carleton Course Classifier
-  #       github: course-classifier
-  #       bullets:
-  #         - A TensorFlow language model to predict a class's department and
-  #           course number given its catalog description.
-  #
-  #     - title: Smart Garage
-  #       github: homekit-garage-door
-  #       bullets:
-  #         - Integrates my parents' 40-year-old garage door opener with Apple
-  #           HomeKit using an ESP32 microcontroller.
+  - title: Selected Projects
+    items:
+      - title: In-Game Win Prediction with Deep Learning
+        github: stats-comps
+        bullets:
+          - A deep learning model that uses sequences of in-game events like
+            passes and shots to predict the results of in-progress basketball
+            games. Written as a senior thesis for the Carleton statistics
+            department.
+
+      - title: Wordle Bot
+        github: wordle-bot
+        bullets:
+          - An information-theory powered bot that beats Wordle in about 3.5
+            moves on average.
+
+      - title: Ole or Carl?
+        github: ole-or-carl
+        bullets:
+          - Uses deep learning and an SVM to differentiate between students from
+            Northfield's two rival colleges.
+
+      - title: In Passing
+        github: in-passing
+        bullets:
+          - An interactive visualization of passing and touch data from the 2022
+            FIFA Men's World Cup.
+
+      - title: TODO.swift
+        github: todo.swift
+        bullets:
+          - A command line app to view and add to your Apple reminders.
+
+      # - title: OEIS.rs
+      #   github: oeis.rs
+      #   bullets:
+      #     - A command line app to interactively search the Online Encyclopedia
+      #       of Integer Sequences.
+
+      - title: Smart Garage
+        github: homekit-garage-door
+        bullets:
+          - Integrates my parents' 40-year-old garage door opener with Apple
+            HomeKit using an ESP32 microcontroller.
 
   - title: Personal Interests
     summary:
