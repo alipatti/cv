@@ -6,7 +6,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{etoolbox}
 
-\usepackage[margin=4em,bottom=5em]{geometry}
+\usepackage[margin=4em,footskip=1.5em]{geometry}
 
 \usepackage[
 	maxnames=100,
@@ -60,10 +60,13 @@
 \renewcommand{\headrulewidth}{0pt} % remove line from header
 \fancyhf{} % clear header and footer
 \cfoot{
+	\color{gray}
 	\footnotesize \itshape
+	$\sim$
 	last updated \today
 	\ifthenelse{\pageref{LastPage}=1}{}{
 	   (page \thepage\ of \pageref{LastPage})}
+	$\sim$
 }
 
 \renewcommand{\baselinestretch}{1.05} 
