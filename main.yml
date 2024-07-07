@@ -76,10 +76,9 @@ sections:
         dates: March 2021 -- June 2024
         tags: [short]
         bullets:
-          - Held office hours, desiged assignments, and graded homework for
+          - Held office hours, designed assignments, and graded homework for
             various math and computer science classes.
-          - "Selected courses: data visualization (2x), algorithms, making
-            decisions with AI, abstract algebra, real analysis."
+          - "Courses include data visualization (2x), algorithms, artificial intelligence, abstract algebra, and real analysis."
           # - "Courses: artificial intelligence (CS 321), data visualization (CS
           #   314), algorithms (CS 252), abstract algebra (MATH 352), real
           #   analysis (MATH 321), math structures (MATH 236), and calculus II
@@ -210,7 +209,7 @@ sections:
 
       - title: Math
         notes:
-          algebra I, real analysis I, combinatorics, topology, algebraic number
+          group theory, ring theory, field theory, real analysis, combinatorics, topology, algebraic number
           theory, analytic number theory, galois theory, representation theory.
 
   - title: Publications and Preprints
@@ -227,18 +226,18 @@ sections:
           Associate Provost and Professor of Computer Science, Carleton College
         phone: 507-222-4300
         email: dln@carleton.edu.
-        bullets:
-          - At Carleton, I served as David's TA, worked in his research group,
-            and studied abroad with him in Cambridge.
+        # bullets:
+        #   - At Carleton, I served as David's TA, worked in his research group,
+        #     and studied abroad with him in Cambridge.
 
       - title: Jenny Bourne
         subtitle:
           Raymond Plank Professor of Incentive Economics, Carleton College
         phone: 507-222-4007
         email: jbourne@carleton.edu
-        bullets:
-          - Jenny was one of my favorite undergraduate professors and nudged me
-            towards economics/policy work.
+        # bullets:
+        #   - Jenny was one of my favorite undergraduate professors and nudged me
+        #     towards economics/policy work.
 
       - title: Nicholas Hopper
         subtitle:
@@ -246,18 +245,18 @@ sections:
           University of Minnesota
         phone: 612-626-1284
         email: hoppernj@umn.edu
-        bullets:
-          - I spent the Fall of 2022 and the Summer of 2023 working with Nick
-            in his research group at UMN.
+        # bullets:
+        #   - I spent the Fall of 2022 and the Summer of 2023 working with Nick
+        #     in his research group at UMN.
 
       - title: Rafe Jones
         subtitle:
           Department Chair and Professor of Mathematics, Carleton College
         phone: 507-222-4450
         email: rfjones@carleton.edu
-        bullets:
-          - Rafe was my undergraduate department chair and a member of my senior
-            thesis committee.
+        # bullets:
+        #   - Rafe was my undergraduate department chair and a member of my senior
+        #     thesis committee.
 
   # - title: Selected Projects
   #   items:
