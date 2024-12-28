@@ -1,0 +1,12 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "build": "deno index.js",
+    "dev": "deno --watch index.js"
+  },
+  "imports": {
+    "@std/async": "jsr:@std/async@^1.0.9",
+    "handlebars": "npm:handlebars@^4.7.8",
+    "spinnies": "npm:spinnies@^0.5.1"
+  }
+}

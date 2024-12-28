@@ -1,18 +1,13 @@
-import { readFile, copyFile, writeFile, mkdir } from "fs/promises";
-import yaml from "js-yaml";
 import hbs from "handlebars";
 import Spinnies from "spinnies";
-import { promisify } from "util";
-import { exec as execCallback } from "child_process";
+import { parse } from "jsr:@std/yaml";
 
-const exec = promisify(execCallback);
-
-const OUT_DIR = "pdfs";
-const TEMP_DIR = ".temp";
+const OUTPUT_PDF_DIRECTORY = "pdfs";
 const CV_BASE_NAME = "pattison-cv";
 
 const getContent = async (tag) => {
-  const content = yaml.load(await readFile("main.yml"));
+  const content = parse(await Deno.readTextFile("main.yml"));
+
   if (!tag || tag === "full") return content;
   return filterContent(content, tag);
 };
@@ -40,28 +35,50 @@ const filterContent = (content, tag) => ({
 });
 
 const buildTex = async (tag) => {
-  const content = await getContent(tag);
-
   // generate tex source
-  const template = (await readFile("template.tex.hbs")).toString();
-  const latex = hbs.compile(template)(content);
-
-  // setup file structure
-  const workingDir = `${TEMP_DIR}/${tag}`;
-  const fileNameRoot = `${CV_BASE_NAME}-${tag}`;
-  await mkdir(`${workingDir}`, { recursive: true });
-  await writeFile(`${workingDir}/${fileNameRoot}.tex`, latex);
-  await copyFile("publications.bib", `${workingDir}/publications.bib`);
+  const template = await Deno.readTextFile("template.tex.hbs");
+  const texString = hbs.compile(template)(await getContent(tag));
+  const texBytes = new TextEncoder().encode(texString);
 
   // build pdf
-  await exec(`latexmk -cd ${workingDir}/${fileNameRoot}.tex`);
+  const output_dir = `/tmp/com.alipatti.cv/${tag}`;
+  await Deno.mkdir(output_dir, { recursive: true });
+
+  // spawn tectonic subprocess
+  const tectonic = new Deno.Command("tectonic", {
+    args: [
+      "-X",
+      "compile",
+      "--outdir",
+      output_dir,
+      "--keep-intermediates",
+      "-",
+    ],
+    stdin: "piped",
+    stderr: "piped",
+    stdout: "piped",
+  }).spawn();
+
+  // pipe tex to stdin
+  {
+    const writer = tectonic.stdin.getWriter();
+    await writer.write(texBytes);
+    await writer.close();
+  }
+
+  // await compilation
+  const { success, stderr } = await tectonic.output();
+
+  if (!success) {
+    throw new Error(
+      `Failed to compile ${tag}:\n${new TextDecoder().decode(stderr)}`,
+    );
+  }
 
   // move pdf to output directory
-  await mkdir(`${OUT_DIR}`, { recursive: true });
-  await copyFile(
-    `${workingDir}/${fileNameRoot}.pdf`,
-    `${OUT_DIR}/${fileNameRoot}.pdf`
-  );
+  const outputPdf = `${OUTPUT_PDF_DIRECTORY}/${CV_BASE_NAME}-${tag}.pdf`;
+  await Deno.mkdir(`${OUTPUT_PDF_DIRECTORY}`, { recursive: true });
+  await Deno.copyFile(`${output_dir}/texput.pdf`, outputPdf);
 };
 
 const main = async () => {
@@ -75,7 +92,7 @@ const main = async () => {
       spinnies.add(tag);
       await buildTex(tag);
       spinnies.succeed(tag);
-    })
+    }),
   );
 };
 
