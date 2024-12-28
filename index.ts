@@ -3,24 +3,16 @@
 import hbs from "handlebars";
 import Spinnies from "spinnies";
 import { parse } from "jsr:@std/yaml";
-
-const OUTPUT_PDF_DIRECTORY = "pdfs";
-const CV_BASE_NAME = "pattison-cv";
+import { Command, Option, runExit } from "clipanion";
+import chalk from "chalk";
 
 type Content = { sections: Section[]; about: About };
 type Section = { items: Item[] };
 type About = any;
 type Item = any;
 
-const getContent = async (tag?: string) => {
-  const content = parse(await Deno.readTextFile("main.yml")) as Content;
-
-  if (!tag || tag === "full") return content;
-  return filterContent(content, tag);
-};
-
-const getTags = async () =>
-  (await getContent()).sections
+const getTags = async (content: Content) =>
+  content.sections
     .map((section) => section.items?.map((item) => item.tags)) // find all tags in yaml
     .flat(2) // flatten
     .filter((tag, i, array) => array.indexOf(tag) === i) // remove dups
@@ -38,26 +30,26 @@ const filterContent = (content: Content, tag: string) => ({
     .filter((section) => section.items?.length > 0),
 });
 
-const buildTex = async (tag: string) => {
-  // generate tex source
-  const template = await Deno.readTextFile("template.tex.hbs");
-  const texString = hbs.compile(template)(await getContent(tag));
+const createTexSource = (
+  content: Content,
+  tag: string,
+  template: HandlebarsTemplateDelegate
+): Uint8Array => {
+  const texString = template(filterContent(content, tag));
   const texBytes = new TextEncoder().encode(texString);
 
-  // build pdf
-  const output_dir = `/tmp/com.alipatti.cv/${tag}`;
-  await Deno.mkdir(output_dir, { recursive: true });
+  return texBytes;
+};
+
+const renderTexToPdf = async (
+  texSource: Uint8Array,
+  outputFilepath: string
+) => {
+  const outputDirectory = await Deno.makeTempDir();
 
   // spawn tectonic subprocess
   const tectonic = new Deno.Command("tectonic", {
-    args: [
-      "-X",
-      "compile",
-      "--outdir",
-      output_dir,
-      "--keep-intermediates",
-      "-",
-    ],
+    args: ["-X", "compile", "--outdir", outputDirectory, "-"],
     stdin: "piped",
     stderr: "piped",
     stdout: "piped",
@@ -66,7 +58,7 @@ const buildTex = async (tag: string) => {
   // pipe tex to stdin
   {
     const writer = tectonic.stdin.getWriter();
-    await writer.write(texBytes);
+    await writer.write(texSource);
     await writer.close();
   }
 
@@ -75,29 +67,84 @@ const buildTex = async (tag: string) => {
 
   if (!success) {
     throw new Error(
-      `Failed to compile ${tag}:\n${new TextDecoder().decode(stderr)}`,
+      `Failed to compile pdf:\n${new TextDecoder().decode(stderr)}`
     );
   }
 
   // move pdf to output directory
-  const outputPdf = `${OUTPUT_PDF_DIRECTORY}/${CV_BASE_NAME}-${tag}.pdf`;
-  await Deno.mkdir(`${OUTPUT_PDF_DIRECTORY}`, { recursive: true });
-  await Deno.copyFile(`${output_dir}/texput.pdf`, outputPdf);
+  await Deno.copyFile(`${outputDirectory}/texput.pdf`, outputFilepath);
 };
 
-const main = async () => {
-  const tags = await getTags();
-  tags.push("full");
+runExit(
+  class CompileCommand extends Command {
+    contentFile = Option.String("--input", "main.yml", {
+      description: "File from which to read CV information.",
+    });
 
-  const spinnies = new Spinnies();
+    outputDirectory = Option.String("--input", "pdfs/", {
+      description: "Where to save rendered pdfs.",
+    });
 
-  await Promise.all(
-    tags.map(async (tag) => {
-      spinnies.add(tag);
-      await buildTex(tag);
-      spinnies.succeed(tag);
-    }),
-  );
-};
+    tags = Option.Array("--tags", {
+      description: "Which versions to render.",
+    });
 
-await main();
+    all = Option.Boolean("--all", false, {
+      description: "Render all versions.",
+    });
+
+    prefix = Option.String("--prefix", "", {
+      description: "String to prefix to pdf file name (e.g. your last name)",
+    });
+
+    templateFile = Option.String("--template", "template.tex.hbs", {
+      description: "Handlebars LaTeX template file.",
+    });
+
+    async execute() {
+      // load content and template
+      const content = parse(await Deno.readTextFile("main.yml")) as Content;
+      const template = hbs.compile(await Deno.readTextFile(this.templateFile));
+
+      // process args
+      if (!this.tags) {
+        this.tags = ["full"];
+      }
+
+      if (this.all) {
+        this.tags = await getTags(content);
+        this.tags.push("full");
+      }
+
+      this.outputDirectory = this.outputDirectory.replace("/?$", "/"); // ensure tailing slash
+
+      // print intention
+      this.context.stdout.write(
+        `Rendering CV from ${chalk.bold(this.contentFile)}\n`
+      );
+
+      // compile pdfs
+      await Deno.mkdir(`${this.outputDirectory}`, { recursive: true });
+      const spinnies = new Spinnies();
+
+      const renderPromises = this.tags.map(async (tag) => {
+        const outputFilepath =
+          this.outputDirectory +
+          `${this.prefix.toString()}${this.prefix ? "-" : ""}` +
+          `cv-${tag}.pdf`;
+
+        spinnies.add(tag, {
+          text: `${tag} ⇢ ${chalk.white(outputFilepath)}`,
+          succeedColor: "white",
+        });
+
+        const tex = createTexSource(content, tag, template);
+        await renderTexToPdf(tex, outputFilepath);
+
+        spinnies.succeed(tag);
+      });
+
+      await Promise.all(renderPromises);
+    }
+  }
+);

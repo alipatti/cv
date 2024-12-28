@@ -1,16 +1,14 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@std/async@*": "1.0.9",
     "jsr:@std/yaml@*": "1.0.5",
     "npm:@types/node@*": "22.5.4",
+    "npm:chalk@^5.4.1": "5.4.1",
+    "npm:clipanion@^4.0.0-rc.4": "4.0.0-rc.4_typanion@3.14.0",
     "npm:handlebars@^4.7.8": "4.7.8",
     "npm:spinnies@~0.5.1": "0.5.1"
   },
   "jsr": {
-    "@std/async@1.0.9": {
-      "integrity": "c6472fd0623b3f3daae023cdf7ca5535e1b721dfbf376562c0c12b3fb4867f91"
-    },
     "@std/yaml@1.0.5": {
       "integrity": "71ba3d334305ee2149391931508b2c293a8490f94a337eef3a09cade1a2a2742"
     }
@@ -39,10 +37,19 @@
         "supports-color"
       ]
     },
+    "chalk@5.4.1": {
+      "integrity": "sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w=="
+    },
     "cli-cursor@3.1.0": {
       "integrity": "sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==",
       "dependencies": [
         "restore-cursor"
+      ]
+    },
+    "clipanion@4.0.0-rc.4_typanion@3.14.0": {
+      "integrity": "sha512-CXkMQxU6s9GklO/1f714dkKBMu1lopS1WFF0B8o4AxPykR1hpozxSiUZ5ZUeBjfPgCWqbcNOtZVFhB8Lkfp1+Q==",
+      "dependencies": [
+        "typanion"
       ]
     },
     "color-convert@1.9.3": {
@@ -101,7 +108,7 @@
     "spinnies@0.5.1": {
       "integrity": "sha512-WpjSXv9NQz0nU3yCT9TFEOfpFrXADY9C5fG6eAJqixLhvTX1jP3w92Y8IE5oafIe42nlF9otjhllnXN/QCaB3A==",
       "dependencies": [
-        "chalk",
+        "chalk@2.4.2",
         "cli-cursor",
         "strip-ansi"
       ]
@@ -117,6 +124,9 @@
       "dependencies": [
         "has-flag"
       ]
+    },
+    "typanion@3.14.0": {
+      "integrity": "sha512-ZW/lVMRabETuYCd9O9ZvMhAh8GslSqaUjxmK/JLPCh6l73CvLBiuXswj/+7LdnWOgYsQ130FqLzFz5aGT4I3Ug=="
     },
     "uglify-js@3.19.3": {
       "integrity": "sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ=="
@@ -137,7 +147,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@std/async@^1.0.9",
+      "npm:chalk@^5.4.1",
+      "npm:clipanion@^4.0.0-rc.4",
       "npm:handlebars@^4.7.8",
       "npm:spinnies@~0.5.1"
     ]
