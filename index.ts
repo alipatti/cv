@@ -1,3 +1,5 @@
+#!/usr/bin/env deno --allow-all
+
 import hbs from "handlebars";
 import Spinnies from "spinnies";
 import { parse } from "jsr:@std/yaml";
@@ -5,8 +7,13 @@ import { parse } from "jsr:@std/yaml";
 const OUTPUT_PDF_DIRECTORY = "pdfs";
 const CV_BASE_NAME = "pattison-cv";
 
-const getContent = async (tag) => {
-  const content = parse(await Deno.readTextFile("main.yml"));
+type Content = { sections: Section[]; about: About };
+type Section = { items: Item[] };
+type About = any;
+type Item = any;
+
+const getContent = async (tag?: string) => {
+  const content = parse(await Deno.readTextFile("main.yml")) as Content;
 
   if (!tag || tag === "full") return content;
   return filterContent(content, tag);
@@ -19,22 +26,19 @@ const getTags = async () =>
     .filter((tag, i, array) => array.indexOf(tag) === i) // remove dups
     .filter((val) => val !== undefined); // remove undefined
 
-const filterSections = (sections, tag) =>
-  sections
-    // include only tagged items
+const filterContent = (content: Content, tag: string) => ({
+  about: content.about,
+  sections: content.sections
+    // include only item that have been tagged
     .map(({ items, ...rest }) => ({
       items: items?.filter((item) => item.tags?.includes(tag)),
       ...rest,
     }))
     // remove sections with no items
-    .filter((section) => section.items?.length > 0);
-
-const filterContent = (content, tag) => ({
-  about: content.about,
-  sections: filterSections(content.sections, tag),
+    .filter((section) => section.items?.length > 0),
 });
 
-const buildTex = async (tag) => {
+const buildTex = async (tag: string) => {
   // generate tex source
   const template = await Deno.readTextFile("template.tex.hbs");
   const texString = hbs.compile(template)(await getContent(tag));
