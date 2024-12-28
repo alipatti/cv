@@ -23,7 +23,7 @@ const filterContent = (content: Content, tag: string) => ({
   sections: content.sections
     // include only item that have been tagged
     .map(({ items, ...rest }) => ({
-      items: items?.filter((item) => item.tags?.includes(tag)),
+      items: items?.filter((item) => item.tags?.includes(tag) || tag == "full"),
       ...rest,
     }))
     // remove sections with no items
