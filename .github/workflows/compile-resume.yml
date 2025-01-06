@@ -19,12 +19,6 @@ jobs:
         with:
           deno-version: v2.x
 
-      - name: Tectonic package cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/Tectonic
-          key: ${{ runner.os }}-tectonic
-
       - name: Tectonic setup
         uses: wtfjoke/setup-tectonic@v3
         with:
