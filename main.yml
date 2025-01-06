@@ -10,19 +10,31 @@ sections:
   - title: Education
     items:
       - title: Carleton College
-        subtitle: B.A. in Mathematics and Statistics
+        subtitle: B.A. in Mathematics and Statistics (summa cum laude)
         dates: September 2020 -- June 2024
         tags: [short]
         bullets:
-          - Graduated \textit{summa cum laude} (top 2 percent) with 3.99 GPA.
-          - Captain of varsity track and field. Studied abroad at the University
-            of Cambridge.
-          # - "Theses: \\textit{Sports as Sequences: Win Prediction with Deep
-          # Learning} (stats) and \\textit{The Class Group} (math)."
+          - "3.99 GPA, National Merit Scholarship, Phi Beta Kappa (junior year),
+            Noyes Prize."
+          # - Studied abroad at the University of Cambridge.
+          - "Captain of varsity track and field, conference champion at 4x 800m,
+            three-time all-conference, Kelly Award."
+          - "**Relevant coursework**: analytic and algebraic number theory,
+            Galois theory, representation theory, real analysis, combinatorics,
+            topology, machine learing, micro and labor economics, algorithms,
+            cryptography, natural language processing, quantum computing."
+          - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
+            (statistics) and _The Class Group_ (math)."
 
-      - title: St. Paul Como Park High School
-        subtitle: H.S. Diploma
-        dates: Sep 2016 - June 2020
+      # - title: Harvard University
+      #   subtitle: Non-degree-seeking student
+      #   dates: September 2024 - present
+      #   bullets:
+      #     - Audit Ph.D.-level classes in statistics and applied math.
+
+      # - title: St. Paul Como Park High School
+      #   subtitle: H.S. Diploma
+      #   dates: Sep 2016 - June 2020
 
       # - title: University of Minnesota
       #   subtitle: Talented Youth Mathematics Program
@@ -32,23 +44,24 @@ sections:
       #       semesters of set theory, vector calculus, linear algebra, and
       #       differential equations.
 
-  - title: Work Experience
+  - title: Research Experience
     items:
+      # - title: Research Assistant
+      #   subtitle: National Bureau of Economic Research
+      #   dates: July 2024 -- present
+
       - title: Predoctoral Fellow
         subtitle: Harvard University
         dates: July 2024 -- present
         tags: [short]
+
         bullets:
-          - Research assistant for the Opportunity Insights group under
-            professors Raj Chetty, Nathan Hendren, and John Friedman.
-
-      - title: Research Assistant
-        subtitle: National Bureau of Economic Research
-        dates: July 2024 -- present
-
-      # - title: Contractor
-      #   subtitle: United States Census Bureau
-      #   dates: July 2024 -- present
+          - Research the changing relationship between race, socioeconomic
+            status, and life expectancy in the United States.
+          - Supervised by Raj Chetty (Harvard), John Friedman (Brown), and
+            Michael Stepner (Toronto).
+          # - Co-authored a paper to appear in the Journal of the American Medical
+          #   Association.
 
       - title: Cryptography Research Assistant
         subtitle: University of Minnesota
@@ -65,25 +78,11 @@ sections:
         dates: September 2023 -- June 2024
         tags: [short]
         bullets:
-          - Studied a novel algorithms problem inspired by clustering survey
+          - Studied a novel NP-complete problem inspired by clustering survey
             responses.
           - Developed approximation algorithms and proved inapproximability in
             special cases by reducing to well-studied problems. Supervised by
             Professor David Liben-Nowell.
-
-      - title: Teaching Assistant
-        subtitle: Carleton College
-        dates: March 2021 -- June 2024
-        tags: [short]
-        bullets:
-          - Held office hours, designed assignments, and graded homework for
-            various math and computer science classes.
-          - "Courses include data visualization (2x), algorithms, artificial
-            intelligence, abstract algebra, and real analysis."
-          # - "Courses: artificial intelligence (CS 321), data visualization (CS
-          #   314), algorithms (CS 252), abstract algebra (MATH 352), real
-          #   analysis (MATH 321), math structures (MATH 236), and calculus II
-          #   (MATH 120)."
 
       - title: Research Assistant
         subtitle: LIGO Scientific Collaboration
@@ -93,16 +92,31 @@ sections:
           - Helped maintain a dashboard and SQL database used to filter false
             positives from gravitational wave sensor data.
 
+  - title: Work Experience
+    items:
+      - title: Teaching Assistant
+        subtitle: Carleton College
+        dates: March 2021 -- June 2024
+        tags: [short]
+        bullets:
+          - Held office hours, designed assignments, and graded homework for
+            various math and computer science classes.
+          - Courses include data visualization (2x), algorithms, artificial
+            intelligence, abstract algebra, and real analysis.
+          # - "Courses: artificial intelligence (CS 321), data visualization (CS
+          #   314), algorithms (CS 252), abstract algebra (MATH 352), real
+          #   analysis (MATH 321), math structures (MATH 236), and calculus II
+          #   (MATH 120)."
+
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
         tags: [short]
         bullets:
-          - Worked with interdepartmental task force to make Minnesota's
-            government systems more inclusive of older adults.
-          - Analyzed census data to identify disparities across demographic
-            groups and created interactive visualizations for use by government
-            employees and other consultants.
+          - Analyzed American Community Survey data to identify demographic
+            disparities in housing and internet access.
+          - Created reports and interactive data visualizations for use by
+            government employees and other consultants.
 
       - title: Counselor
         subtitle: YMCA Camp Widjiwagan
@@ -113,8 +127,6 @@ sections:
             wilderness trips across North America.
           - Lead a week-long canoeing trip with a program dedicated to
             increasing diversity in the outdoors community.
-          # - Managed a \$95,000 budget in a team of three and taught basic
-          # nutrition to kids aged 12 to 18.
 
       - title: Dining Hall Worker
         subtitle: Carleton College
@@ -126,188 +138,34 @@ sections:
         dates: November 2018 -- December 2020
         tags: [short]
 
-  - title: Awards and Recognition
-    items:
-      - title: Noyes Prize
-        tags: [short]
-        dates: May 2024
-        paren: awarded to members of senior class on basis of GPA
-
-      - title: Kelly Award
-        tags: [short]
-        dates: May 2024
-        paren: for achievement in collegiate track and field
-
-      - title: Kolenkow-Reitz Fellowship
-        dates: December 2023
-        paren: funded applied cryptography research at UMN
-
-      - title: Dean's List
-        tags: [short]
-        dates: September 2021, 2022, and 2023
-        paren: top 10 percent of class in previous academic year
-
-      - title: Phi Beta Kappa
-        tags: [short]
-        dates: June 2023
-        paren: one of nine Junior-year inductees, roughly 2 percent of the class
-
-      - title: NSF REU
-        dates: June - August 2023
-        paren: funded applied cryptography research at UMN
-
-      - title:
-          James F. Koehler Endowed Scholarship
-          # https://www.carleton.edu/stewardship/2023-funds/endowed/
-        dates: September 2022
-        paren: \$30,000 per year for one math major at Carleton
-
-      # - title: National AP Scholar
-      #   dates: July 2020
-
-      - title: National Merit Scholarship
-        dates: May 2020
-        paren: awarded to rougly 1 percent of high-school seniors in the U.S.
-
   - title: Skills
     items:
       - title: Programming
         tags: [short]
         notes:
-          Python, Rust, R, JavaScript, TypeScript, Swift, Lua, git, Docker,
-          \LaTeX, SQL.
-
-      - title: Cryptography
-        notes: Rust, zero-knowledge proofs, dalek-crypto, arkworks, OpenSSL.
+          Python, Rust, R, \{Java,Type\}Script, Swift, git, Docker, \LaTeX, SQL.
 
       - title: Data Science and Visualization
         tags: [short]
         notes:
-          R (tidyverse, Shiny, ggplot2), Python (Pandas, Polars, NumPy),
-          JavaScript (d3.js)
+          R (tidyverse), Python (skikit-learn, Polars, NumPy), JavaScript
+          (d3.js)
 
       - title: Machine Learning
         tags: [short]
         notes: scikit-learn, tidymodels, PyTorch, TensorFlow
 
-      - title: Web Development
-        notes: React, Next.js, Tailwind CSS, TypeScript.
-
-  - title: Selected Coursework
-    items:
-      - title: Computer Science
-        notes:
-          algorithms, data structures, cryptography, artificial intelligence,
-          natural language processing, quantum computing.
-
-      - title: Economics
-        notes: micro and macro economics, labor economics, price theory.
-
-      - title: Statistics
-        notes:
-          probability, regression, time-series analysis, machine learning, data
-          science, data visualization.
-
-      - title: Math
-        notes:
-          group theory, ring theory, field theory, real analysis, combinatorics,
-          topology, algebraic number theory, analytic number theory, galois
-          theory, representation theory.
-
   - title: Publications and Preprints
     items:
       - citations:
+          - health-inequality
           - cerberus
           - threshold-reporting
           - exemplar
 
-  - title: References
-    items:
-      - title: Daivd Liben-Nowell
-        subtitle:
-          Associate Provost and Professor of Computer Science, Carleton College
-        phone: 507-222-4300
-        email: dln@carleton.edu.
-        # bullets:
-        #   - At Carleton, I served as David's TA, worked in his research group,
-        #     and studied abroad with him in Cambridge.
-
-      - title: Jenny Bourne
-        subtitle:
-          Raymond Plank Professor of Incentive Economics, Carleton College
-        phone: 507-222-4007
-        email: jbourne@carleton.edu
-        # bullets:
-        #   - Jenny was one of my favorite undergraduate professors and nudged me
-        #     towards economics/policy work.
-
-      - title: Nicholas Hopper
-        subtitle:
-          Director of Undergraduate Studies and Professor of Computer Science,
-          University of Minnesota
-        phone: 612-626-1284
-        email: hoppernj@umn.edu
-        # bullets:
-        #   - I spent the Fall of 2022 and the Summer of 2023 working with Nick
-        #     in his research group at UMN.
-
-      - title: Rafe Jones
-        subtitle:
-          Department Chair and Professor of Mathematics, Carleton College
-        phone: 507-222-4450
-        email: rfjones@carleton.edu
-        # bullets:
-        #   - Rafe was my undergraduate department chair and a member of my senior
-        #     thesis committee.
-
-  - title: Selected Projects
-    items:
-      - title: In-Game Win Prediction with Deep Learning
-        github: stats-comps
-        bullets:
-          - A deep learning model that uses sequences of in-game events like
-            passes and shots to predict the results of in-progress basketball
-            games. Written as a senior thesis for the Carleton statistics
-            department.
-
-      - title: Wordle Bot
-        github: wordle-bot
-        bullets:
-          - An information-theory powered bot that beats Wordle in about 3.5
-            moves on average.
-
-      - title: Ole or Carl?
-        github: ole-or-carl
-        bullets:
-          - Uses deep learning and an SVM to differentiate between students from
-            Northfield's two rival colleges.
-
-      - title: In Passing
-        github: in-passing
-        bullets:
-          - An interactive visualization of passing and touch data from the 2022
-            FIFA Men's World Cup.
-
-      - title: TODO.swift
-        github: todo.swift
-        bullets:
-          - A command line app to view and add to your Apple reminders.
-
-      # - title: OEIS.rs
-      #   github: oeis.rs
-      #   bullets:
-      #     - A command line app to interactively search the Online Encyclopedia
-      #       of Integer Sequences.
-
-      - title: Smart Garage
-        github: homekit-garage-door
-        bullets:
-          - Integrates my parents' 40-year-old garage door opener with Apple
-            HomeKit using an ESP32 microcontroller.
-
   - title: Personal Interests
     summary:
-      Running, the Minnesota Timberwolves, the Premier League, backpacking,
-      photography, playing the piano, ultimate frisbee, nordic skiing, Wii Mario
-      Kart, Project Euler, David Sedaris, Curb Your Enthusiasm, the upper
-      midwest (but not Wisconsin), tomfoolery.
+      Running, backpacking, getting my heart broken by perennially-mediocre
+      sports teams, playing the piano, ultimate frisbee, nordic skiing, Wii
+      Mario Kart, Project Euler, the upper midwest (but not Wisconsin), soccer,
+      tomfoolery.
