@@ -12,17 +12,17 @@ sections:
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics (summa cum laude)
         dates: September 2020 -- June 2024
-        tags: [short]
         bullets:
           - "3.99 GPA, National Merit Scholarship, Phi Beta Kappa (junior year),
             Noyes Prize."
-          # - Studied abroad at the University of Cambridge.
           - "Captain of varsity track and field, conference champion at 4x 800m,
             three-time all-conference, Kelly Award."
-          - "**Relevant coursework**: analytic and algebraic number theory,
+          - "**Selected coursework**: analytic and algebraic number theory,
             Galois theory, representation theory, real analysis, combinatorics,
-            topology, machine learing, micro and labor economics, algorithms,
-            cryptography, natural language processing, quantum computing."
+            topology, probability, statistical inference, machine learning,
+            micro and labor economics, algorithms, cryptography, natural
+            language processing, quantum computing."
+          # TODO: split these up?
           - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
             (statistics) and _The Class Group_ (math)."
 
@@ -44,128 +44,125 @@ sections:
       #       semesters of set theory, vector calculus, linear algebra, and
       #       differential equations.
 
-  - title: Research Experience
+  - title: Research
     items:
-      # - title: Research Assistant
-      #   subtitle: National Bureau of Economic Research
-      #   dates: July 2024 -- present
-
       - title: Predoctoral Fellow
         subtitle: Harvard University
-        dates: July 2024 -- present
-        tags: [short]
+        dates: July 2024 -- July 2026
 
         bullets:
-          - Research the changing relationship between race, socioeconomic
-            status, and life expectancy in the United States.
-          - Supervised by Raj Chetty (Harvard), John Friedman (Brown), and
-            Michael Stepner (Toronto).
-          # - Co-authored a paper to appear in the Journal of the American Medical
-          #   Association.
+          - Wrote pipeline to process decades of Census, IRS tax, and SSA
+            mortality data to produce granular estimates of life expectancy by
+            geography, income, race, and sex.
+          - Coauthored a paper on the changing relationship between race,
+            income, and life expectancy in the United States.
+          - Supervised by Raj Chetty and John Friedman.
+
+      # TODO: keep or no?
+      # - title: Research Assistant
+      #   subtitle: National Bureau of Economic Research
+      #   dates: July 2024 -- July 2026
 
       - title: Cryptography Research Assistant
         subtitle: University of Minnesota
         dates: September 2022 -- June 2024
-        tags: [short]
         bullets:
-          - Designed a tool for reporting misuse on enctypred messsaging
+          - Designed a tool for reporting misuse on encrypted messaging
             platforms that provably maintains users' privacy.
-          - Supported by an NSF REU and Carleton's Kolenkow-Reitz Fellowship.
-            Supervised by Professor Nicholas Hopper.
+          - Presented findings at 44th IEEE Symposium on Security and Privacy.
+            Supervised by Nicholas Hopper.
 
       - title: Algorithms Research Assistant
         subtitle: Carleton College
         dates: September 2023 -- June 2024
-        tags: [short]
         bullets:
-          - Studied a novel NP-complete problem inspired by clustering survey
+          - Proposed a novel combinatorial problem inspired by clustering survey
             responses.
-          - Developed approximation algorithms and proved inapproximability in
-            special cases by reducing to well-studied problems. Supervised by
-            Professor David Liben-Nowell.
+          - Proved NP-completeness and (in)approximability under certain
+            restrictions. Supervised by David Liben-Nowell.
 
       - title: Research Assistant
         subtitle: LIGO Scientific Collaboration
-        dates: Janurary 2024 -- March 2024
-        tags: [short]
+        dates: January 2024 -- March 2024
         bullets:
           - Helped maintain a dashboard and SQL database used to filter false
             positives from gravitational wave sensor data.
 
+  - title: Teaching
+    items:
+      # TODO: replace dates here with terms?
+
+      - title: Computer Science Teaching Assistant
+        subtitle: Carleton College
+        dates: March 2022 -- June 2024
+        bullets:
+          - Designed labs, wrote autograders, held office hours, and graded
+            homework for classes on artificial intelligence (CS-321), algorithms
+            (CS-252, CS-352), and data visualization (CS-314).
+
+      - title: Math Teaching Assistant
+        subtitle: Carleton College
+        dates: September 2023 -- March 2024
+        bullets:
+          - Held office hours, tutored students, and graded for abstract algebra
+            (MATH-342) and real analysis (MATH-321).
+
+      - title: Math Grader
+        subtitle: Carleton College
+        dates: March 2021 -- March 2022
+        bullets:
+          - Graded homework for introductory proofs class (MATH-236) and
+            calculus II (MATH-120).
+
   - title: Work Experience
     items:
-      - title: Teaching Assistant
-        subtitle: Carleton College
-        dates: March 2021 -- June 2024
-        tags: [short]
-        bullets:
-          - Held office hours, designed assignments, and graded homework for
-            various math and computer science classes.
-          - Courses include data visualization (2x), algorithms, artificial
-            intelligence, abstract algebra, and real analysis.
-          # - "Courses: artificial intelligence (CS 321), data visualization (CS
-          #   314), algorithms (CS 252), abstract algebra (MATH 352), real
-          #   analysis (MATH 321), math structures (MATH 236), and calculus II
-          #   (MATH 120)."
-
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        tags: [short]
         bullets:
-          - Analyzed American Community Survey data to identify demographic
-            disparities in housing and internet access.
-          - Created reports and interactive data visualizations for use by
-            government employees and other consultants.
+          - Used American Community Survey data to identify target populations
+            for housing and internet access programs.
 
-      - title: Counselor
+      - title: Wilderness Outfitter and Guide
         subtitle: YMCA Camp Widjiwagan
-        dates: June 2021 -- September 2021
-        tags: [short]
+        dates: June 2021 -- August 2021
         bullets:
           - Oversaw the purchase and distribution of food for nearly 200
             wilderness trips across North America.
-          - Lead a week-long canoeing trip with a program dedicated to
-            increasing diversity in the outdoors community.
+          # - Lead a week-long canoeing trip with a program dedicated to
+          #   increasing diversity in the outdoors community.
 
-      - title: Dining Hall Worker
+      - title: Cafeteria Worker
         subtitle: Carleton College
         dates: September 2020 -- March 2021
-        tags: [short]
 
       - title: Farm Hand
         subtitle: Hansen Tree Farm
         dates: November 2018 -- December 2020
-        tags: [short]
+
+  # TODO: include this?
+  # - title: Software
 
   - title: Skills
     items:
       - title: Programming
-        tags: [short]
         notes:
           Python, Rust, R, \{Java,Type\}Script, Swift, git, Docker, \LaTeX, SQL.
 
       - title: Data Science and Visualization
-        tags: [short]
         notes:
-          R (tidyverse), Python (skikit-learn, Polars, NumPy), JavaScript
+          R (tidyverse), Python (scikit-learn, Polars, NumPy), JavaScript
           (d3.js)
-
-      - title: Machine Learning
-        tags: [short]
-        notes: scikit-learn, tidymodels, PyTorch, TensorFlow
 
   - title: Publications and Preprints
     items:
       - citations:
           - health-inequality
-          - cerberus
           - threshold-reporting
           - exemplar
+          - cerberus
 
   - title: Personal Interests
     summary:
-      Running, backpacking, getting my heart broken by perennially-mediocre
-      sports teams, playing the piano, ultimate frisbee, nordic skiing, Wii
-      Mario Kart, Project Euler, the upper midwest (but not Wisconsin), soccer,
-      tomfoolery.
+      Running, mountains, perennially-mediocre sports teams, playing the piano,
+      biking, Wii Mario Kart, ultimate frisbee, pickup soccer, meandering.
