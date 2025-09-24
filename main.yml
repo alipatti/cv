@@ -54,7 +54,7 @@ sections:
           - Wrote pipeline to process decades of Census, IRS tax, and SSA
             mortality data to produce granular estimates of life expectancy by
             geography, income, race, and sex.
-          - Coauthored a paper on the changing relationship between race,
+          - Coauthoring a paper on the changing relationship between race,
             income, and life expectancy in the United States.
           - Supervised by Raj Chetty and John Friedman.
 
@@ -102,19 +102,21 @@ sections:
 
       - title: Math Teaching Assistant
         subtitle: Carleton College
-        dates: September 2023 -- March 2024
+        dates: March 2021 -- March 2024
         bullets:
           - Held office hours, tutored students, and graded for abstract algebra
-            (MATH-342) and real analysis (MATH-321).
+            (MATH-342), real analysis (MATH-321), an introductory proofs class
+            (MATH-236), and calculus II (MATH-120).
 
-      - title: Math Grader
-        subtitle: Carleton College
-        dates: March 2021 -- March 2022
-        bullets:
-          - Graded homework for introductory proofs class (MATH-236) and
-            calculus II (MATH-120).
+  - title: Publications and Preprints
+    items:
+      - citations:
+          - health-inequality
+          - threshold-reporting
+          - exemplar
+          - cerberus
 
-  - title: Work Experience
+  - title: Other Work Experience
     items:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
@@ -140,9 +142,6 @@ sections:
         subtitle: Hansen Tree Farm
         dates: November 2018 -- December 2020
 
-  # TODO: include this?
-  # - title: Software
-
   - title: Skills
     items:
       - title: Programming
@@ -154,15 +153,10 @@ sections:
           R (tidyverse), Python (scikit-learn, Polars, NumPy), JavaScript
           (d3.js)
 
-  - title: Publications and Preprints
-    items:
-      - citations:
-          - health-inequality
-          - threshold-reporting
-          - exemplar
-          - cerberus
+  # TODO: include this?
+  # - title: Software
 
   - title: Personal Interests
     summary:
       Running, mountains, perennially-mediocre sports teams, playing the piano,
-      biking, Wii Mario Kart, ultimate frisbee, pickup soccer, meandering.
+      biking, Wii Mario Kart, pickup sports.
