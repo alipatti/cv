@@ -123,6 +123,10 @@
 			{{{this.subtitle}}}%
 		}
 
+		\def\secondline{%
+			{{{this.second_line}}}%
+		}
+
 		\def\notes{%
 			{{{this.notes}}}%
 		}
@@ -153,6 +157,7 @@
 			\ifdefempty{\notes}{}{: \notes}%
 			\ifdefempty{\paren}{}{\quad (\textit{\paren})}%
 			\ifdefempty{\dates}{}{\hfill \textit{\dates}}%
+			\ifdefempty{\secondline}{}{\\ \secondline}%
 		{{/if}}
 
 		{{#if this.email}}

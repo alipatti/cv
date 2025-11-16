@@ -58,11 +58,6 @@ sections:
             income, and life expectancy in the United States.
           - Supervised by Raj Chetty and John Friedman.
 
-      # TODO: keep or no?
-      # - title: Research Assistant
-      #   subtitle: National Bureau of Economic Research
-      #   dates: July 2024 -- July 2026
-
       - title: Cryptography Research Assistant
         subtitle: University of Minnesota
         dates: September 2022 -- June 2024
@@ -76,7 +71,7 @@ sections:
         subtitle: Carleton College
         dates: September 2023 -- June 2024
         bullets:
-          - Proposed a novel combinatorial problem inspired by clustering survey
+          - Proposed and studied a novel combinatorial problem inspired by clustering survey
             responses.
           - Proved NP-completeness and (in)approximability under certain
             restrictions. Supervised by David Liben-Nowell.
@@ -88,33 +83,39 @@ sections:
           - Helped maintain a dashboard and SQL database used to filter false
             positives from gravitational wave sensor data.
 
+    # TODO: expand each class to its own row?
   - title: Teaching
     items:
-      # TODO: replace dates here with terms?
-
       - title: Computer Science Teaching Assistant
         subtitle: Carleton College
         dates: March 2022 -- June 2024
         bullets:
           - Designed labs, wrote autograders, held office hours, and graded
-            homework for classes on artificial intelligence (CS-321), algorithms
-            (CS-252, CS-352), and data visualization (CS-314).
+            homework.
+          - "**Courses:** artificial intelligence (CS-321), algorithms (CS-252,
+            CS-352), and data visualization (CS-314)."
 
       - title: Math Teaching Assistant
         subtitle: Carleton College
         dates: March 2021 -- March 2024
         bullets:
-          - Held office hours, tutored students, and graded for abstract algebra
-            (MATH-342), real analysis (MATH-321), an introductory proofs class
-            (MATH-236), and calculus II (MATH-120).
+          - Held office hours, tutored students, and graded.
+          - "**Courses:** abstract algebra (MATH-342), real analysis (MATH-321),
+            introductory proof-writing (MATH-236), and calculus II (MATH-120)."
 
-  - title: Publications and Preprints
+  - title: Refereed Publications
+    items:
+      - citations:
+          - cerberus
+  - title: Preprints
+    items:
+      - citations:
+          - exemplar
+  - title: Manuscripts in Preparation
     items:
       - citations:
           - health-inequality
           - threshold-reporting
-          - exemplar
-          - cerberus
 
   - title: Other Work Experience
     items:
