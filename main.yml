@@ -71,8 +71,8 @@ sections:
         subtitle: Carleton College
         dates: September 2023 -- June 2024
         bullets:
-          - Proposed and studied a novel combinatorial problem inspired by clustering survey
-            responses.
+          - Proposed and studied a novel combinatorial problem inspired by
+            clustering survey responses.
           - Proved NP-completeness and (in)approximability under certain
             restrictions. Supervised by David Liben-Nowell.
 
@@ -80,8 +80,11 @@ sections:
         subtitle: LIGO Scientific Collaboration
         dates: January 2024 -- March 2024
         bullets:
-          - Helped maintain a dashboard and SQL database used to filter false
-            positives from gravitational wave sensor data.
+          - Served as a computational RA on a project searching for
+            gravatational waves emitted by spinning neutron stars.
+          - Helped build and maintain a SQL database and interactive dashboard
+            to locate and filter false positives from the collaboration's sensor
+            data.
 
     # TODO: expand each class to its own row?
   - title: Teaching
@@ -107,33 +110,57 @@ sections:
     items:
       - citations:
           - cerberus
-  - title: Preprints
+  - title: Preprints and Working Papers
     items:
       - citations:
           - exemplar
+          - spectral-radius
+
   - title: Manuscripts in Preparation
     items:
       - citations:
           - health-inequality
           - threshold-reporting
 
+  - title: Talks and Presentations
+    items:
+      - title:
+          Evolution of Racial and Socioeconomic Disparities in Life Expectancy
+          in the United States
+        bullets:
+          - Harvard Summer of Opportunity Conference (with John Friedman and Ines Guix). Cambridge, MA. July 2025.
+          - Harvard ECON 50 Section (with Ines Guix). Cambridge, MA.
+            April 2025.
+
+      - title: "Sports as Sequences: An Introduction to Deep Learning"
+        bullets:
+          - Carleton College. Northfield, MN. February 2024 (statistics senior thesis).
+
+      - title: The Class Group
+        bullets:
+          - Carleton College. Northfield, MN. November 2023 (mathematics senior thesis).
+
+      - title: Committee Moderation on Encrypted Messaging Platforms
+        bullets:
+          - IEEE Symposium on Security and Privacy. San Francisco, CA. May 2023. Poster presentation.
+
   - title: Other Work Experience
     items:
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         dates: September 2023 -- November 2023
-        bullets:
-          - Used American Community Survey data to identify target populations
-            for housing and internet access programs.
+        # bullets:
+        #   - Used American Community Survey data to identify target populations
+        #     for housing and internet access programs.
 
       - title: Wilderness Outfitter and Guide
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- August 2021
-        bullets:
-          - Oversaw the purchase and distribution of food for nearly 200
-            wilderness trips across North America.
-          # - Lead a week-long canoeing trip with a program dedicated to
-          #   increasing diversity in the outdoors community.
+        # bullets:
+        #   - Oversaw the purchase and distribution of food for nearly 200
+        #     wilderness trips across North America.
+        #   - Lead a week-long canoeing trip with a program dedicated to
+        #     increasing diversity in the outdoors community.
 
       - title: Cafeteria Worker
         subtitle: Carleton College
@@ -153,9 +180,6 @@ sections:
         notes:
           R (tidyverse), Python (scikit-learn, Polars, NumPy), JavaScript
           (d3.js)
-
-  # TODO: include this?
-  # - title: Software
 
   - title: Personal Interests
     summary:
