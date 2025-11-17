@@ -3,20 +3,25 @@
 \usepackage{xhfill}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fontawesome}
-\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+{{!-- \usepackage[T1]{fontenc} --}}
 \usepackage{etoolbox}
 
 \usepackage[margin=4em,footskip=1.5em]{geometry}
 
+
+\newcommand{\sqbullet}{\raisebox{0.2em}{\rule{0.5ex}{0.5ex}}}
+
 \usepackage[
 	maxnames=100,
-	{{!-- giveninits=true, --}}
 	sorting=none,
 	style=authortitle,
 	dashed=false,
 ]{biblatex}
 \addbibresource{publications.bib}
 \setlength\bibitemsep{1.2\itemsep}
+\DeclareNameAlias{default}{given-family}
+\DeclareNameAlias{sortname}{given-family}
 
 \usepackage{parskip}
 \pagestyle{empty}
@@ -38,12 +43,12 @@
 
 \titlespacing{\section}
 	{-1em}  % leading
-	{.8em}  % before
-	{.4em}  % after
+	{1em}  % before
+	{.5em}  % after
 
 \titlespacing{\subsection}
 	{0em}  % leading
-	{.2em}  % before
+	{.5em}  % before
 	{1pt}  % after
 
 \usepackage{enumitem}
@@ -61,12 +66,10 @@
 \fancyhf{} % clear header and footer
 \cfoot{
 	\color{gray}
-	\footnotesize \itshape
-	$\sim$
-	last updated \today
-	\ifthenelse{\pageref{LastPage}=1}{}{
-	   (page \thepage\ of \pageref{LastPage})}
-	$\sim$
+	\footnotesize
+	\itshape
+	\ifthenelse{\pageref{LastPage}=1}{}{Page \thepage\ of \pageref{LastPage}.}
+	Compiled \today.
 }
 
 \renewcommand{\baselinestretch}{1.05} 
@@ -183,7 +186,8 @@
 
 		{{#if this.bullets}}
 			\begin{itemize}[
-				label={\bfseries-},
+				label={\sqbullet},
+				{{!-- label={\bfseries-}, --}}
 				leftmargin=1.5em,
 			]
 			{{#each this.bullets}}
