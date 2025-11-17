@@ -66,9 +66,26 @@ const renderTexToPdf = async (
 ) => {
   const outputDirectory = await Deno.makeTempDir();
 
+  // awful hack to deal with conflicting biber/biblatex versioning
+  // see https://github.com/tectonic-typesetting/tectonic/issues/1267
+  const kpse = new Deno.Command("kpsewhich", {
+    args: ["biblatex.sty"],
+    stdout: "piped",
+  });
+  const kpseOutput = await kpse.output();
+  const searchPath = new TextDecoder().decode(kpseOutput.stdout).trim();
+  const searchDir = searchPath.substring(0, searchPath.lastIndexOf("/"));
+
   // spawn tectonic subprocess
   const tectonic = new Deno.Command("tectonic", {
-    args: ["-X", "compile", "--outdir", outputDirectory, "-"],
+    args: [
+      "-Z",
+      `search-path=${searchDir}`,
+      "--outdir",
+      outputDirectory,
+      "--keep-logs",
+      "-",
+    ],
     stdin: "piped",
     stderr: "piped",
     stdout: "piped",
@@ -91,7 +108,13 @@ const renderTexToPdf = async (
   }
 
   // move pdf to output directory
+  // Deno.readDirSync(outputDirectory).forEach(d => console.log(d.name));
+  // await Deno.writeFile(outputFilepath.replace(".pdf", ".tex"), texSource);
   await Deno.copyFile(`${outputDirectory}/texput.pdf`, outputFilepath);
+  await Deno.copyFile(
+    `${outputDirectory}/texput.log`,
+    outputFilepath.replace(".pdf", ".log"),
+  );
 };
 
 runExit(
