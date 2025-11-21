@@ -15,9 +15,9 @@ sections:
         bullets:
           - "**Selected coursework**: analytic and algebraic number theory,
             representation theory, Galois theory, real analysis, combinatorics,
-            topology, probability, statistical inference, machine learning,
-            micro and labor economics, algorithms, cryptography, natural
-            language processing, quantum computing."
+            topology, statistical inference, machine learning, micro and labor
+            economics, algorithms, cryptography, natural language processing,
+            quantum computing."
           - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
             (statistics) and _The Class Group_ (math)."
 
@@ -36,7 +36,7 @@ sections:
   - title: Research
     items:
       - title: Predoctoral Fellow
-        subtitle: Harvard University
+        subtitle: Opportunity Insights at Harvard University
         dates: July 2024 -- July 2026
         with: Raj Chetty and John Friedman
 
@@ -69,12 +69,10 @@ sections:
         with: David Liben-Nowell and Anna Rafferty
 
         bullets:
-          - Proposed and studied a novel combinatorial problem inspired by
-            clustering survey responses.
-          - Proved NP-completeness and inapproximability under certain
-            restrictions.
-          - Demonstrated the existence of a greedy 0.5-approximation on a
-            restricted case.
+          - Proposed and studied a novel NP-complete combinatorial problem
+            inspired by clustering survey responses.
+          - Proved inapproximability of the problem in general and exhibited a
+            greedy 0.5-approximation on a restricted case.
 
       - title: Research Assistant
         subtitle: LIGO Scientific Collaboration
@@ -84,17 +82,14 @@ sections:
         bullets:
           - Served as a computational RA on a project searching for
             gravatational waves emitted by spinning neutron stars.
-          # - Due to their slight asymmetry, theory predicts that the stars'
-          #   rotation should emit regularly-spaced ripples in spacetime that
-          #   appear as faint peaks in the signal's Fourier transform.
-          - Helped build and maintain a database and interactive dashboard to
-            locate and filter false positives from the collaboration's sensor
-            data.
+          - Helped build and maintain a database to locate and filter false
+            positives from the collaboration's sensor data.
 
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
         with: Adam Loy
         dates: September 2023 -- November 2023
+
         bullets:
           - Used American Community Survey data to identify target populations
             for housing and internet access programs.
@@ -164,7 +159,7 @@ sections:
         details: one of the six highest GPAs in graduating class
         dates: May 2024
       - title: Kelly Award
-        details: for leadership in colegiate track \& field
+        details: for leadership in collegiate track \& field
         dates: May 2024
       - title: NSF Research Experience for Undergraduates
         dates: June 2023
