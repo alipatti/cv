@@ -89,7 +89,7 @@ const renderTexToPdf = async (
     ];
   } catch {
     /// catch if there's no system latex distro (so kpsewhich doesn't exist)
-    args = [outputDirectory, "--keep-logs", "-"];
+    args = ["--outdir", outputDirectory, "--keep-logs", "-"];
   }
 
   // spawn tectonic subprocess
