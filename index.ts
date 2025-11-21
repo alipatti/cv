@@ -66,26 +66,35 @@ const renderTexToPdf = async (
 ) => {
   const outputDirectory = await Deno.makeTempDir();
 
-  // awful hack to deal with conflicting biber/biblatex versioning
-  // see https://github.com/tectonic-typesetting/tectonic/issues/1267
-  const kpse = new Deno.Command("kpsewhich", {
-    args: ["biblatex.sty"],
-    stdout: "piped",
-  });
-  const kpseOutput = await kpse.output();
-  const searchPath = new TextDecoder().decode(kpseOutput.stdout).trim();
-  const searchDir = searchPath.substring(0, searchPath.lastIndexOf("/"));
+  let args;
 
-  // spawn tectonic subprocess
-  const tectonic = new Deno.Command("tectonic", {
-    args: [
+  try {
+    // awful hack to deal with conflicting biber/biblatex versioning
+    // see https://github.com/tectonic-typesetting/tectonic/issues/1267
+    const kpseStdout = new Deno.Command("kpsewhich", {
+      args: ["biblatex.sty"],
+      stdout: "piped",
+    }).outputSync().stdout;
+
+    const path = new TextDecoder().decode(kpseStdout).trim();
+    const dir = path.substring(0, path.lastIndexOf("/"));
+
+    args = [
       "-Z",
-      `search-path=${searchDir}`,
+      `search-path=${dir}`,
       "--outdir",
       outputDirectory,
       "--keep-logs",
       "-",
-    ],
+    ];
+  } catch {
+    /// catch if there's no system latex distro (so kpsewhich doesn't exist)
+    args = [outputDirectory, "--keep-logs", "-"];
+  }
+
+  // spawn tectonic subprocess
+  const tectonic = new Deno.Command("tectonic", {
+    args: args,
     stdin: "piped",
     stderr: "piped",
     stdout: "piped",
