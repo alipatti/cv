@@ -1,16 +1,16 @@
 \documentclass{article}
 
+\usepackage[dvipsnames,x11names]{xcolor}
 \usepackage{xhfill}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fontawesome}
 \usepackage{fontspec}
 {{!-- \usepackage[T1]{fontenc} --}}
 \usepackage{etoolbox}
-
 \usepackage[margin=4em,footskip=1.5em]{geometry}
 
-
-\newcommand{\sqbullet}{\raisebox{0.2em}{\rule{0.5ex}{0.5ex}}}
+\newcommand{\bulletpoint}{\raisebox{0.2em}{\rule{0.5ex}{0.5ex}}}
+\colorlet{sectionColor}{black}
 
 \usepackage[
 	maxnames=100,
@@ -33,7 +33,7 @@
 	{\Large \scshape}
 	{}
 	{0em}  % number-header spacing 
-	{#1 \ \xrfill[.2em]{.5pt}}
+	{\color{sectionColor} #1 \ \xrfill[.2em]{.2pt}}
 
 \titleformat{\subsection}[runin]
 	{}
@@ -48,7 +48,7 @@
 
 \titlespacing{\subsection}
 	{0em}  % leading
-	{.5em}  % before
+	{.2em}  % before
 	{1pt}  % after
 
 \usepackage{enumitem}
@@ -85,7 +85,7 @@
 
 	\title
 
-	\medskip
+	\vspace{1em}
 
 	\itshape
 	\faicon{envelope} {{{about.email}}} \ | \ 
@@ -107,6 +107,7 @@
 		{ linkedin.com/in/{{~about.linkedin~}} \; \faicon{linkedin}}
 \end{minipage}
 
+\smallskip
 
 {{!-- SECTIONS --}}
 {{#each sections}}
@@ -126,18 +127,9 @@
 			{{{this.subtitle}}}%
 		}
 
-		\def\secondline{%
-			{{{this.second_line}}}%
-		}
-
 		\def\notes{%
 			{{{this.notes}}}%
 		}
-
-		\def\paren{%
-			{{{this.paren}}}%
-		}
-
 		
 		\def\dates{%
 			{{{this.dates}}}%
@@ -155,12 +147,16 @@
 		{{#if this.title}}
 			\subsection{%
 				\ifdefempty{\title}{}{\textbf{\title}}%
-				\ifdefempty{\subtitle}{}{, \textit{\subtitle}}%
+				\ifdefempty{\subtitle}{}{, {\subtitle}}%
 			}%
 			\ifdefempty{\notes}{}{: \notes}%
-			\ifdefempty{\paren}{}{\quad (\textit{\paren})}%
+			{{#if this.details}}
+				\ --- \ {{{this.details}}}
+			{{/if}}
 			\ifdefempty{\dates}{}{\hfill \textit{\dates}}%
-			\ifdefempty{\secondline}{}{\\ \secondline}%
+		{{/if}}
+		{{#if this.with}}
+			\\ \textit{with {{{this.with}}} }
 		{{/if}}
 
 		{{#if this.email}}
@@ -170,7 +166,7 @@
 			\;
 			\itshape\small
 			\faicon{envelope} {{{this.email}}}
-			\ | \ \hspace{2pt}
+			~~~ | ~~~ \ \hspace{2pt}
 			\faicon{phone} {{{this.phone}}}
 			\normalfont\normalsize
 		{{/if}}
@@ -186,7 +182,7 @@
 
 		{{#if this.bullets}}
 			\begin{itemize}[
-				label={\sqbullet},
+				label={\bulletpoint},
 				{{!-- label={\bfseries-}, --}}
 				leftmargin=1.5em,
 			]
@@ -194,6 +190,7 @@
 				\item {{{this}}}
 			{{/each}}
 			\end{itemize}
+			\vspace{.75em}
 		{{/if}}
 
 	{{/each }}

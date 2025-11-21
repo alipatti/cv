@@ -13,24 +13,13 @@ sections:
         subtitle: B.A. in Mathematics and Statistics (summa cum laude)
         dates: September 2020 -- June 2024
         bullets:
-          - "3.99 GPA, National Merit Scholarship, Phi Beta Kappa (junior year),
-            Noyes Prize."
-          - "Captain of varsity track and field, conference champion at 4x 800m,
-            three-time all-conference, Kelly Award."
           - "**Selected coursework**: analytic and algebraic number theory,
-            Galois theory, representation theory, real analysis, combinatorics,
+            representation theory, Galois theory, real analysis, combinatorics,
             topology, probability, statistical inference, machine learning,
             micro and labor economics, algorithms, cryptography, natural
             language processing, quantum computing."
-          # TODO: split these up?
           - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
             (statistics) and _The Class Group_ (math)."
-
-      # - title: Harvard University
-      #   subtitle: Non-degree-seeking student
-      #   dates: September 2024 - present
-      #   bullets:
-      #     - Audit Ph.D.-level classes in statistics and applied math.
 
       # - title: St. Paul Como Park High School
       #   subtitle: H.S. Diploma
@@ -49,62 +38,66 @@ sections:
       - title: Predoctoral Fellow
         subtitle: Harvard University
         dates: July 2024 -- July 2026
+        with: Raj Chetty and John Friedman
 
         bullets:
           - Wrote pipeline to process decades of Census, IRS tax, and SSA
             mortality data to produce granular estimates of life expectancy by
             geography, income, race, and sex.
+          - Conducted analyses to disentangle the mechanisms behind the
+            diverging health of the rich and the poor.
           - Coauthoring a paper on the changing relationship between race,
             income, and life expectancy in the United States.
-          - Supervised by Raj Chetty and John Friedman.
 
       - title: Cryptography Research Assistant
         subtitle: University of Minnesota
         dates: September 2022 -- June 2024
+        with: Nicholas Hopper
+
         bullets:
           - Designed a tool for reporting misuse on encrypted messaging
             platforms that provably maintains users' privacy.
+          - Utilized threshold cryptography and a non-interactive
+            zero-knowledge-proof to have senders of reported messages retain
+            their privacy until their messages are reported many times or by
+            many people.
           - Presented findings at 44th IEEE Symposium on Security and Privacy.
-            Supervised by Nicholas Hopper.
 
       - title: Algorithms Research Assistant
         subtitle: Carleton College
         dates: September 2023 -- June 2024
+        with: David Liben-Nowell and Anna Rafferty
+
         bullets:
           - Proposed and studied a novel combinatorial problem inspired by
             clustering survey responses.
-          - Proved NP-completeness and (in)approximability under certain
-            restrictions. Supervised by David Liben-Nowell.
+          - Proved NP-completeness and inapproximability under certain
+            restrictions.
+          - Demonstrated the existence of a greedy 0.5-approximation on a
+            restricted case.
 
       - title: Research Assistant
         subtitle: LIGO Scientific Collaboration
         dates: January 2024 -- March 2024
+        with: Jay Tasson
+
         bullets:
           - Served as a computational RA on a project searching for
             gravatational waves emitted by spinning neutron stars.
-          - Helped build and maintain a SQL database and interactive dashboard
-            to locate and filter false positives from the collaboration's sensor
+          # - Due to their slight asymmetry, theory predicts that the stars'
+          #   rotation should emit regularly-spaced ripples in spacetime that
+          #   appear as faint peaks in the signal's Fourier transform.
+          - Helped build and maintain a database and interactive dashboard to
+            locate and filter false positives from the collaboration's sensor
             data.
 
-    # TODO: expand each class to its own row?
-  - title: Teaching
-    items:
-      - title: Computer Science Teaching Assistant
-        subtitle: Carleton College
-        dates: March 2022 -- June 2024
+      - title: Statistical Consultant
+        subtitle: Minnesota Department of Human Services
+        with: Adam Loy
+        dates: September 2023 -- November 2023
         bullets:
-          - Designed labs, wrote autograders, held office hours, and graded
-            homework.
-          - "**Courses:** artificial intelligence (CS-321), algorithms (CS-252,
-            CS-352), and data visualization (CS-314)."
-
-      - title: Math Teaching Assistant
-        subtitle: Carleton College
-        dates: March 2021 -- March 2024
-        bullets:
-          - Held office hours, tutored students, and graded.
-          - "**Courses:** abstract algebra (MATH-342), real analysis (MATH-321),
-            introductory proof-writing (MATH-236), and calculus II (MATH-120)."
+          - Used American Community Survey data to identify target populations
+            for housing and internet access programs.
 
   - title: Refereed Publications
     items:
@@ -122,36 +115,74 @@ sections:
           - health-inequality
           - threshold-reporting
 
-  - title: Talks and Presentations
+  # TODO: tighten/cut this section?
+  # - title: Talks and Presentations
+  #   items:
+  #     - title:
+  #         Evolution of Racial and Socioeconomic Disparities in Life Expectancy
+  #         in the United States
+  #       bullets:
+  #         - Harvard Summer of Opportunity Conference (with John Friedman and
+  #           Ines Guix). Cambridge, MA. July 2025.
+  #         - Harvard ECON 50 Section (with Ines Guix). Cambridge, MA. April 2025.
+  #
+  #     - title: "Sports as Sequences: An Introduction to Deep Learning"
+  #       bullets:
+  #         - Carleton College. Northfield, MN. February 2024 (statistics senior
+  #           thesis).
+  #
+  #     - title: The Class Group
+  #       bullets:
+  #         - Carleton College. Northfield, MN. November 2023 (mathematics senior
+  #           thesis).
+  #
+  #     - title: Committee Moderation on Encrypted Messaging Platforms
+  #       bullets:
+  #         - IEEE Symposium on Security and Privacy. San Francisco, CA. May 2023.
+  #           Poster presentation.
+
+  - title: Teaching
     items:
-      - title:
-          Evolution of Racial and Socioeconomic Disparities in Life Expectancy
-          in the United States
+      - title: Computer Science Teaching Assistant
+        subtitle: Carleton College
         bullets:
-          - Harvard Summer of Opportunity Conference (with John Friedman and Ines Guix). Cambridge, MA. July 2025.
-          - Harvard ECON 50 Section (with Ines Guix). Cambridge, MA.
-            April 2025.
+          - "CS 314: Data Visualization (spring 2023, spring 2024)"
+          - "CS 321: Making Decisions with Artificial Intelligence (winter 2024)"
+          - "CS 252: Algorithms (spring 2023)"
 
-      - title: "Sports as Sequences: An Introduction to Deep Learning"
+      - title: Math Teaching Assistant
+        subtitle: Carleton College
         bullets:
-          - Carleton College. Northfield, MN. February 2024 (statistics senior thesis).
+          - "MATH 342: Abstract Algebra I (winter 2024)"
+          - "MATH 321: Real Analysis I (fall 2023)"
+          - "MATH 120: Calculus II (winter 2022)"
+          - "MATH 236: Math Structures (spring 2021)"
 
-      - title: The Class Group
-        bullets:
-          - Carleton College. Northfield, MN. November 2023 (mathematics senior thesis).
-
-      - title: Committee Moderation on Encrypted Messaging Platforms
-        bullets:
-          - IEEE Symposium on Security and Privacy. San Francisco, CA. May 2023. Poster presentation.
-
-  - title: Other Work Experience
+  - title: Select Honors
     items:
-      - title: Statistical Consultant
-        subtitle: Minnesota Department of Human Services
-        dates: September 2023 -- November 2023
+      - title: Noyes Prize
+        details: one of the six highest GPAs in graduating class
+        dates: May 2024
+      - title: Kelly Award
+        details: for leadership in colegiate track \& field
+        dates: May 2024
+      - title: NSF Research Experience for Undergraduates
+        dates: June 2023
+      - title: Phi Beta Kappa
+        dates: May 2023
+      - title: Kolenkow Reitz Fellowship
+        details: funded three months of off-campus research
+        dates: September 2022
+      - title: National Merit Scholarship
+        dates: September 2020
+
+  - title: Other Experience
+    items:
+      - title: Captain
+        subtitle: Carleton Varsity Track and Field
+        dates: May 2023 -- May 2024
         # bullets:
-        #   - Used American Community Survey data to identify target populations
-        #     for housing and internet access programs.
+        #   - Conference champion at 4x 800m, three-time all-conference, Kelly Award.
 
       - title: Wilderness Outfitter and Guide
         subtitle: YMCA Camp Widjiwagan
@@ -175,11 +206,6 @@ sections:
       - title: Programming
         notes:
           Python, Rust, R, \{Java,Type\}Script, Swift, git, Docker, \LaTeX, SQL.
-
-      - title: Data Science and Visualization
-        notes:
-          R (tidyverse), Python (scikit-learn, Polars, NumPy), JavaScript
-          (d3.js)
 
   - title: Personal Interests
     summary:
