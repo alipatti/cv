@@ -13,11 +13,16 @@ sections:
         subtitle: B.A. in Mathematics and Statistics (summa cum laude)
         dates: September 2020 -- June 2024
         bullets:
+          - "**GPA**: 3.99 / 4.0."
+          - "**Involvement**: varsity track and field (captain), Phi Beta Kappa
+            (junior year)."
+          # - "3.99 / 4.0 GPA, varsity track and field (captain), Phi Beta Kappa
+          #   (junior year)."
           - "**Selected coursework**: analytic and algebraic number theory,
             representation theory, Galois theory, real analysis, combinatorics,
-            topology, statistical inference, machine learning, micro and labor
-            economics, algorithms, cryptography, natural language processing,
-            quantum computing."
+            topology, statistical inference, machine learning, time series
+            analysis, micro and labor economics, algorithms, cryptography,
+            natural language processing, quantum computing."
           - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
             (statistics) and _The Class Group_ (math)."
 
@@ -33,7 +38,7 @@ sections:
       #       semesters of set theory, vector calculus, linear algebra, and
       #       differential equations.
 
-  - title: Research
+  - title: Research Experience
     items:
       - title: Predoctoral Fellow
         subtitle: Opportunity Insights at Harvard University
@@ -41,10 +46,10 @@ sections:
         with: Raj Chetty and John Friedman
 
         bullets:
-          - Wrote pipeline to process decades of Census, IRS tax, and SSA
+          - Wrote a pipeline to process decades of Census, IRS tax, and SSA
             mortality data to produce granular estimates of life expectancy by
             geography, income, race, and sex.
-          - Conducted analyses to disentangle the mechanisms behind the
+          - Conducted analyses to disentangle mechanisms behind the
             diverging health of the rich and the poor.
           - Coauthoring a paper on the changing relationship between race,
             income, and life expectancy in the United States.
@@ -58,7 +63,7 @@ sections:
           - Designed a tool for reporting misuse on encrypted messaging
             platforms that provably maintains users' privacy.
           - Utilized threshold cryptography and a non-interactive
-            zero-knowledge-proof to have senders of reported messages retain
+            zero-knowledge proof to have senders of reported messages retain
             their privacy until their messages are reported many times or by
             many people.
           - Presented findings at 44th IEEE Symposium on Security and Privacy.
@@ -74,14 +79,14 @@ sections:
           - Proved inapproximability of the problem in general and exhibited a
             greedy 0.5-approximation on a restricted case.
 
-      - title: Research Assistant
+      - title: Computational Research Assistant
         subtitle: LIGO Scientific Collaboration
         dates: January 2024 -- March 2024
         with: Jay Tasson
 
         bullets:
           - Served as a computational RA on a project searching for
-            gravatational waves emitted by spinning neutron stars.
+            gravitational waves emitted by spinning neutron stars.
           - Helped build and maintain a database to locate and filter false
             positives from the collaboration's sensor data.
 
@@ -166,18 +171,18 @@ sections:
       - title: Phi Beta Kappa
         dates: May 2023
       - title: Kolenkow Reitz Fellowship
-        details: funded three months of off-campus research
+        # details: funded three months of off-campus research
         dates: September 2022
       - title: National Merit Scholarship
         dates: September 2020
 
   - title: Other Experience
     items:
-      - title: Captain
-        subtitle: Carleton Varsity Track and Field
-        dates: May 2023 -- May 2024
-        # bullets:
-        #   - Conference champion at 4x 800m, three-time all-conference, Kelly Award.
+      # - title: Captain
+      #   subtitle: Carleton Varsity Track and Field
+      #   dates: May 2023 -- May 2024
+      #   bullets:
+      #     - Conference champion at 4x800m, three-time all-conference, Kelly Award.
 
       - title: Wilderness Outfitter and Guide
         subtitle: YMCA Camp Widjiwagan
@@ -185,7 +190,7 @@ sections:
         # bullets:
         #   - Oversaw the purchase and distribution of food for nearly 200
         #     wilderness trips across North America.
-        #   - Lead a week-long canoeing trip with a program dedicated to
+        #   - Led a week-long canoeing trip with a program dedicated to
         #     increasing diversity in the outdoors community.
 
       - title: Cafeteria Worker
@@ -204,5 +209,5 @@ sections:
 
   - title: Personal Interests
     summary:
-      Running, mountains, perennially-mediocre sports teams, playing the piano,
-      biking, Wii Mario Kart, pickup sports.
+      Running, mountains, perennially mediocre sports teams, playing the piano,
+      biking, Wii Mario Kart, pickup soccer.
