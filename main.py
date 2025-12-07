@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from io import StringIO
 from pathlib import Path
-import textwrap
 import subprocess
 import re
 import typer
@@ -118,8 +117,7 @@ class CVBuilder(StringIO):
                 rf"\faicon{{globe}} \href{{http://{about.website}}}{{{about.website}}}"
             )
 
-        self.write(
-            textwrap.dedent(rf"""
+        self.write(rf"""
             \documentclass{{cv}}
 
             \begin{{document}}
@@ -133,18 +131,14 @@ class CVBuilder(StringIO):
 
                 {r" \ | \ ".join(contact)}
             \end{{center}}
-
             """)
-        )
 
     def write_section(self, section: Section):
-        self.write(
-            textwrap.dedent(rf"""
+        self.write(rf"""
             \section{{{section.title}}}
 
             {section.summary}
             """)
-        )
 
         for item in section.items:
             self.write_item(item)
@@ -152,11 +146,13 @@ class CVBuilder(StringIO):
     def write_item(self, item: Item):
         if item.citation:
             self.write(rf"""
-			\begin{{refsection}}
-				\nocite{{{item.citation}}}
-				\printbibliography[heading=none]
-			\end{{refsection}} 
-            """)
+                \begin{{adjustwidth}}{{1em}}{{0cm}}
+                \begin{{refsection}}
+                    \nocite{{{item.citation}}}
+                    \printbibliography[heading=none]
+                \end{{refsection}} 
+                \end{{adjustwidth}}
+                """)
             return
 
         if item.title and item.subtitle:

@@ -8,6 +8,7 @@
 \RequirePackage{fontawesome}
 \RequirePackage{fontenc}
 \RequirePackage{etoolbox}
+\RequirePackage{changepage}
 
 \RequirePackage{geometry}
 \geometry{
