@@ -40,7 +40,6 @@ class Item(pydantic.BaseModel):
     citation: str = ""
     with_: str = pydantic.Field(alias="with", default="")
     details: str = ""
-    notes: str = ""
 
 
 def main(
@@ -165,9 +164,6 @@ class CVBuilder(StringIO):
 
         elif item.title:
             self.write(rf"\subsection{{\textbf{{{item.title}}}}}")
-
-        if item.notes:
-            self.write(rf": {item.notes}")
 
         if item.details:
             self.write(rf"~---~{item.details}")
