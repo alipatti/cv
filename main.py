@@ -48,8 +48,8 @@ class Item(pydantic.BaseModel):
 def main(
     input: Path = Path("main.yml"),
     pdf: Path = Path(f"pdfs/pattison-cv-{TODAY}.pdf"),
-    schema_path: Path = Path("cv.schema.json"),
     schema: bool = False,
+    schema_path: Path = Path("cv.schema.json"),
     preview: bool = False,
 ):
     if schema:
@@ -65,7 +65,8 @@ def main(
 
     pdf_path = compile_pdf(cv_tex, pdf)
 
-    subprocess.check_output(["open", str(pdf_path)])
+    if preview:
+        subprocess.check_output(["open", str(pdf_path)])
 
     return pdf_path
 
@@ -78,7 +79,8 @@ def compile_pdf(
     tex_file.parent.mkdir(exist_ok=True, parents=True)
     tex_file.write_text(tex)
 
-    args = ["latexmk", tex_file]
+    args = ["tectonic", tex_file] + get_biblatex_args()
+
     try:
         subprocess.check_output(args)
     except subprocess.CalledProcessError as e:
@@ -199,6 +201,22 @@ def md_to_tex(s: str) -> str:
     s = bold_pattern.sub(r"\\textbf{\2}", s)
     s = italic_pattern.sub(r"\\textit{\2}", s)
     return s
+
+
+def get_biblatex_args():
+    """
+    awful hack to deal with conflicting biber/biblatex versioning.
+    see https://github.com/tectonic-typesetting/tectonic/issues/1267
+    """
+
+    try:
+        path = subprocess.check_output(["kpsewhich", "biblatex.sty"]).decode().strip()
+        d = Path(path).parent
+        return ["-Z", f"search-path={d}"]
+
+    except FileNotFoundError:
+        print("kpsewhich not found")
+        return []
 
 
 if __name__ == "__main__":

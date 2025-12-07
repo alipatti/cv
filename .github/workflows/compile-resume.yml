@@ -14,18 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Deno setup
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v7
 
-      - name: Tectonic setup
+      - name: Set up Tectonic
         uses: wtfjoke/setup-tectonic@v3
         with:
           biber-version: 2.17
 
-      - name: Render pdfs
-        run: deno task build --prefix pattison --all
+      - name: Compile pdf
+        run: uv run -m main
 
       - name: Prep for release
         run: |
