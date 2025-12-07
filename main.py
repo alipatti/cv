@@ -10,8 +10,6 @@ import json
 import pydantic
 import yaml
 
-TEMP_DIR = Path(".latex/")
-
 
 class CVContent(pydantic.BaseModel):
     about: About
