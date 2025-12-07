@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from datetime import datetime
 from io import StringIO
 from pathlib import Path
 import textwrap
@@ -13,7 +12,6 @@ import pydantic
 import yaml
 
 TEMP_DIR = Path(".latex/")
-TODAY = datetime.today().strftime("%b-%Y").lower()
 
 
 class CVContent(pydantic.BaseModel):
@@ -47,7 +45,7 @@ class Item(pydantic.BaseModel):
 
 def main(
     input: Path = Path("main.yml"),
-    pdf: Path = Path(f"pdfs/pattison-cv-{TODAY}.pdf"),
+    pdf: Path = Path("pdfs/pattison-cv.pdf"),
     schema: bool = False,
     schema_path: Path = Path("cv.schema.json"),
     preview: bool = False,
