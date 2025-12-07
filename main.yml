@@ -86,8 +86,8 @@ sections:
         bullets:
           - Served as a computational RA on a project searching for
             gravitational waves emitted by spinning neutron stars.
-          - Helped build and maintain a database to locate and filter false
-            positives from the collaboration's sensor data.
+          - Maintained a database and interactive dashboard to help locate false
+            positives in the collaboration's sensor data.
 
       - title: Statistical Consultant
         subtitle: Minnesota Department of Human Services
