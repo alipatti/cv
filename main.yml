@@ -176,19 +176,12 @@ sections:
       - title: Phi Beta Kappa
         dates: May 2023
       - title: Kolenkow Reitz Fellowship
-        # details: funded three months of off-campus research
         dates: September 2022
       - title: National Merit Scholarship
         dates: September 2020
 
   - title: Other Experience
     items:
-      # - title: Captain
-      #   subtitle: Carleton Varsity Track and Field
-      #   dates: May 2023 -- May 2024
-      #   bullets:
-      #     - Conference champion at 4x800m, three-time all-conference, Kelly Award.
-
       - title: Wilderness Outfitter and Guide
         subtitle: YMCA Camp Widjiwagan
         dates: June 2021 -- August 2021
