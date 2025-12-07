@@ -1,9 +1,0 @@
-{
-  "tasks": { "build": "deno --allow-all index.ts" },
-  "imports": {
-    "chalk": "npm:chalk@^5.4.1",
-    "clipanion": "npm:clipanion@^4.0.0-rc.4",
-    "handlebars": "npm:handlebars@^4.7.8",
-    "spinnies": "npm:spinnies@^0.5.1"
-  }
-}

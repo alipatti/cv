@@ -1,9 +1,11 @@
+# yaml-language-server: $schema=./cv.schema.json
+
 about:
   name: Alistair Pattison
   phone: (651) 706-6713
   email: apattison@g.harvard.edu
-  github: alipatti
-  linkedin: alipatti
+  # github: alipatti
+  # linkedin: alipatti
   website: alipatti.com
 
 sections:
@@ -47,8 +49,8 @@ sections:
           - Wrote a pipeline to process decades of Census, IRS tax, and SSA
             mortality data to produce granular estimates of life expectancy by
             geography, income, race, and sex.
-          - Conducted analyses to disentangle mechanisms behind the
-            diverging health of the rich and the poor.
+          - Conducted analyses to disentangle mechanisms behind the diverging
+            health of the rich and the poor.
           - Coauthoring a paper on the changing relationship between race,
             income, and life expectancy in the United States.
 
@@ -60,10 +62,9 @@ sections:
         bullets:
           - Designed a tool for reporting misuse on encrypted messaging
             platforms that provably maintains users' privacy.
-          - Utilized threshold cryptography and a non-interactive
-            zero-knowledge proof to have senders of reported messages retain
-            their privacy until their messages are reported many times or by
-            many people.
+          - Utilized threshold cryptography and a non-interactive zero-knowledge
+            proof to have senders of reported messages retain their privacy
+            until their messages are reported many times or by many people.
           - Presented findings at 44th IEEE Symposium on Security and Privacy.
 
       - title: Algorithms Research Assistant
@@ -99,19 +100,17 @@ sections:
 
   - title: Refereed Publications
     items:
-      - citations:
-          - cerberus
+      - citation: cerberus
+
   - title: Preprints and Working Papers
     items:
-      - citations:
-          - exemplar
-          - spectral-radius
+      - citation: exemplar
+      - citation: spectral-radius
 
   - title: Manuscripts in Preparation
     items:
-      - citations:
-          - health-inequality
-          - threshold-reporting
+      - citation: health-inequality
+      - citation: threshold-reporting
 
   # TODO: tighten/cut this section?
   # - title: Talks and Presentations
@@ -164,8 +163,16 @@ sections:
       - title: Kelly Award
         details: for leadership in collegiate track \& field
         dates: May 2024
+      - title: MIAC Conference Champion
+        details: 4x800m
+        dates: May 2024
+      - title: MIAC All-Conference
+        details: 800m, 4x400m, 4x800m
+        dates: February 2023, 2024; May 2024
       - title: NSF Research Experience for Undergraduates
         dates: June 2023
+      - title: Dean's List
+        dates: September 2021, 2022, 2023
       - title: Phi Beta Kappa
         dates: May 2023
       - title: Kolenkow Reitz Fellowship
@@ -199,13 +206,11 @@ sections:
         subtitle: Hansen Tree Farm
         dates: November 2018 -- December 2020
 
-  - title: Skills
+  - title: Skills and Interests
     items:
       - title: Programming
-        notes:
-          Python, Rust, R, \{Java,Type\}Script, Swift, git, Docker, \LaTeX, SQL.
-
-  - title: Personal Interests
-    summary:
-      Running, mountains, perennially mediocre sports teams, playing the piano,
-      biking, Wii Mario Kart, pickup soccer.
+        details: Python, Rust, R, TypeScript, Swift, git, Docker, \LaTeX, SQL.
+      - title: Personal Interests
+        details:
+          Mountains, perennially mediocre sports teams, playing the piano,
+          biking, pickup soccer.
