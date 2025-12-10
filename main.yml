@@ -2,7 +2,7 @@
 
 about:
   name: Alistair Pattison
-  phone: (651) 706-6713
+  # phone: (651) 706-6713
   email: apattison@g.harvard.edu
   # github: alipatti
   # linkedin: alipatti
@@ -107,7 +107,7 @@ sections:
       - citation: exemplar
       - citation: spectral-radius
 
-  - title: Manuscripts in Preparation
+  - title: Works in Progress
     items:
       - citation: health-inequality
       - citation: threshold-reporting
@@ -158,16 +158,16 @@ sections:
   - title: Select Honors
     items:
       - title: Noyes Prize
-        details: one of the six highest GPAs in graduating class
+        subtitle: one of the six highest GPAs in graduating class
         dates: May 2024
       - title: Kelly Award
-        details: for leadership in collegiate track \& field
+        subtitle: leadership in collegiate track \& field
         dates: May 2024
       - title: MIAC Conference Champion
-        details: 4x800m
+        subtitle: track and field (4x800m)
         dates: May 2024
       - title: MIAC All-Conference
-        details: 800m, 4x400m, 4x800m
+        subtitle: track and field (800m, 4x400m, 4x800m)
         dates: February 2023, 2024; May 2024
       - title: NSF Research Experience for Undergraduates
         dates: June 2023
@@ -175,6 +175,7 @@ sections:
         dates: September 2021, 2022, 2023
       - title: Phi Beta Kappa
         dates: May 2023
+        subtitle: elected as Junior
       - title: Kolenkow Reitz Fellowship
         dates: September 2022
       - title: National Merit Scholarship
