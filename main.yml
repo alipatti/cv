@@ -96,7 +96,7 @@ sections:
         subtitle: track and field (4x800m)
         dates: 2024
       - title: MIAC All-Conference
-        # subtitle: track and field (800m, 4x400m, 4x800m)
+        subtitle: track and field # (800m, 4x400m, 4x800m)
         dates: 2023, 2024
       - title: NSF Research Experience for Undergraduates
         dates: 2023
