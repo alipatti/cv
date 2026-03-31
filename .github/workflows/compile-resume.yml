@@ -23,7 +23,7 @@ jobs:
           biber-version: 2.17
 
       - name: Compile pdf
-        run: uv run -m main
+        run: uv run cv build --output pattison-cv.pdf --no-preview --verbose
 
       - name: Prep for release
         run: |
@@ -35,13 +35,13 @@ jobs:
         with:
           name: ${{ env.release_name }}
           tag_name: ${{ env.release_tag }}
-          files: pdfs/*
+          files: pattison-cv.pdf
 
       - name: Create artifacts
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: pdfs/
+          path: pattison-cv.pdf
 
   deploy_pages:
     environment:
