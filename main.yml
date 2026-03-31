@@ -11,94 +11,66 @@ about:
 sections:
   - title: Education
     items:
+      # - title: Columbia University
+      #   subtitle: Ph.D. in Economics
+      #   dates: 2026 -- present
+      # - title: Princeton University
+      #   subtitle: Ph.D. in Economics
+      #   dates: 2026 -- present
+        # bullets:
+        #   - "**Interests**: Political economy, applied microeconomics, econometrics."
+
       - title: Carleton College
-        subtitle: B.A. in Mathematics and Statistics (summa cum laude)
-        dates: September 2020 -- June 2024
-        bullets:
-          - "**GPA**: 3.99 / 4.0."
-          - "**Involvement**: varsity track and field (captain), Phi Beta Kappa
-            (junior year)."
-          - "**Selected coursework**: analytic and algebraic number theory,
-            representation theory, Galois theory, real analysis, combinatorics,
-            topology, statistical inference, machine learning, time series
-            analysis, micro and labor economics, algorithms, cryptography,
-            natural language processing, quantum computing."
-          - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
-            (statistics) and _The Class Group_ (math)."
+        subtitle: B.A. in Mathematics and Statistics, _summa cum laude_
+        dates: 2020 -- 2024
+        # bullets:
+        #   - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
+        #     (statistics) and _The Class Group_ (math)."
 
-      # - title: St. Paul Como Park High School
-      #   subtitle: H.S. Diploma
-      #   dates: Sep 2016 - June 2020
-
-      # - title: University of Minnesota
-      #   subtitle: Talented Youth Mathematics Program
-      #   dates: Sep 2015 -- June 2020
-      #   bullets:
-      #     - Completed selective high-school math program culminating in six
-      #       semesters of set theory, vector calculus, linear algebra, and
-      #       differential equations.
-
-  - title: Research Experience
+  - title: Previous Research Experience
     items:
       - title: Predoctoral Fellow
         subtitle: Opportunity Insights at Harvard University
-        dates: July 2024 -- July 2026
+        dates: 2024 -- 2026
         with: Raj Chetty and John Friedman
 
-        bullets:
-          - Wrote a pipeline to process decades of Census, IRS tax, and SSA
-            mortality data to produce granular estimates of life expectancy by
-            geography, income, race, and sex.
-          - Conducted analyses to disentangle mechanisms behind the diverging
-            health of the rich and the poor.
-          - Coauthoring a paper on the changing relationship between race,
-            income, and life expectancy in the United States.
+        # bullets:
+        #   - Wrote a pipeline to process decades of Census, IRS tax, and SSA
+        #     mortality data to produce granular estimates of life expectancy by
+        #     geography, income, race, and sex.
+        #   - Authored the \texttt{oi-tools} library.
+        #   - Coauthored a paper on the changing relationship between race,
+        #     income, and life expectancy in the United States.
 
-      - title: Cryptography Research Assistant
+      - title: Cryptography Researcher
         subtitle: University of Minnesota
-        dates: September 2022 -- June 2024
+        dates: 2022 -- 2024
         with: Nicholas Hopper
 
-        bullets:
-          - Designed a tool for reporting misuse on encrypted messaging
-            platforms that provably maintains users' privacy.
-          - Utilized threshold cryptography and a non-interactive zero-knowledge
-            proof to have senders of reported messages retain their privacy
-            until their messages are reported many times or by many people.
-          - Presented findings at 44th IEEE Symposium on Security and Privacy.
+        # bullets:
+        #   - Designed a tool for reporting misuse on encrypted messaging
+        #     platforms that provably maintains users' privacy.
+        #   - Presented findings at 44th IEEE Symposium on Security and Privacy.
 
-      - title: Algorithms Research Assistant
+      - title: Algorithms Researcher
         subtitle: Carleton College
-        dates: September 2023 -- June 2024
+        dates: 2023 -- 2024
         with: David Liben-Nowell and Anna Rafferty
 
-        bullets:
-          - Proposed and studied a novel NP-complete combinatorial problem
-            inspired by clustering survey responses.
-          - Proved inapproximability of the problem in general and exhibited a
-            greedy 0.5-approximation on a restricted case.
+        # bullets:
+        #   - Proposed and studied a novel NP-complete combinatorial problem
+        #     inspired by clustering survey responses.
 
       - title: Computational Research Assistant
         subtitle: LIGO Scientific Collaboration
-        dates: January 2024 -- March 2024
+        dates: 2024 -- 2024
         with: Jay Tasson
 
-        bullets:
-          - Served as a computational RA on a project searching for
-            gravitational waves emitted by spinning neutron stars.
-          - Maintained a database and interactive dashboard to help locate false
-            positives in the collaboration's sensor data.
+        # bullets:
+        #   - Served as a computational RA on a project searching for
+        #     gravitational waves emitted by spinning neutron stars.
 
-      - title: Statistical Consultant
-        subtitle: Minnesota Department of Human Services
-        with: Adam Loy
-        dates: September 2023 -- November 2023
-
-        bullets:
-          - Used American Community Survey data to identify target populations
-            for housing and internet access programs.
-
-  - title: Refereed Publications
+  - title: Refereed Publications and Conference Presentations
     items:
       - citation: cerberus
 
@@ -112,31 +84,31 @@ sections:
       - citation: health-inequality
       - citation: threshold-reporting
 
-  # TODO: tighten/cut this section?
-  # - title: Talks and Presentations
-  #   items:
-  #     - title:
-  #         Evolution of Racial and Socioeconomic Disparities in Life Expectancy
-  #         in the United States
-  #       bullets:
-  #         - Harvard Summer of Opportunity Conference (with John Friedman and
-  #           Ines Guix). Cambridge, MA. July 2025.
-  #         - Harvard ECON 50 Section (with Ines Guix). Cambridge, MA. April 2025.
-  #
-  #     - title: "Sports as Sequences: An Introduction to Deep Learning"
-  #       bullets:
-  #         - Carleton College. Northfield, MN. February 2024 (statistics senior
-  #           thesis).
-  #
-  #     - title: The Class Group
-  #       bullets:
-  #         - Carleton College. Northfield, MN. November 2023 (mathematics senior
-  #           thesis).
-  #
-  #     - title: Committee Moderation on Encrypted Messaging Platforms
-  #       bullets:
-  #         - IEEE Symposium on Security and Privacy. San Francisco, CA. May 2023.
-  #           Poster presentation.
+  - title: Select Honors
+    items:
+      - title: Noyes Prize
+        subtitle: one of the six highest GPAs in graduating class
+        dates: 2024
+      - title: Kelly Award
+        subtitle: leadership in collegiate track \& field
+        dates: 2024
+      - title: MIAC Conference Champion
+        subtitle: track and field (4x800m)
+        dates: 2024
+      - title: MIAC All-Conference
+        # subtitle: track and field (800m, 4x400m, 4x800m)
+        dates: 2023, 2024
+      - title: NSF Research Experience for Undergraduates
+        dates: 2023
+      - title: Dean's List
+        dates: 2021, 2022, 2023
+      - title: Phi Beta Kappa
+        dates: 2023
+        subtitle: elected as Junior
+      - title: Kolenkow Reitz Fellowship
+        dates: 2022
+      - title: National Merit Scholarship
+        dates: 2020
 
   - title: Teaching
     items:
@@ -155,50 +127,24 @@ sections:
           - "MATH 120: Calculus II (winter 2022)"
           - "MATH 236: Math Structures (spring 2021)"
 
-  - title: Select Honors
-    items:
-      - title: Noyes Prize
-        subtitle: one of the six highest GPAs in graduating class
-        dates: May 2024
-      - title: Kelly Award
-        subtitle: leadership in collegiate track \& field
-        dates: May 2024
-      - title: MIAC Conference Champion
-        subtitle: track and field (4x800m)
-        dates: May 2024
-      - title: MIAC All-Conference
-        subtitle: track and field (800m, 4x400m, 4x800m)
-        dates: February 2023, 2024; May 2024
-      - title: NSF Research Experience for Undergraduates
-        dates: June 2023
-      - title: Dean's List
-        dates: September 2021, 2022, 2023
-      - title: Phi Beta Kappa
-        dates: May 2023
-        subtitle: elected as Junior
-      - title: Kolenkow Reitz Fellowship
-        dates: September 2022
-      - title: National Merit Scholarship
-        dates: September 2020
-
   - title: Other Experience
     items:
       - title: Wilderness Outfitter and Guide
         subtitle: YMCA Camp Widjiwagan
-        dates: June 2021 -- August 2021
-        # bullets:
-        #   - Oversaw the purchase and distribution of food for nearly 200
-        #     wilderness trips across North America.
-        #   - Led a week-long canoeing trip with a program dedicated to
-        #     increasing diversity in the outdoors community.
+        dates: 2021
 
       - title: Cafeteria Worker
         subtitle: Carleton College
-        dates: September 2020 -- March 2021
+        dates: 2020 -- 2021
 
       - title: Farm Hand
         subtitle: Hansen Tree Farm
-        dates: November 2018 -- December 2020
+        dates: 2018 -- 2020
+
+      - title: Statistical Consultant
+        subtitle: Minnesota Department of Human Services
+        with: Adam Loy
+        dates: 2023
 
   - title: Skills and Interests
     items:
