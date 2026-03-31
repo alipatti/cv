@@ -18,3 +18,5 @@ pdfs
 *.run.xml
 *.tex
 *.pdf
+
+*.egg-info

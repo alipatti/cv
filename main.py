@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import logging
 from io import StringIO
 from pathlib import Path
 import subprocess
 import re
-import typer
+import cyclopts
 import json
+import sys
 
 import pydantic
 import yaml
@@ -32,34 +34,49 @@ class Section(pydantic.BaseModel):
 class Item(pydantic.BaseModel):
     title: str = ""
     subtitle: str = ""
-    dates: str = ""
+    dates: str | int = ""
     bullets: list[str] = []
     citation: str = ""
     with_: str = pydantic.Field(alias="with", default="")
     details: str = ""
 
 
-def main(
-    input: Path = Path("main.yml"),
-    pdf: Path = Path("pdfs/pattison-cv.pdf"),
-    schema: bool = False,
-    schema_path: Path = Path("cv.schema.json"),
-    preview: bool = False,
-):
-    if schema:
-        schema_path.write_text(json.dumps(CVContent.model_json_schema()))
+app = cyclopts.App()
 
+
+@app.command()
+def schema(output: Path = Path("cv.schema.json")):
+    """Generate the CV schema."""
+    output.write_text(json.dumps(CVContent.model_json_schema()))
+    print(f"Wrote schema to {output}.")
+
+
+@app.command()
+def build(
+    input: Path = Path("main.yml"),
+    output: Path = Path("pattison-cv.pdf"),
+    preview: bool = True,
+    verbose: bool = True,
+):
+
+    if verbose:
+        logging.basicConfig(level=logging.DEBUG)
+
+    logging.info(f"Reading {input}...")
     with input.open() as f:
         content = CVContent.model_validate(
             yaml.full_load(f),
             extra="forbid",
         )
 
+    logging.info("Creating intermediate tex...")
     cv_tex = CVBuilder.create_tex(content)
 
-    pdf_path = compile_pdf(cv_tex, pdf)
+    logging.info(f"Compiling pdf to {output}...")
+    pdf_path = compile_pdf(cv_tex, output)
 
     if preview:
+        logging.info(f"Opening {output}...")
         subprocess.check_output(["open", str(pdf_path)])
 
     return pdf_path
@@ -75,12 +92,16 @@ def compile_pdf(
 
     args = ["tectonic", tex_file] + get_biblatex_args()
 
-    try:
-        subprocess.check_output(args)
-    except subprocess.CalledProcessError as e:
-        print(Path(tex_file.with_suffix(".log")).read_text())
-        print(e.output.decode())
-        raise
+    process = subprocess.run(
+        args,
+        capture_output=True,
+        encoding="utf-8",
+    )
+
+    if process.returncode != 0:
+        print(process.stdout)
+        print(process.stderr)
+        sys.exit(1)
 
     pdf_path.parent.mkdir(exist_ok=True, parents=True)
     return tex_file.with_suffix(".pdf").rename(pdf_path)
@@ -154,7 +175,9 @@ class CVBuilder(StringIO):
             return
 
         if item.title and item.subtitle:
-            self.write(rf"\subsection{{\textbf{{{item.title}}}, {item.subtitle}}}")
+            self.write(
+                rf"\subsection{{\textbf{{{item.title}}}, {md_to_tex(item.subtitle)}}}"
+            )
 
         elif item.title:
             self.write(rf"\subsection{{\textbf{{{item.title}}}}}")
@@ -163,10 +186,10 @@ class CVBuilder(StringIO):
             self.write(rf"~---~{item.details}")
 
         if item.dates:
-            self.write(rf"\hfill \textit{{{item.dates}}}")
+            self.write(rf"\hfill \textsl{{{item.dates}}}")
 
         if item.with_:
-            self.write(rf"\\ \hspace{{1em}}\textit{{with {item.with_}}}")
+            self.write(rf"\\ \hspace{{1em}}\textit{{\quad with {item.with_}}}")
 
         if item.bullets:
             self.write("\\begin{itemize}\n")
@@ -207,5 +230,5 @@ def get_biblatex_args():
         return []
 
 
-if __name__ == "__main__":
-    typer.run(main)
+def main():
+    app()

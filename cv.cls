@@ -42,7 +42,8 @@
 {\Large \scshape}
 {}
 {0em}  % number-header spacing 
-{\color{sectionColor} #1 \ \xrfill[.2em]{.2pt}}
+{\color{sectionColor} #1}
+% {\color{sectionColor} #1 \ \xrfill[.2em]{.2pt}}
 
 \titleformat{\subsection}[runin]
 {}
@@ -82,3 +83,6 @@
 
 \linespread{1.05}
 
+% \RequirePackage{fontspec}
+% \usepackage{unicode-math}
+% \setmainfont{Libertinus Serif}
