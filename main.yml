@@ -91,10 +91,10 @@ sections:
         subtitle: leadership in collegiate track \& field
         dates: 2024
       - title: MIAC Conference Champion
-        subtitle: track and field (4x800m)
+        subtitle: track \& field (4x800m)
         dates: 2024
       - title: MIAC All-Conference
-        subtitle: track and field # (800m, 4x400m, 4x800m)
+        subtitle: track \& field # (800m, 4x400m, 4x800m)
         dates: 2023, 2024
       - title: NSF Research Experience for Undergraduates
         dates: 2023
@@ -110,23 +110,23 @@ sections:
 
   - title: Teaching
     items:
-      - title: Computer Science Teaching Assistant
-        subtitle: Carleton College
+      - title: Carleton College
         bullets:
-          - "CS 314: Data Visualization (spring 2023, spring 2024)"
-          - "CS 321: Making Decisions with Artificial Intelligence (winter 2024)"
-          - "CS 252: Algorithms (spring 2023)"
-
-      - title: Math Teaching Assistant
-        subtitle: Carleton College
-        bullets:
+          - "CS 314: Data Visualization (spring 2024)"
           - "MATH 342: Abstract Algebra I (winter 2024)"
           - "MATH 321: Real Analysis I (fall 2023)"
+          - "CS 314: Data Visualization (spring 2023)"
+          - "CS 321: Making Decisions with Artificial Intelligence (winter 2023)"
+          - "CS 252: Algorithms (spring 2022)"
           - "MATH 120: Calculus II (winter 2022)"
           - "MATH 236: Math Structures (spring 2021)"
 
   - title: Other Experience
     items:
+      - title: Statistical Consultant
+        subtitle: Minnesota Department of Human Services
+        dates: 2023
+
       - title: Wilderness Outfitter and Guide
         subtitle: YMCA Camp Widjiwagan
         dates: 2021
@@ -138,11 +138,6 @@ sections:
       - title: Farm Hand
         subtitle: Hansen Tree Farm
         dates: 2018 -- 2020
-
-      - title: Statistical Consultant
-        subtitle: Minnesota Department of Human Services
-        with: Adam Loy
-        dates: 2023
 
   - title: Skills and Interests
     items:
