@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=./cv.schema.json
+#                                  \-- use `cv schema` to generate this
 
 about:
   name: Alistair Pattison
@@ -11,12 +12,9 @@ about:
 sections:
   - title: Education
     items:
-      # - title: Columbia University
-      #   subtitle: Ph.D. in Economics
-      #   dates: 2026 -- present
-      # - title: Princeton University
-      #   subtitle: Ph.D. in Economics
-      #   dates: 2026 -- present
+      - title: Princeton University
+        subtitle: Ph.D. in Economics
+        dates: 2026 -- present
         # bullets:
         #   - "**Interests**: Political economy, applied microeconomics, econometrics."
 
