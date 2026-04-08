@@ -55,6 +55,9 @@
 \titlespacing{\section}{0em}{1em}{.5em}
 \titlespacing{\subsection}{1em}{.2em}{.1em}
 
+% Allow page breaks only between sections
+\preto{\section}{\filbreak}
+
 \RequirePackage{enumitem}
 \newcommand{\bulletpoint}{\raisebox{0.2em}{\rule{0.5ex}{0.5ex}}}
 \setlist{
