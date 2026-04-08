@@ -1,3 +1,5 @@
+from typing import Any
+
 import pydantic
 
 
@@ -11,7 +13,7 @@ class About(pydantic.BaseModel):
 class Item(pydantic.BaseModel):
     title: str = ""
     subtitle: str = ""
-    dates: str | int = ""
+    dates: int | str | Any = ""
     bullets: list[str] = []
     citation: str = ""
     with_: str = pydantic.Field(alias="with", default="")
