@@ -1,10 +1,13 @@
+import logging
 import re
 import subprocess
 import sys
+from collections.abc import Sequence
 from io import StringIO
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
-from .schema import About, CVContent, Item, Section
+from cv.schema import About, CVContent, Item, Section
 
 
 class CVBuilder(StringIO):
@@ -23,7 +26,7 @@ class CVBuilder(StringIO):
         self.write_footer()
 
     def write_header(self, about: About):
-        contact = []
+        contact: list[str] = []
 
         if about.email:
             contact.append(rf"\faicon{{envelope}} {about.email}")
@@ -106,18 +109,27 @@ class CVBuilder(StringIO):
 def compile_pdf(
     tex: str,
     pdf_path: Path,
-    tex_file=Path("main.tex"),
+    tex_file: Path | None = None,
 ) -> Path:
-    tex_file.parent.mkdir(exist_ok=True, parents=True)
+    if tex_file is not None:
+        return _compile(tex, pdf_path, tex_file, keep_intermediates=True)
+
+    with TemporaryDirectory() as tmp:
+        return _compile(tex, pdf_path, Path(tmp) / "main.tex", keep_intermediates=False)
+
+
+def _compile(
+    tex: str, pdf_path: Path, tex_file: Path, keep_intermediates: bool
+) -> Path:
     tex_file.write_text(tex)
+    args = ["tectonic", tex_file, "-Z", f"search-path={Path.cwd()}"]
 
-    args = ["tectonic", tex_file] + get_biblatex_args()
+    if keep_intermediates:
+        args.append("--keep-intermediates")
 
-    process = subprocess.run(
-        args,
-        capture_output=True,
-        encoding="utf-8",
-    )
+    args.extend(get_biblatex_args())
+
+    process = subprocess.run(args, capture_output=True, encoding="utf-8")
 
     if process.returncode != 0:
         print(process.stdout)
@@ -128,7 +140,7 @@ def compile_pdf(
     return tex_file.with_suffix(".pdf").rename(pdf_path)
 
 
-def get_biblatex_args():
+def get_biblatex_args() -> Sequence[str]:
     """
     awful hack to deal with conflicting biber/biblatex versioning.
     see https://github.com/tectonic-typesetting/tectonic/issues/1267
@@ -140,7 +152,7 @@ def get_biblatex_args():
         return ["-Z", f"search-path={d}"]
 
     except FileNotFoundError:
-        print("kpsewhich not found")
+        logging.debug("kpsewhich not found")
         return []
 
 
