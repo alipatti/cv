@@ -23,7 +23,7 @@ jobs:
           biber-version: 2.17
 
       - name: Compile pdf
-        run: uv run cv build --output pdfs/pattison-cv.pdf --no-preview --verbose
+        run: uv run cv build --output pdfs/pattison-cv.pdf --no-open --verbose
 
       - name: Prep for release
         run: |
