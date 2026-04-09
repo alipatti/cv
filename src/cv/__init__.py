@@ -32,7 +32,7 @@ def schema(output: Path = Path("cv.schema.json")):
 def build(
     input: Path = Path("main.yml"),
     output: Path = Path("pattison-cv.pdf"),
-    preview: bool = True,
+    open: bool = True,
     verbose: bool = True,
 ):
     if verbose:
@@ -43,7 +43,7 @@ def build(
     logging.info(f"Compiling pdf to {output}...")
     _build_once(input, output)
 
-    if preview:
+    if open:
         logging.info(f"Opening {output}...")
         subprocess.check_output(["open", str(output)])
 
@@ -53,7 +53,7 @@ def watch(
     input: Path = Path("main.yml"),
     output: Path = Path("pattison-cv.pdf"),
     bib: Path = Path("publications.bib"),
-    open: bool = False,
+    open: bool = True,
 ):
     """Watch for changes and rebuild the CV."""
     logging.basicConfig(level=logging.INFO)
