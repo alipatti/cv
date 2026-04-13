@@ -21,6 +21,20 @@ sections:
         #   - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
         #     (statistics) and _The Class Group_ (math)."
 
+  - title: Refereed Publications and Conference Presentations
+    items:
+      - citation: cerberus
+
+  - title: Preprints and Working Papers
+    items:
+      - citation: exemplar
+      - citation: spectral-radius
+
+  - title: Works in Progress
+    items:
+      - citation: health-inequality
+      # - citation: threshold-reporting
+
   - title: Previous Research Experience
     items:
       - title: Predoctoral Fellow
@@ -63,20 +77,6 @@ sections:
         # bullets:
         #   - Served as a computational RA on a project searching for
         #     gravitational waves emitted by spinning neutron stars.
-
-  - title: Refereed Publications and Conference Presentations
-    items:
-      - citation: cerberus
-
-  - title: Preprints and Working Papers
-    items:
-      - citation: exemplar
-      - citation: spectral-radius
-
-  - title: Works in Progress
-    items:
-      - citation: health-inequality
-      - citation: threshold-reporting
 
   - title: Select Honors
     items:
