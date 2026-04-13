@@ -108,10 +108,7 @@
 }
 
 #let render-section(section) = {
-  heading(level: 1, [#section.title])
-
-  let summary = section.at("summary", default: "")
-  if summary != "" { [#summary] }
+  heading(level: 1, section.title)
 
   for item in section.at("items", default: ()) {
     v(0.6em, weak: true)
@@ -123,20 +120,20 @@
   let contact = ()
 
   if about.at("email", default: "") != "" {
-    contact.push([#about.email])
+    contact.push(about.email)
   }
   if about.at("phone", default: "") != "" {
-    contact.push([#about.phone])
+    contact.push(about.phone)
   }
   if about.at("website", default: "") != "" {
-    contact.push(link("https://" + about.website)[#about.website])
+    contact.push(link("https://" + about.website, about.website)
   }
 
   align(center)[
     #text(size: 20pt, smallcaps(strong(about.name)))
     #if contact.len() > 0 {
       v(0.25em, weak: true)
-      emph(contact.join([ | ]))
+      emph(contact.join([ #h(1em) | #h(1em) ]))
     }
   ]
 }
