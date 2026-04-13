@@ -1,0 +1,59 @@
+cerberus:
+  type: article
+  title: Committee Moderation on Encrypted Messaging Platforms
+  author:
+    - Alistair Pattison
+    - Nicholas Hopper
+  date: "2023"
+  note: Extended abstract at the 44th IEEE Symposium on Security and Privacy
+  url: https://arxiv.org/abs/2306.01241
+
+threshold-reporting:
+  type: article
+  title: Private Threshold Content Reporting for Encrypted Messages
+  author:
+    - Alistair Pattison
+    - Nicholas Hopper
+
+exemplar:
+  type: article
+  title: Maximizing the Margin Between Desirable and Undesirable Elements in a Covering Problem
+  author:
+    - Sophie Boileau
+    - Andrew Hong
+    - David Liben-Nowell
+    - Alistair Pattison
+    - Anna N. Rafferty
+    - Charlie Roslansky
+  date: "2026"
+  note: Under review
+  url: https://arxiv.org/abs/2507.03817
+
+health-inequality:
+  type: article
+  title: Evolution of Racial and Socioeconomic Disparities in Life Expectancy in the United States
+  author:
+    - Raj Chetty
+    - Janet Currie
+    - John N. Friedman
+    - Ines Guix
+    - Nathan Hendren
+    - Hannes Schwandt
+    - Michael Stepner
+    - Harvey Barhard
+    - Dhruv Gaur
+    - Tyler Jacobsen
+    - Emma Lee
+    - Alistair Pattison
+    - Ana Sanchez-Chico
+    - Arjun Shanmugam
+    - Brad Foster
+    - Sonya Porter
+
+spectral-radius:
+  type: article
+  title: Public Ideological Polarization
+  author:
+    - Alistair Pattison
+  date: "2025"
+  url: https://arxiv.org/abs/2512.00955

@@ -12,11 +12,11 @@ sections:
     items:
       - title: Princeton University
         subtitle: Ph.D. in Economics
-        dates: 2026 -- present
+        dates: 2026 – present
 
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics, _summa cum laude_
-        dates: 2020 -- 2024
+        dates: 2020 – 2024
         # bullets:
         #   - "**Theses**: _sport2vec: Modeling Basketball with Deep Learning_
         #     (statistics) and _The Class Group_ (math)."
@@ -39,7 +39,7 @@ sections:
     items:
       - title: Predoctoral Fellow
         subtitle: Opportunity Insights at Harvard University
-        dates: 2024 -- 2026
+        dates: 2024 – 2026
         with: Raj Chetty and John Friedman
 
         # bullets:
@@ -52,7 +52,7 @@ sections:
 
       - title: Cryptography Researcher
         subtitle: University of Minnesota
-        dates: 2022 -- 2024
+        dates: 2022 – 2024
         with: Nicholas Hopper
 
         # bullets:
@@ -62,7 +62,7 @@ sections:
 
       - title: Algorithms Researcher
         subtitle: Carleton College
-        dates: 2023 -- 2024
+        dates: 2023 – 2024
         with: David Liben-Nowell and Anna Rafferty
 
         # bullets:
@@ -71,7 +71,7 @@ sections:
 
       - title: Computational Research Assistant
         subtitle: LIGO Scientific Collaboration
-        dates: 2024 -- 2024
+        dates: 2024 – 2024
         with: Jay Tasson
 
         # bullets:
@@ -89,10 +89,10 @@ sections:
       #   subtitle: leadership in collegiate track \& field
       #   dates: 2024
       - title: MIAC Conference Champion
-        subtitle: track \& field (4x800m)
+        subtitle: track & field (4x800m)
         dates: 2024
       - title: MIAC All-Conference
-        subtitle: track \& field # (800m, 4x400m, 4x800m)
+        subtitle: track & field # (800m, 4x400m, 4x800m)
         dates: 2023, 2024
       - title: Phi Beta Kappa
         subtitle: elected as Junior
@@ -129,16 +129,16 @@ sections:
 
       - title: Cafeteria Worker
         subtitle: Carleton College
-        dates: 2020 -- 2021
+        dates: 2020 – 2021
 
       - title: Farm Hand
         subtitle: Hansen Tree Farm
-        dates: 2018 -- 2020
+        dates: 2018 – 2020
 
   - title: Skills and Interests
     items:
       - title: Programming
-        details: Python, Rust, R, TypeScript, Swift, git, Docker, \LaTeX, SQL.
+        details: Python, Rust, R, TypeScript, Swift, git, Docker, LaTeX, SQL.
       - title: Personal Interests
         details:
           Mountains, perennially mediocre sports teams, playing the piano,
