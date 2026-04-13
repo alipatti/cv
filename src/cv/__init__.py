@@ -34,6 +34,7 @@ def build(
     output: Path = Path("pattison-cv.pdf"),
     open: bool = True,
     verbose: bool = True,
+    app: str = "Skim",
 ):
     if verbose:
         logging.basicConfig(level=logging.DEBUG)
@@ -45,7 +46,7 @@ def build(
 
     if open:
         logging.info(f"Opening {output}...")
-        subprocess.check_output(["open", str(output)])
+        subprocess.check_output(["open", str(output), "-a", app])
 
 
 @app.command()
@@ -54,6 +55,7 @@ def watch(
     output: Path = Path("pattison-cv.pdf"),
     bib: Path = Path("publications.bib"),
     open: bool = True,
+    app: str = "Skim",
 ):
     """Watch for changes and rebuild the CV."""
     logging.basicConfig(level=logging.INFO)
@@ -63,7 +65,7 @@ def watch(
         tex_file = Path(tmp) / "main.tex"
 
         if open:
-            subprocess.check_output(["open", str(output)])
+            subprocess.check_output(["open", str(output), "-a", app])
 
         for _ in watchfiles_watch(input, bib):
             _build_once(input, output, tex_file=tex_file)
