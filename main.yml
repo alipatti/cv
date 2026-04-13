@@ -3,10 +3,8 @@
 
 about:
   name: Alistair Pattison
-  # phone: (651) 706-6713
-  email: apattison@g.harvard.edu
-  # github: alipatti
-  # linkedin: alipatti
+  # TODO: update with princeton alias
+  email: ap1741@princeton.edu
   website: alipatti.com
 
 sections:
@@ -15,8 +13,6 @@ sections:
       - title: Princeton University
         subtitle: Ph.D. in Economics
         dates: 2026 -- present
-        # bullets:
-        #   - "**Interests**: Political economy, applied microeconomics, econometrics."
 
       - title: Carleton College
         subtitle: B.A. in Mathematics and Statistics, _summa cum laude_
@@ -89,24 +85,22 @@ sections:
       - title: Noyes Prize
         subtitle: one of the six highest GPAs in graduating class
         dates: 2024
-      - title: Kelly Award
-        subtitle: leadership in collegiate track \& field
-        dates: 2024
+      # - title: Kelly Award
+      #   subtitle: leadership in collegiate track \& field
+      #   dates: 2024
       - title: MIAC Conference Champion
         subtitle: track \& field (4x800m)
         dates: 2024
       - title: MIAC All-Conference
         subtitle: track \& field # (800m, 4x400m, 4x800m)
         dates: 2023, 2024
+      - title: Phi Beta Kappa
+        subtitle: elected as Junior
+        dates: 2023
       - title: NSF Research Experience for Undergraduates
         dates: 2023
-      - title: Dean's List
-        dates: 2021, 2022, 2023
-      - title: Phi Beta Kappa
-        dates: 2023
-        subtitle: elected as Junior
-      - title: Kolenkow Reitz Fellowship
-        dates: 2022
+      # - title: Dean's List
+      #   dates: 2021, 2022, 2023
       - title: National Merit Scholarship
         dates: 2020
 
