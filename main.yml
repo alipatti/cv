@@ -23,11 +23,11 @@ sections:
 
   - title: Refereed Publications and Conference Presentations
     items:
+      - citation: margin
       - citation: cerberus
 
   - title: Preprints and Working Papers
     items:
-      - citation: exemplar
       - citation: spectral-radius
 
   - title: Works in Progress
