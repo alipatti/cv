@@ -21,16 +21,17 @@ sections:
     items:
       - citation: margin
 
-  - title: Conference Presentations
-    items:
-      - citation: cerberus
-      # TODO: add SOO?
-
   - title: Works in Progress
     items:
       - citation: spectral-radius
       - citation: health-inequality
       # - citation: threshold-reporting
+
+  - title: Talks and Presentations
+    items:
+      - citation: margin-talk
+      - citation: health-inequality-talk
+      - citation: cerberus-poster
 
   - title: Select Honors
     items:
