@@ -77,30 +77,60 @@ class CVBuilder(StringIO):
                 """)
             return
 
+        header = ""
+
         if item.title and item.subtitle:
-            self.write(
-                rf"\subsection{{\textbf{{{item.title}}}, {md_to_tex(item.subtitle)}}}"
-            )
+            header = rf"\subsection{{\textbf{{{item.title}}}, {md_to_tex(item.subtitle)}}}"
 
         elif item.title:
-            self.write(rf"\subsection{{\textbf{{{item.title}}}}}")
+            header = rf"\subsection{{\textbf{{{item.title}}}}}"
 
         if item.details:
-            self.write(rf"~---~{item.details}")
+            header += rf"~---~{item.details}"
 
         if item.dates:
-            self.write(rf"\hfill \textsl{{{item.dates}}}")
+            header += rf"\hfill \textsl{{{item.dates}}}"
 
         if item.with_:
-            self.write(rf"\\ \hspace{{1em}}\textit{{\quad with {item.with_}}}")
+            header += rf"\\ \hspace{{1em}}\textit{{\quad with {item.with_}}}"
 
-        if item.bullets:
+        if item.bullets and item.columns > 1:
+            self.write(header + "\n\n")
+
+            # side-by-side top-aligned minipages, one per column
+            per_column = -(-len(item.bullets) // item.columns)
+            chunks = [
+                item.bullets[i : i + per_column]
+                for i in range(0, len(item.bullets), per_column)
+            ]
+
+            self.write("\\noindent")
+
+            for chunk in chunks:
+                self.write(
+                    "\\begin{minipage}[t]{"
+                    + f"{1 / item.columns:.4f}"
+                    + "\\linewidth}\n\\begin{itemize}\n"
+                )
+
+                for b in chunk:
+                    self.write(rf"\item {md_to_tex(b)}")
+
+                self.write("\\end{itemize}\n\\end{minipage}%\n")
+
+            self.write("\n")
+
+        elif item.bullets:
+            self.write(header)
             self.write("\\begin{itemize}\n")
 
             for b in item.bullets:
                 self.write(rf"\item {md_to_tex(b)}")
 
             self.write("\\end{itemize}\n")
+
+        else:
+            self.write(header)
 
     def write_footer(self):
         self.write("\n\n\\end{document}")

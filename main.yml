@@ -108,15 +108,15 @@ sections:
   - title: Teaching
     items:
       - title: Carleton College
+        columns: 2
         bullets:
-          - "CS 314: Data Visualization (spring 2024)"
-          - "MATH 342: Abstract Algebra I (winter 2024)"
-          - "MATH 321: Real Analysis I (fall 2023)"
-          - "CS 314: Data Visualization (spring 2023)"
-          - "CS 321: Making Decisions with Artificial Intelligence (winter 2023)"
-          - "CS 252: Algorithms (spring 2022)"
-          - "MATH 120: Calculus II (winter 2022)"
-          - "MATH 236: Mathematical Structures (spring 2021)"
+          - "MATH 342: Abstract Algebra I (2024)"
+          - "MATH 321: Real Analysis I (2023)"
+          - "CS 314: Data Visualization (2023, 2024)"
+          - "CS 321: Making Decisions with AI (2023)"
+          - "CS 252: Algorithms (2022)"
+          - "MATH 120: Calculus II (2022)"
+          - "MATH 236: Math Structures (2021)"
 
   - title: Skills and Interests
     items:

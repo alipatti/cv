@@ -15,6 +15,7 @@ class Item(pydantic.BaseModel):
     subtitle: str = ""
     dates: int | str | Any = ""
     bullets: list[str] = []
+    columns: int = 1
     citation: str = ""
     with_: str = pydantic.Field(alias="with", default="")
     details: str = ""

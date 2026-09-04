@@ -58,6 +58,9 @@
 % Allow page breaks only between sections
 \preto{\section}{\filbreak}
 
+\RequirePackage{multicol}
+\setlength{\multicolsep}{0pt}
+
 \RequirePackage{enumitem}
 \newcommand{\bulletpoint}{\raisebox{0.2em}{\rule{0.5ex}{0.5ex}}}
 \setlist{
