@@ -121,10 +121,12 @@ sections:
           - "MATH 120: Calculus II (2022)"
           - "MATH 236: Math Structures (2021)"
 
-  - title: Skills and Interests
+  - title: Miscellaneous
     items:
-      - title: Programming
-        details: Python, Rust.
+      # - title: Programming
+      #   details: Python, Rust.
+      - title: Data Access
+        details: U.S. Census Bureau Special Sworn Status (2024 -- present).
       - title: Personal Interests
         details:
           Mountains, perennially mediocre sports teams, playing the piano,
